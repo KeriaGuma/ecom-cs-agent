@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>电商智能客服</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --text:#1f2328; --muted:#6b7280; --me:#2563eb; --line:#e5e7eb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1115; --card:#181b21; --text:#e6e6e6; --muted:#9aa0a6; --me:#3b82f6; --line:#2a2e36; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); }
+  main { max-width:720px; margin:0 auto; padding:16px; display:flex; flex-direction:column; height:100vh; }
+  header { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:12px; }
+  header h1 { font-size:17px; margin:0 auto 0 0; }
+  [hidden] { display:none !important; }
+  select, input, button { font:inherit; padding:6px 10px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--text); }
+  #log { flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:10px; padding:4px; }
+  .msg { max-width:85%; padding:8px 12px; border-radius:12px; white-space:pre-wrap; word-break:break-word; background:var(--card); border:1px solid var(--line); }
+  .me { align-self:flex-end; background:var(--me); color:#fff; border:none; }
+  .status { align-self:flex-start; color:var(--muted); font-size:13px; }
+  form { display:flex; gap:8px; margin-top:12px; }
+  form input { flex:1; }
+  .pick { cursor:pointer; padding:6px 8px; border:1px solid var(--line); border-radius:8px; }
+  .thumb { display:block; max-width:160px; max-height:160px; margin-top:6px; border-radius:6px; }
+  button { background:var(--me); color:#fff; border:none; cursor:pointer; }
+  button:disabled { opacity:.5; }
+  #refunds { display:grid; gap:8px; max-height:32vh; overflow:auto; }
+  .refund { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 12px; }
+  .refund p { margin:2px 0 6px; }
+  .refund small { display:block; color:var(--muted); margin-bottom:6px; overflow-wrap:anywhere; }
+  .refund .row-actions { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  .refund input { max-width:180px; }
+  .bar { color:var(--muted); font-size:13px; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .bar button, header button { background:var(--card); color:var(--text); border:1px solid var(--line); }
+  .bar a, header a { color:var(--me); }
+  #demo-login { margin:0 0 12px; flex-wrap:wrap; }
+  #demo-login input { flex:0 1 150px; }
+  #notice, #handoff { min-height:1.45em; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>电商智能客服</h1>
+    <select id="user" aria-label="买家账号"><option>u001</option><option>u002</option></select>
+    <span id="account" hidden></span>
+    <button id="logout" type="button" hidden>退出</button>
+    <input id="session" value="web" size="8" aria-label="会话 ID">
+    <a href="/desk" id="desk" hidden>坐席工作台</a>
+  </header>
+  <form id="demo-login" hidden>
+    <select id="username" aria-label="演示买家"><option>u001</option><option>u002</option></select>
+    <input id="password" type="password" aria-label="演示口令" placeholder="演示口令 demo" required>
+    <button>登录买家</button>
+  </form>
+  <div class="bar"><span id="handoff" aria-live="polite"></span><button id="clear" type="button" hidden>清理会话</button></div>
+  <div id="log"></div>
+  <div class="bar"><span id="notice" aria-live="polite"></span><button id="retry" type="button" hidden>重试此消息</button></div>
+  <section id="refunds" aria-label="退款记录" aria-live="polite"></section>
+  <form id="f">
+    <input id="text" placeholder="例如：查下 O1003 的物流，顺便问下七天无理由退货运费谁出？" autocomplete="off">
+    <label class="pick" title="附上图片">📷<input id="img" type="file" accept="image/png,image/jpeg,image/webp" hidden></label>
+    <button id="send">发送</button>
+  </form>
+</main>
+<script>
+const log = document.getElementById('log');
+const refundPanel = document.getElementById('refunds');
+const userField = document.getElementById('user'), sessionField = document.getElementById('session');
+const cards = new Map();
+const loginForm = document.getElementById('demo-login'), logout = document.getElementById('logout');
+const notice = document.getElementById('notice'), handoff = document.getElementById('handoff');
+const retry = document.getElementById('retry'), clear = document.getElementById('clear');
+const input = document.getElementById('text'), send = document.getElementById('send');
+const image = document.getElementById('img');
+let demo = false, customer = null, ready = false, sending = false, retryTurn = null, historyKey = null;
+
+const currentUser = () => demo ? customer?.username : userField.value;
+const headers = (user, json = false) => ({...(!demo ? {'X-User-Id': user} : {}),
+                                        ...(json ? {'Content-Type': 'application/json'} : {})});
+const sessionEndpoint = (session, kind) => `/sessions/${encodeURIComponent(session)}/${kind}`;
+
+function syncControls() {
+  const signedIn = Boolean(currentUser());
+  input.disabled = send.disabled = !ready || !signedIn || sending;
+  clear.hidden = !signedIn;
+  clear.disabled = sending;
+  sessionField.disabled = sending;
+  userField.disabled = sending;
+  logout.disabled = sending;
+  retry.hidden = !retryTurn || sending;
+}
+
+function add(cls, text) {
+  const d = document.createElement('div'); d.className = 'msg ' + cls; d.textContent = text;
+  log.appendChild(d); log.scrollTop = log.scrollHeight; return d;
+}
+
+function showRefund(refund, user, session) {
+  if (currentUser() !== user || sessionField.value !== session) return;
+  const existing = cards.get(refund.refund_id);
+  const card = existing || document.createElement('article');
+  card.className = 'refund';
+  const title = document.createElement('strong');
+  const kind = refund.refund_type === 'return_refund' ? '退货退款' : '仅退款';
+  title.textContent = `${refund.order_id} ${refund.item} · ¥${refund.amount.toFixed(2)}（${kind}）`;
+  const detail = document.createElement('p');
+  const reason = refund.reason_type === 'quality' ? '质量问题' : '无理由退货';
+  const shipping = { buyer: '退货运费由买家承担', seller: '退货运费由商家承担' }[refund.shipping_paid_by] || '无需退货';
+  detail.textContent = `${reason} · ${shipping} · ${refund.status_text}`;
+  if (refund.status === 'draft' && refund.needs_approval) detail.textContent += ' · 确认后进入人工审核';
+  const receipt = document.createElement('small');
+  receipt.textContent = `申请号 ${refund.refund_id}`;
+  const actions = document.createElement('div');
+  actions.className = 'row-actions';
+  card.replaceChildren(title, detail, receipt, actions);
+  if (!existing) {
+    cards.set(refund.refund_id, card);
+    refundPanel.appendChild(card);
+  }
+
+  function callRefund(label, pathSuffix = '', method = 'GET', payload = undefined) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = label;
+    button.onclick = async () => {
+      if (currentUser() !== user || sessionField.value !== session) return;
+      const controls = card.querySelectorAll('button, input');
+      controls.forEach(el => el.disabled = true);
+      const endpoint = `/refunds/${encodeURIComponent(refund.refund_id)}${pathSuffix}`;
+      try {
+        const body = typeof payload === 'function' ? payload() : payload;
+        const response = await fetch(endpoint, {
+          method, headers: headers(user, body !== undefined),
+          ...(body !== undefined ? { body: JSON.stringify(body) } : {}),
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.detail || '退款操作失败');
+        showRefund(result, user, session);
+      } catch (error) {
+        add('', error.message);
+      } finally {
+        controls.forEach(el => el.disabled = false);
+      }
+    };
+    actions.appendChild(button);
+  }
+
+  if (refund.status === 'draft') {
+    callRefund('确认申请', '/confirm', 'POST', { confirmed: true });
+    callRefund('取消', '/confirm', 'POST', { confirmed: false });
+  } else if (refund.status === 'awaiting_return') {
+    if (!refund.return_tracking_no) {
+      const trackInput = document.createElement('input');
+      trackInput.placeholder = '退货快递单号';
+      trackInput.value = 'SF900123';
+      actions.appendChild(trackInput);
+      callRefund('提交退货单号', '/return', 'POST', () => ({ tracking_no: trackInput.value.trim() }));
+    }
+    callRefund('刷新状态');
+  } else if (['pending_approval', 'ready', 'processing', 'unknown'].includes(refund.status)) {
+    callRefund('刷新状态');
+  }
+}
+
+async function loadRefunds() {
+  const user = currentUser(), session = sessionField.value;
+  if (!user || !session) return;
+  cards.clear();
+  refundPanel.replaceChildren();
+  try {
+    const response = await fetch(sessionEndpoint(session, 'refunds'), { headers: headers(user) });
+    if (response.ok) (await response.json()).refunds.forEach(refund => showRefund(refund, user, session));
+  } catch (error) {
+    add('status', '暂时无法读取退款记录');
+  }
+}
+
+async function loadHistory() {
+  const user = currentUser(), session = sessionField.value;
+  if (sending || !user || !session) return;
+  try {
+    const response = await fetch(sessionEndpoint(session, 'messages'), { headers: headers(user) });
+    if (!response.ok || sending || user !== currentUser() || session !== sessionField.value) return;
+    const data = await response.json();
+    if (sending || user !== currentUser() || session !== sessionField.value) return;
+    const ticket = data.handoff;
+    handoff.textContent = ticket ? `工单 #${ticket.ticket_id} · ${ticket.active ? '人工客服接待中' : '等待坐席领取'}` : '';
+    image.closest('label').hidden = Boolean(ticket?.active);
+    if (ticket?.active) image.value = '';
+    const key = JSON.stringify(data.messages);
+    if (historyKey === key) return;
+    historyKey = key;
+    log.replaceChildren();
+    for (const message of data.messages) {
+      add(message.role === 'user' ? 'me' : '', message.role === 'staff' ? `人工客服：${message.content}` : message.content);
+    }
+  } catch {
+    // 下次刷新会重新读取。
+  }
+}
+
+function resetView() {
+  retryTurn = null;
+  historyKey = null;
+  notice.textContent = '';
+  handoff.textContent = '';
+  image.closest('label').hidden = false;
+  log.replaceChildren();
+  cards.clear();
+  refundPanel.replaceChildren();
+  syncControls();
+  loadHistory();
+  loadRefunds();
+}
+
+function showIdentity() {
+  const account = document.getElementById('account');
+  userField.hidden = demo;
+  loginForm.hidden = !demo || Boolean(customer);
+  logout.hidden = account.hidden = !demo || !customer;
+  document.getElementById('desk').hidden = !demo;
+  account.textContent = customer?.username || '';
+  resetView();
+}
+
+loginForm.onsubmit = async event => {
+  event.preventDefault();
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password');
+  try {
+    const response = await fetch('/demo/login', {method: 'POST', headers: headers(null, true),
+      body: JSON.stringify({username, password: password.value})});
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.detail || '登录失败');
+    customer = data;
+    password.value = '';
+    showIdentity();
+  } catch (error) { notice.textContent = error.message; }
+};
+
+logout.onclick = async () => {
+  const response = await fetch('/demo/logout', {method: 'POST', headers: headers(null, true),
+    body: JSON.stringify({role: 'customer'})});
+  if (response.ok) { customer = null; showIdentity(); }
+};
+
+clear.onclick = async () => {
+  if (sending || !confirm('清理本会话的聊天记录？退款和工单记录会继续保留。')) return;
+  const user = currentUser(), session = sessionField.value;
+  try {
+    const response = await fetch(sessionEndpoint(session, 'messages'), {method: 'DELETE', headers: headers(user)});
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.detail || '清理失败');
+    resetView();
+    notice.textContent = '聊天记录已清理';
+  } catch (error) { notice.textContent = error.message; }
+};
+
+userField.addEventListener('change', resetView);
+sessionField.addEventListener('change', resetView);
+syncControls();
+fetch('/demo/session').then(async response => {
+  demo = response.ok;
+  customer = demo ? (await response.json()).customer : null;
+}).catch(() => { notice.textContent = '暂时无法读取登录状态'; }).finally(() => {
+  ready = true;
+  showIdentity();
+});
+setInterval(loadHistory, 2000);
+
+async function sendTurn(turn, echo = true) {
+  if (sending || !currentUser()) return;
+  retryTurn = null;
+  sending = true;
+  syncControls();
+  const user = currentUser(), session = turn.session_id;
+  if (echo) {
+    const me = add('me', turn.message);
+    if (turn.images.length) { const im = document.createElement('img'); im.src = turn.images[0]; im.className = 'thumb'; me.appendChild(im); }
+  }
+  let bubble = null;
+  let completed = false;
+  notice.textContent = '';
+  try {
+    const res = await fetch('/chat', { method: 'POST',
+      headers: headers(user, true), body: JSON.stringify(turn) });
+    if (!res.ok) {
+      if ([409, 503].includes(res.status)) retryTurn = turn;
+      notice.textContent = (await res.json()).detail || '请求失败';
+      return;
+    }
+    const reader = res.body.getReader(), dec = new TextDecoder(); let buf = '';
+    while (true) {
+      const { value, done } = await reader.read(); if (done) break;
+      buf += dec.decode(value, { stream: true });
+      let i; while ((i = buf.indexOf('\n\n')) >= 0) {
+        const block = buf.slice(0, i); buf = buf.slice(i + 2);
+        const ev = (block.match(/^event: (.*)$/m) || [])[1], data = JSON.parse((block.match(/^data: (.*)$/m) || [])[1] || '{}');
+        if (ev === 'status') add('status', '· ' + data.text);
+        else if (ev === 'token') { bubble = bubble || add('', ''); bubble.textContent += data.text; }
+        else if (ev === 'message') { bubble = bubble || add('', ''); bubble.textContent = data.text; }
+        else if (ev === 'done') {
+          completed = true;
+          notice.textContent = `耗时 ${(data.latency_ms / 1000).toFixed(1)}s` + (data.ticket_id ? ` · 工单 #${data.ticket_id}` : '');
+          (data.refunds || []).forEach(refund => showRefund(refund, user, session));
+        }
+        else if (ev === 'error') { completed = true; notice.textContent = data.text; }
+        log.scrollTop = log.scrollHeight;
+      }
+    }
+    if (!completed) throw new Error('连接提前结束，请重试该请求');
+  } catch (err) { retryTurn = turn; notice.textContent = err.message; }
+  finally {
+    sending = false;
+    syncControls();
+    input.focus();
+    if (completed) { historyKey = null; await loadHistory(); }
+  }
+}
+
+retry.onclick = () => sendTurn(retryTurn, false);
+document.getElementById('f').onsubmit = async event => {
+  event.preventDefault();
+  const message = input.value.trim();
+  if (!message || sending || !currentUser()) return;
+  const session_id = sessionField.value, user = currentUser();
+  const file = image.files[0];
+  let images = [];
+  if (file) {
+    try {
+      images = [await new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      })];
+    } catch { notice.textContent = '暂时无法读取图片'; return; }
+  }
+  if (sessionField.value !== session_id || currentUser() !== user || sending) return;
+  const request_id = Array.from(crypto.getRandomValues(new Uint8Array(16)), x => x.toString(16).padStart(2, '0')).join('');
+  input.value = '';
+  image.value = '';
+  await sendTurn({session_id, message, images, request_id});
+};
+</script>
+</body>
+</html>

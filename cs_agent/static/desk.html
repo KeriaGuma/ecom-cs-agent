@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>客服与售后工作台</title>
+<style>
+  :root { color-scheme:light; --bg:#f4f5f1; --paper:#fff; --ink:#182a27; --muted:#60706a; --line:#d9e0d9; --accent:#176452; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 system-ui,"PingFang SC","Microsoft YaHei",sans-serif; }
+  [hidden] { display:none !important; }
+  header { display:flex; align-items:center; gap:14px; border-bottom:1px solid var(--line); padding:17px clamp(18px,5vw,62px); background:var(--paper); }
+  h1,h2,h3,p { margin:0; }
+  h1 { font-size:20px; margin-right:auto; }
+  h2 { font-size:18px; }
+  h3 { font-size:15px; }
+  a { color:var(--accent); }
+  main { max-width:1130px; margin:0 auto; padding:26px clamp(14px,4vw,46px); }
+  form,.actions { display:flex; flex-wrap:wrap; align-items:center; gap:9px; }
+  button,input,select { font:inherit; border:1px solid var(--line); border-radius:6px; padding:8px 12px; background:var(--paper); color:var(--ink); }
+  input { min-width:0; }
+  button { cursor:pointer; background:var(--accent); border-color:var(--accent); color:#fff; }
+  button.secondary { background:var(--paper); border-color:var(--line); color:var(--accent); }
+  button:disabled { opacity:.55; cursor:default; }
+  #status { min-height:1.6em; margin:12px 0; color:var(--muted); }
+  .workspace { display:grid; grid-template-columns:minmax(185px,1fr) minmax(290px,2.25fr); gap:16px; align-items:start; }
+  .panel { background:var(--paper); padding:18px; border:1px solid var(--line); border-radius:10px; }
+  .panel > * + * { margin-top:12px; }
+  #tickets { display:grid; gap:8px; }
+  .ticket { text-align:left; }
+  .ticket[aria-pressed="true"] { outline:1px solid var(--accent); }
+  #messages { display:grid; gap:8px; max-height:48vh; overflow:auto; }
+  .message { border-left:3px solid var(--line); background:var(--bg); padding:8px 12px; border-radius:4px; white-space:pre-wrap; overflow-wrap:anywhere; }
+  .message.staff { border-color:var(--accent); }
+  .muted,small { color:var(--muted); }
+  #reply input,#refund-id,#approval-comment { flex:1; }
+  #refund-items, #return-items { display:grid; gap:8px; }
+  .row { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; border-bottom:1px solid var(--line); padding:8px 0; }
+  #approval-tools form { margin-top:12px; }
+  @media (max-width:700px) { .workspace { grid-template-columns:1fr; } header { gap:9px; flex-wrap:wrap; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>客服与售后工作台</h1>
+  <span id="identity" class="muted"></span>
+  <button id="logout" class="secondary" hidden>退出</button>
+  <a href="/">买家会话</a>
+</header>
+<main>
+  <form id="login" hidden>
+    <select id="username" aria-label="演示员工">
+      <option value="s01">s01 · 客服坐席</option>
+      <option value="s02">s02 · 客服坐席</option>
+      <option value="a01">a01 · 售后审批与验收员</option>
+    </select>
+    <input id="password" type="password" placeholder="演示口令 demo" aria-label="口令" required>
+    <button>登录</button>
+  </form>
+  <p id="status" role="status"></p>
+  <section id="service" class="workspace" hidden>
+    <aside class="panel">
+      <h2>接待队列</h2>
+      <div id="tickets"></div>
+    </aside>
+    <article class="panel">
+      <h2 id="ticket-title">选择工单</h2>
+      <p id="ticket-summary" class="muted"></p>
+      <div class="actions">
+        <button id="claim" hidden>领取工单</button>
+        <button id="close" class="secondary" hidden>结束接待</button>
+      </div>
+      <div id="messages" aria-label="会话记录"></div>
+      <div id="ticket-refunds"></div>
+      <form id="reply" hidden>
+        <input id="reply-message" placeholder="向买家回复" aria-label="回复内容" required maxlength="2000">
+        <button>发送</button>
+      </form>
+    </article>
+  </section>
+  <section id="approvals" class="workspace" hidden>
+    <aside class="panel">
+      <h2>待审批退款</h2>
+      <div id="refund-items"></div>
+      <h2>待验货退货单</h2>
+      <div id="return-items"></div>
+    </aside>
+    <article id="approval-tools" class="panel">
+      <h2>处理售后与对账</h2>
+      <form id="approval-form">
+        <label for="refund-id">退款申请号</label>
+        <input id="refund-id" required>
+        <label for="fault">模拟支付结果</label>
+        <select id="fault">
+          <option value="">正常回执</option>
+          <option value="ack_lost">退款成功但回执丢失</option>
+          <option value="processing">支付处理中</option>
+          <option value="failed">支付失败</option>
+        </select>
+        <button type="button" id="set-fault" class="secondary">设置模拟结果</button>
+        <input id="approval-comment" placeholder="审批意见或退货单号" aria-label="审批意见或退货单号" maxlength="1000">
+        <button value="approve">审批通过</button>
+        <button value="reject" class="secondary">审批驳回</button>
+        <button value="receive">确认退货入库并打款</button>
+        <button value="reconcile" class="secondary">核对支付结果</button>
+      </form>
+      <p id="refund-result" aria-live="polite"></p>
+    </article>
+  </section>
+</main>
+<script>
+const byId = id => document.getElementById(id);
+const statusLine = byId('status');
+let operator = null, selected = null, busy = false, poll = false, latestMessages = null;
+
+async function api(path, method = 'GET', body) {
+  const options = {method};
+  if (body !== undefined) {
+    options.headers = {'Content-Type': 'application/json'};
+    options.body = JSON.stringify(body);
+  }
+  const response = await fetch(path, options);
+  const data = await response.json();
+  if (!response.ok) throw new Error(typeof data.detail === 'string' ? data.detail : '请求未完成');
+  return data;
+}
+
+const ticketPath = (id, action = '') => `/tickets/${id}${action ? '/' + action : ''}`;
+
+function selectTicket(id) {
+  if (busy) return;
+  selected = id;
+  byId('reply-message').value = '';
+  update();
+}
+
+function renderTickets(tickets) {
+  const box = byId('tickets');
+  box.replaceChildren();
+  if (!tickets.length) box.textContent = '当前没有待接待的工单';
+  for (const ticket of tickets) {
+    const button = document.createElement('button');
+    button.className = 'ticket secondary';
+    button.textContent = `#${ticket.ticket_id} · ${ticket.user_id} · ${ticket.assignee ? '接待中' : '待领取'}`;
+    button.setAttribute('aria-pressed', String(selected === ticket.ticket_id));
+    button.onclick = () => selectTicket(ticket.ticket_id);
+    box.appendChild(button);
+  }
+}
+
+function renderTicket(ticket) {
+  const owned = Boolean(ticket && ticket.assignee === operator?.username && ticket.status === 'open');
+  byId('ticket-title').textContent = ticket ? `工单 #${ticket.ticket_id} · ${ticket.user_id}` : '选择工单';
+  byId('ticket-summary').textContent = ticket?.summary?.intent || ticket?.summary?.reason || '';
+  byId('claim').hidden = !ticket || Boolean(ticket.assignee);
+  byId('close').hidden = !owned;
+  byId('reply').hidden = !owned || !ticket.thread_id;
+  const refunds = byId('ticket-refunds');
+  refunds.replaceChildren(...(ticket?.refunds || []).map(refund => {
+    const row = document.createElement('p');
+    row.className = 'muted';
+    row.textContent = `${refund.order_id} · ¥${refund.amount.toFixed(2)} · ${refund.status_text} · ${refund.refund_id}`;
+    return row;
+  }));
+  const messages = ticket?.messages || [];
+  const key = JSON.stringify(messages);
+  if (latestMessages === key) return;
+  latestMessages = key;
+  const transcript = byId('messages');
+  transcript.replaceChildren(...messages.map(message => {
+    const row = document.createElement('p');
+    row.className = `message ${message.role}`;
+    row.textContent = `${({user: '买家', staff: '人工客服', assistant: '客服助手'})[message.role]}：${message.content}`;
+    return row;
+  }));
+  transcript.scrollTop = transcript.scrollHeight;
+}
+
+function renderList(containerId, items, emptyText, formatter) {
+  const box = byId(containerId);
+  box.replaceChildren();
+  if (!items.length) {
+    box.textContent = emptyText;
+    return;
+  }
+  for (const item of items) {
+    const row = document.createElement('div');
+    row.className = 'row';
+    const label = document.createElement('span');
+    label.textContent = formatter(item);
+    const select = document.createElement('button');
+    select.className = 'secondary';
+    select.textContent = '选择';
+    select.onclick = () => {byId('refund-id').value = item.refund_id; byId('refund-id').focus();};
+    row.append(label, select);
+    box.appendChild(row);
+  }
+}
+
+function renderRefunds(data) {
+  renderList('refund-items', data.refunds || [], '当前没有待审批的退款',
+    r => `${r.order_id} · ¥${r.amount.toFixed(2)} · ${r.user_id}`);
+  renderList('return-items', data.returns || [], '当前没有待验货的退货单',
+    r => `${r.order_id} · ¥${r.amount.toFixed(2)} · ${r.return_tracking_no || '未填单号'}`);
+}
+
+async function update() {
+  if (poll || busy || !operator) return;
+  const current = operator;
+  poll = true;
+  try {
+    if (current.role === 'staff') {
+      const {open} = await api('/tickets');
+      if (operator !== current || busy) return;
+      if (!open.some(ticket => ticket.ticket_id === selected)) selected = null;
+      renderTickets(open);
+      const id = selected;
+      const detail = id ? await api(ticketPath(id)) : null;
+      if (operator === current && selected === id && !busy) renderTicket(detail);
+    } else {
+      const approvals = await api('/approvals');
+      if (operator === current && !busy) renderRefunds(approvals);
+    }
+  } catch (error) {
+    statusLine.textContent = error.message;
+  } finally { poll = false; }
+}
+
+async function action(run) {
+  if (busy) return;
+  busy = true;
+  statusLine.textContent = '';
+  try { await run(); }
+  catch (error) { statusLine.textContent = error.message; }
+  finally { busy = false; await update(); }
+}
+
+function showOperator() {
+  byId('login').hidden = Boolean(operator);
+  byId('logout').hidden = !operator;
+  byId('identity').textContent = operator ? `${operator.username} · ${operator.role === 'staff' ? '客服坐席' : '售后审批与验收员'}` : '';
+  byId('service').hidden = operator?.role !== 'staff';
+  byId('approvals').hidden = operator?.role !== 'approver';
+  selected = null;
+  latestMessages = null;
+  renderTickets([]);
+  renderTicket(null);
+  renderRefunds({refunds: [], returns: []});
+  byId('reply-message').value = '';
+  byId('refund-id').value = '';
+  byId('refund-result').textContent = '';
+}
+
+byId('login').onsubmit = event => {
+  event.preventDefault();
+  action(async () => {
+    operator = await api('/demo/login', 'POST', {username: byId('username').value, password: byId('password').value});
+    byId('password').value = '';
+    showOperator();
+  });
+};
+byId('logout').onclick = () => action(async () => {
+  await api('/demo/logout', 'POST', {role: 'staff'});
+  operator = null;
+  showOperator();
+});
+byId('claim').onclick = () => action(() => api(ticketPath(selected, 'claim'), 'POST'));
+byId('close').onclick = () => action(() => api(ticketPath(selected, 'close'), 'POST'));
+byId('reply').onsubmit = event => {
+  event.preventDefault();
+  action(async () => {
+    const input = byId('reply-message');
+    const message = input.value.trim();
+    if (!message) return;
+    await api(ticketPath(selected, 'messages'), 'POST', {message});
+    input.value = '';
+  });
+};
+byId('set-fault').onclick = () => action(async () => {
+  const refund = byId('refund-id').value.trim(), fault = byId('fault').value;
+  if (!refund || !fault) { statusLine.textContent = '请输入退款申请号并选择故障类型'; return; }
+  const result = await api(`/demo/refunds/${encodeURIComponent(refund)}/fault`, 'POST', {fault});
+  byId('refund-result').textContent = `已设置模拟支付结果 · ${result.fault}`;
+});
+byId('approval-form').onsubmit = event => {
+  event.preventDefault();
+  action(async () => {
+    const id = encodeURIComponent(byId('refund-id').value.trim());
+    const act = event.submitter?.value;
+    const note = byId('approval-comment').value.trim();
+    let result;
+    if (act === 'reconcile') {
+      result = await api(`/refunds/${id}/reconcile`, 'POST');
+    } else if (act === 'receive') {
+      result = await api(`/refunds/${id}/receive`, 'POST', {tracking_no: note});
+    } else {
+      result = await api(`/refunds/${id}/decision`, 'POST', {approved: act !== 'reject', comment: note});
+    }
+    byId('refund-result').textContent = `${result.order_id} · ${result.status_text}`;
+  });
+};
+action(async () => { operator = (await api('/demo/session')).operator; showOperator(); });
+setInterval(update, 2000);
+</script>
+</body>
+</html>
