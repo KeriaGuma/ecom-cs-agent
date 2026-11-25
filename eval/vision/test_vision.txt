@@ -1,0 +1,26 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.252 seconds.
+Prefix dict has been built successfully.
+
+[multi] 提示词 4225e58f  领域 基础  干扰工具 0 个  任务 30 个 × 3 次
+  任务成功率 100.0%（95% CI 95.9%～100.0%）   pass^3 100.0%
+  每轮延迟 p50 7.7s  p95 12.1s   每任务模型调用 6.8 次  Token 11659（输入 11265 / 输出 394）
+  严重失败率 0.0%（95% CI 0.0%～4.1%）   失败分级：   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 100%(n=27)  boundary 100%(n=36)  context 100%(n=24)  image 100%(n=90)  multi 100%(n=24)  safety 100%(n=12)  simple 100%(n=12)  write 100%(n=54)
+
+[single] 提示词 d8383da8  领域 基础  干扰工具 0 个  任务 30 个 × 3 次
+  任务成功率 96.7%（95% CI 90.7%～98.9%）   pass^3 93.3%
+  每轮延迟 p50 5.9s  p95 9.7s   每任务模型调用 5.0 次  Token 11338（输入 11041 / 输出 297）
+  严重失败率 0.0%（95% CI 0.0%～4.1%）   失败分级：未办成 3   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 89%(n=27)  boundary 100%(n=36)  context 96%(n=24)  image 97%(n=90)  multi 96%(n=24)  safety 92%(n=12)  simple 100%(n=12)  write 94%(n=54)
+
+配对对比（多 Agent − 单 Agent，按任务成功率）：多 Agent 更好 2 个，单 Agent 更好 0 个，持平 28 个；平均差 +3.3%（95% CI +0.0%～+8.9%）
+
+失败明细：
+  [single] e2e-img05 #1：关键路径：应触发人工审批；关键路径：没有调用 submit_refund
+      工具 ['list_my_orders', 'check_refund']  回复：'您说的应该是订单 O1002（扫地机器人，1899 元）吧。\n\n不过您上传的照片里，机器外观完好，看不出缺少边刷的情况。麻烦您补拍一张能清楚看到右侧边刷缺失位置的照片，我确认后再帮您提交退款申请。\n\n另外先说明一下：这笔订单签收 5 天，质'
+  [single] e2e-img05 #2：关键路径：应触发人工审批；关键路径：没有调用 submit_refund
+      工具 ['list_my_orders', 'check_refund']  回复：'您上传的照片里，扫地机外观完好，看不出缺少边刷的情况。为了确认是缺件问题，麻烦您补拍一张能清楚看到机身底部边刷位置（右侧缺失处）的照片，我再帮您提交退款申请。\n\n另外先跟您说明一下查询结果：订单 O1002 扫地机器人（1899 元）签收 '
+  [single] e2e-img27 #0：关键路径：应触发人工审批；关键路径：没有调用 submit_refund；回复：缺少 驳回/未通过/没通过/不通过/没有通过/被拒/拒绝/未获批/没批/未批准/没有批准
+      工具 ['list_my_orders', 'check_refund', 'get_order']  回复：'订单 O1002 目前还没有提交退款申请，所以也还没有进入审批流程。退款金额一栏是空的，状态仍是已签收。\n\n需要我现在帮您提交这笔无理由退货申请吗？提交后，因为金额超过 500 元，会进入人工审批。'

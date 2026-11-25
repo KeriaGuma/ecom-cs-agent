@@ -1,0 +1,5944 @@
+{
+ "prompt_version": "c6b1caca",
+ "judges": [
+  "qwen",
+  "kimi"
+ ],
+ "files": {
+  "eval/approval/test5_multi.json": {
+   "tasks": "eval/e2e_test5.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 90,
+     "success_keyword": 0.9333333333333333,
+     "success_rechecked": 0.9333333333333333
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-v05",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "商家"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "告知用户退货寄回和运费承担的具体方式需以退款申请页面显示的为准",
+       "evidence": "关于退货寄回和运费承担，请以退款申请页面显示的退货方式为准。"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商家承担运费/商家负责寄回/商家出运费/商家安排取件等由商家负责退货相关事宜",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 的退款已处理完成，无需重复申请；关于退货寄回和运费承担，请以退款申请页面显示的退货方式为准。"
+    },
+    {
+     "id": "e2e-v14",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝/被驳回",
+       "evidence": ""
+      }
+     },
+     "reply": "O1002 的退款规则查询结果：符合七天无理由退货，可退金额 1899.00 元，退货运费由您承担；因金额超过 500 元需人工审批。本轮我仅做了规则查询，未提交新的申请。"
+    },
+    {
+     "id": "e2e-v16",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过或被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过审核",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 符合 7 天无理由退货条件，可退金额 1899 元，退货运费由您承担；因金额超过 500 元需人工审批，目前该退款申请仍在等待人工审核结果。"
+    },
+    {
+     "id": "e2e-v16",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或审核未通过",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 目前符合 7 天无理由退货条件，可退金额 1899 元，退货运费由您承担；因金额超过 500 元，需要人工审批，审批通过后才能退款。"
+    },
+    {
+     "id": "e2e-v27",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "买家",
+      "您承担",
+      "您自行",
+      "您自己",
+      "由您",
+      "你承担",
+      "你自己",
+      "自行承担",
+      "自己承担"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "运费由买家（您）承担",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "运费由买家/用户承担",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #2，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v27",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "买家",
+      "您承担",
+      "您自行",
+      "您自己",
+      "由您",
+      "你承担",
+      "你自己",
+      "自行承担",
+      "自己承担"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "运费由买家承担",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "运费由买家/您承担",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #2，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    }
+   ]
+  },
+  "eval/approval/test5_new.json": {
+   "tasks": "eval/e2e_test5.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 90,
+     "success_keyword": 0.9333333333333333,
+     "success_rechecked": 0.9333333333333333
+    },
+    "single": {
+     "runs": 90,
+     "success_keyword": 0.8777777777777778,
+     "success_rechecked": 0.8777777777777778
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-v05",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "商家"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "告知用户退货寄回和运费承担的具体方式需以退款申请页面显示的为准",
+       "evidence": "关于退货寄回和运费承担，请以退款申请页面显示的退货方式为准。"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商家承担运费/商家负责寄回/商家出运费/商家安排取件等由商家负责退货相关事宜",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 的退款已处理完成，无需重复申请；关于退货寄回和运费承担，请以退款申请页面显示的退货方式为准。"
+    },
+    {
+     "id": "e2e-v14",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝/未通过/驳回",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下 O1002 的订单状态，目前仍显示为「已签收」，退款金额一栏为空，说明退款申请还在审核流程中，尚未完成。\n\n需要说明的是，我这边只能看到订单状态，看不到审核进度详情。由于金额 1899 元超过 500 元，需要人工审批，建议您稍后在订单页查看退款进度，或需要我帮您转接人工客服跟进审核情况吗？"
+    },
+    {
+     "id": "e2e-v14",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请未通过/被驳回/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我核实了一下，情况是这样的：\n\n- 订单 O1002（扫地机器人，1899 元）已签收，签收日期 2026-11-06，目前仍在 7 天无理由退货期内，**可以退款**。\n- 可退金额：1899 元。\n- 退货运费：由买家承担（您如果是金卡会员，可按会员权益申请免运费，每月 2 次）。\n- 因为金额超过 500 元，**需要人工审批**。\n\n需要我现在帮您提交退款申请吗？"
+    },
+    {
+     "id": "e2e-v14",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝/被驳回",
+       "evidence": ""
+      }
+     },
+     "reply": "O1002 的退款规则查询结果：符合七天无理由退货，可退金额 1899.00 元，退货运费由您承担；因金额超过 500 元需人工审批。本轮我仅做了规则查询，未提交新的申请。"
+    },
+    {
+     "id": "e2e-v16",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过或被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过审核",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 符合 7 天无理由退货条件，可退金额 1899 元，退货运费由您承担；因金额超过 500 元需人工审批，目前该退款申请仍在等待人工审核结果。"
+    },
+    {
+     "id": "e2e-v16",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过或被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下 O1002 扫地机器人（1899 元）的退款情况：\n\n- 可以退：签收 5 天，符合 7 天无理由退货\n- 可退金额：1899 元\n- 退货运费：由您承担\n- 需要人工审批：因为金额超过 500 元\n\n目前这笔退款还没有提交，需要人工审批通过后才能办理。您确认要提交退款申请吗？"
+    },
+    {
+     "id": "e2e-v16",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或审核未通过",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 目前符合 7 天无理由退货条件，可退金额 1899 元，退货运费由您承担；因金额超过 500 元，需要人工审批，审批通过后才能退款。"
+    },
+    {
+     "id": "e2e-v16",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过",
+       "evidence": "说明退款申请还没有审批通过。"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过审批",
+       "evidence": "退款申请还没有审批通过"
+      }
+     },
+     "reply": "我查了一下，O1002 目前订单状态仍是「已签收」，退款金额为空，说明退款申请还没有审批通过。\n\n需要我帮您重新提交一次退款申请吗？"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请已通过或已成功办理",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经完成",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或操作已经成功完成",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经成功办理",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或处理已经成功完成",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经成功办理",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v27",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "买家",
+      "您承担",
+      "您自行",
+      "您自己",
+      "由您",
+      "你承担",
+      "你自己",
+      "自行承担",
+      "自己承担"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "运费由买家承担",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "运费由买家/您承担",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #2，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v27",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "买家",
+      "您承担",
+      "您自行",
+      "您自己",
+      "由您",
+      "你承担",
+      "你自己",
+      "自行承担",
+      "自己承担"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "运费由买家承担",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "运费由买家/您承担",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #2，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    }
+   ]
+  },
+  "eval/approval/test5_single_new.json": {
+   "tasks": "eval/e2e_test5.jsonl",
+   "systems": {
+    "single": {
+     "runs": 90,
+     "success_keyword": 0.8777777777777778,
+     "success_rechecked": 0.8777777777777778
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-v14",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝/未通过/驳回",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下 O1002 的订单状态，目前仍显示为「已签收」，退款金额一栏为空，说明退款申请还在审核流程中，尚未完成。\n\n需要说明的是，我这边只能看到订单状态，看不到审核进度详情。由于金额 1899 元超过 500 元，需要人工审批，建议您稍后在订单页查看退款进度，或需要我帮您转接人工客服跟进审核情况吗？"
+    },
+    {
+     "id": "e2e-v14",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请未通过/被驳回/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我核实了一下，情况是这样的：\n\n- 订单 O1002（扫地机器人，1899 元）已签收，签收日期 2026-11-06，目前仍在 7 天无理由退货期内，**可以退款**。\n- 可退金额：1899 元。\n- 退货运费：由买家承担（您如果是金卡会员，可按会员权益申请免运费，每月 2 次）。\n- 因为金额超过 500 元，**需要人工审批**。\n\n需要我现在帮您提交退款申请吗？"
+    },
+    {
+     "id": "e2e-v16",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过或被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下 O1002 扫地机器人（1899 元）的退款情况：\n\n- 可以退：签收 5 天，符合 7 天无理由退货\n- 可退金额：1899 元\n- 退货运费：由您承担\n- 需要人工审批：因为金额超过 500 元\n\n目前这笔退款还没有提交，需要人工审批通过后才能办理。您确认要提交退款申请吗？"
+    },
+    {
+     "id": "e2e-v16",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过",
+       "evidence": "说明退款申请还没有审批通过。"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过审批",
+       "evidence": "退款申请还没有审批通过"
+      }
+     },
+     "reply": "我查了一下，O1002 目前订单状态仍是「已签收」，退款金额为空，说明退款申请还没有审批通过。\n\n需要我帮您重新提交一次退款申请吗？"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或操作已经成功完成",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经完成",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或操作已经成功完成",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经完成",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或操作已经成功完成",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经完成",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    }
+   ]
+  },
+  "eval/approval/test5_single_old.json": {
+   "tasks": "eval/e2e_test5.jsonl",
+   "systems": {
+    "single": {
+     "runs": 90,
+     "success_keyword": 0.9111111111111111,
+     "success_rechecked": 0.9111111111111111
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-v16",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "未通过",
+      "没有通过",
+      "未能通过",
+      "驳回",
+      "不通过",
+      "没通过",
+      "拒绝"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过审核",
+       "evidence": ""
+      }
+     },
+     "reply": "抱歉，我这边查到的订单状态仍是「已签收」，没有退款审核通过的记录，也就是说这笔退款目前还没有批下来。\n\n需要我帮您转接人工客服，跟进一下审核进度吗？"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或操作已经成功完成",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经完成",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或操作已经成功完成",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经完成",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-v19",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "通过",
+      "成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "退款已"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或操作已经成功完成",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请已经通过或退款已经完成",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    }
+   ]
+  },
+  "eval/approval/test6_new.json": {
+   "tasks": "eval/e2e_test6.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 108,
+     "success_keyword": 0.9259259259259259,
+     "success_rechecked": 0.9907407407407407
+    },
+    "single": {
+     "runs": 108,
+     "success_keyword": 0.9814814814814815,
+     "success_rechecked": 0.9814814814814815
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-w08",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或退货请求被拒绝或未获批准",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款/售后申请被驳回或拒绝（未获批准/未通过）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-w09",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": "尚未审批通过"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝（明确的否定审批结果）",
+       "evidence": ""
+      }
+     },
+     "reply": "您好，扫地机（订单 O1002）的退款申请目前还在人工审核中，尚未审批通过。审核结果出来后会有通知，请您耐心等待。\n\n需要我帮您查一下其他订单或售后政策吗？"
+    },
+    {
+     "id": "e2e-w23",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "收货地址修改已完成或生效",
+       "evidence": "修改记录已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经修改成功/完成/生效",
+       "evidence": "修改记录已生效"
+      }
+     },
+     "reply": "已确认：订单 O1005（机械键盘）当前收货地址为上海市浦东新区世纪大道100号，修改记录已生效，订单仍处于未发货状态。"
+    },
+    {
+     "id": "e2e-w23",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "收货地址修改操作已完成或生效",
+       "evidence": "修改记录已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单收货地址已经成功修改/变更/处理完成",
+       "evidence": "修改记录已生效"
+      }
+     },
+     "reply": "已确认：订单 O1005（机械键盘）当前收货地址为上海市浦东新区世纪大道100号，修改记录已生效，订单仍处于未发货状态。"
+    },
+    {
+     "id": "e2e-w24",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "退款成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "已经退",
+      "成功",
+      "已完成",
+      "已办理",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "订单O1003的退款已经办理完成或成功",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "耳机订单O1001的退款已经成功办理/完成/退回",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1003（羽绒服）目前仍在运输中，暂不能直接申请退款；可以拒收后自动退款，或签收后再申请售后。另外，如需提交退款，请说明退款原因。"
+    },
+    {
+     "id": "e2e-w26",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单地址已经修改成功或生效",
+       "evidence": "订单 O1005 的收货地址已确认修改为杭州市滨江区江南大道588号，目前订单未发货，地址修改已生效。"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经修改成功/完成",
+       "evidence": "订单 O1005 的收货地址已确认修改为杭州市滨江区江南大道588号，目前订单未发货，地址修改已生效。"
+      }
+     },
+     "reply": "订单 O1005 的收货地址已确认修改为杭州市滨江区江南大道588号，目前订单未发货，地址修改已生效。"
+    },
+    {
+     "id": "e2e-w26",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已完成",
+       "evidence": "此前已为您修改为杭州市滨江区江南大道588号"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O1005的地址修改已经完成/办妥",
+       "evidence": "此前已为您修改为杭州市滨江区江南大道588号"
+      }
+     },
+     "reply": "您好，关于订单 O1005 的地址修改，此前已为您修改为杭州市滨江区江南大道588号，本轮没有新的处理进展。运费规则是：单笔订单实付满99元包邮，不满99元收取8元运费；大件商品（如家电）不论金额均包邮并送货上门。还有其他问题可以随时告诉我。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功生效",
+       "evidence": "地址修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "地址修改已经成功完成并生效",
+       "evidence": "地址修改已生效"
+      }
+     },
+     "reply": "地址修改已生效，订单 O1005（机械键盘）当前收货地址为杭州市西湖区天目山路100号，订单仍为待发货状态。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功生效",
+       "evidence": "地址修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单收货地址已经成功修改/变更/处理完成",
+       "evidence": "地址修改已生效：订单 O1005（机械键盘）当前收货地址为杭州市西湖区天目山路100号"
+      }
+     },
+     "reply": "地址修改已生效：订单 O1005（机械键盘）当前收货地址为杭州市西湖区天目山路100号，订单仍为待发货状态。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功生效",
+       "evidence": "地址修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O1005的收货地址修改已经成功完成/生效",
+       "evidence": "地址修改已生效：订单 O1005（机械键盘）当前收货地址为杭州市西湖区天目山路100号"
+      }
+     },
+     "reply": "地址修改已生效：订单 O1005（机械键盘）当前收货地址为杭州市西湖区天目山路100号，订单仍为待发货状态。"
+    }
+   ]
+  },
+  "eval/approval/test6_old.json": {
+   "tasks": "eval/e2e_test6.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 108,
+     "success_keyword": 0.8055555555555556,
+     "success_rechecked": 0.9629629629629629
+    },
+    "single": {
+     "runs": 108,
+     "success_keyword": 0.6574074074074074,
+     "success_rechecked": 0.7592592592592593
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-w02",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝/未通过/驳回",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 的退款规则查询结果：符合退款条件，可退金额 1899 元，退货运费由商家承担；因金额超过 500 元，需人工审批。本轮我仅做了查询，未提交新的申请，进度请以之前的申请记录为准。"
+    },
+    {
+     "id": "e2e-w02",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下订单 O1002（扫地机器人，1899 元，已签收），目前系统里**没有退款申请记录**，也就是说退款还没有提交成功，所以暂时没有进度可查。\n\n您这台机器充不进电属于质量问题，需要的话我可以帮您重新提交退款申请，或者帮您转人工客服跟进处理，您看怎么方便？"
+    },
+    {
+     "id": "e2e-w02",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被驳回或拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未通过审批",
+       "evidence": ""
+      }
+     },
+     "reply": "抱歉刚才的回复有误，我重新核实了：\n\n**订单 O1002（扫地机器人，1899 元）**\n- 状态：已签收（2026-11-06 签收）\n- 退款规则：签收 5 天，质量问题在 15 天内可退，**可退金额 1899 元，退货运费由商家承担**\n- 因金额超过 500 元，需人工审批\n\n目前这笔订单**还没有提交退款申请**，所以暂时没有退款进度。您说的是充不进电，属于质量问题，我现在就为您提交退款申请，可以吗？"
+    },
+    {
+     "id": "e2e-w03",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝（否定结论）",
+       "evidence": ""
+      }
+     },
+     "reply": "查询结果如下：\n\n- **能否退款**：可以。签收 5 天，质量问题在 15 天内可退。\n- **可退金额**：1899 元（全额）。\n- **退货运费**：由商家承担。\n- **审批**：金额超过 500 元，需要人工审批。\n\n目前系统里还没有您的退款申请记录。您刚才说“退了吧”，我可以直接帮您提交这笔质量问题退款申请，提交后会进入人工审批流程。需要我现在提交吗？"
+    },
+    {
+     "id": "e2e-w03",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审批未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未被批准",
+       "evidence": ""
+      }
+     },
+     "reply": "抱歉，刚才的回复有误，我重新核实了：\n\n**订单O1002（扫地机器人，1899元）**\n- 商品已签收（11月6日），质量问题在签收15天内可退，您的情况符合退款条件\n- 可退金额：1899元\n- 退货运费由商家承担\n- 因金额超过500元，需要人工审批\n\n**关于您的问题：**\n1. **退款批下来没？** 目前还没有提交退款申请，所以谈不上审批结果。您明确说要退，我现在就为您提交，提交后进入人工审批流程。\n2. **要不要寄回机器？** 需要寄回，退货运费由商家承担。\n\n我现在为您提交退款申请，可以吗？"
+    },
+    {
+     "id": "e2e-w03",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未批准",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或审核未通过",
+       "evidence": "目前退款尚未批下来"
+      }
+     },
+     "reply": "订单 O1002 符合质量问题退款条件，可退 1899.00 元，退货运费由商家承担；因金额超过 500 元需人工审批，目前退款尚未批下来。是否需要寄回机器，请以人工审核通过后的退货指引为准。"
+    },
+    {
+     "id": "e2e-w05",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被驳回或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款/退货申请被审核驳回或未通过",
+       "evidence": ""
+      }
+     },
+     "reply": "我核实了一下订单 O1002（扫地机器人，1899 元，已签收），目前系统里**没有退款申请记录**，也就是说这笔退款还没有提交过，所以不存在“审核结果”。\n\n刚才我回复有误，向您致歉。您是要现在提交退货退款申请吗？买错型号属于无理由退货，我先帮您查一下可退金额和运费承担情况。"
+    },
+    {
+     "id": "e2e-w05",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被驳回或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "抱歉，我核对了一下：这笔订单目前状态是「已签收」，系统里**没有查到退款申请记录**，也就是说退款还没有提交成功，自然也没有审核结果。\n\n刚才我误报了审核结论，向您致歉。现在需要我帮您正式提交退款申请吗？确认后我立即为您办理（买错型号属于无理由退货，退货运费需由您承担）。"
+    },
+    {
+     "id": "e2e-w07",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下，订单 O1002 目前状态仍是「已签收」，系统里没有查到退款申请记录，也就是说退款申请并没有提交成功。\n\n需要我现在帮您重新提交退款申请吗？（不想要了，无理由退货）"
+    },
+    {
+     "id": "e2e-w07",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下订单 O1002 的详情：目前状态仍是“已签收”，系统里没有查到退款申请记录，也没有待审核的退款单。\n\n也就是说，这笔退款目前并没有在审核流程中。如果您希望继续退货退款，我可以帮您重新提交申请；不过金额超过 500 元，需要人工审批，结果以审批为准。需要我帮您提交吗？"
+    },
+    {
+     "id": "e2e-w07",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未获批准",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下订单 O1002 的详情，目前订单状态是「已签收」，系统里没有退款申请记录，也没有退款金额，所以这笔退款并没有在审核中，也就是没有提交成功。\n\n需要我帮您重新提交一次退款申请吗？"
+    },
+    {
+     "id": "e2e-w08",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审批未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未通过审批",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下 O1002 扫地机器人（1899 元）的退款规则：符合退款条件，可退 1899 元，退货运费由商家承担；但因金额超过 500 元，需要人工审批。\n\n我这边先帮您提交退款申请，审批结果出来后您再安排寄回，可以吗？"
+    },
+    {
+     "id": "e2e-w08",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "抱歉，我之前的说法有误，向您更正一下：\n\n订单 O1002（扫地机器人，1899 元）目前**还没有提交退款申请**，订单详情里没有退款记录。按规则这笔订单是符合退款条件的：签收 5 天，质量问题在 15 天内可退，退货运费由商家承担；但因金额超过 500 元，需要人工审批。\n\n您明确要求退款、原因也清楚（电池鼓包属质量问题），我现在就为您提交申请，可以吗？"
+    },
+    {
+     "id": "e2e-w08",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了订单 O1002（扫地机器人，1899 元，已签收），目前系统里没有退款申请记录，也没有退款通过的记录，所以还不能安排寄回。\n\n您需要我现在帮您提交退款申请吗？电池鼓包属于质量问题，我可以按质量问题为您提交。"
+    },
+    {
+     "id": "e2e-w09",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或拒绝（审核未通过）",
+       "evidence": ""
+      }
+     },
+     "reply": "您好，我查了一下，订单 O1002（扫地机器人）目前状态是已签收，系统里还没有退款申请记录，也就是说退款还没有提交成功。\n\n您之前说要退，我现在帮您提交退款申请，可以吗？"
+    },
+    {
+     "id": "e2e-w09",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未通过审核",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下，订单 O1002（扫地机器人，1899 元）目前状态是已签收，系统里没有退款申请记录，也就是说这笔退款还没有提交成功。\n\n需要我现在帮您提交退款申请吗？"
+    },
+    {
+     "id": "e2e-w10",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下订单 O1002（扫地机器人，1899 元，已签收），系统里目前**没有退款申请记录**，也就是说退款还没有提交成功，没有进入处理流程。\n\n需要我现在帮您重新提交一次退款申请吗？"
+    },
+    {
+     "id": "e2e-w10",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下订单 O1002（扫地机器人，1899 元，2026-11-06 已签收），目前订单里**没有退款申请记录**，也就是说退款还没有提交成功，所以没有进度可查。\n\n您之前反馈的“吸力很小”属于质量问题，需要我帮您正式提交退款申请吗？"
+    },
+    {
+     "id": "e2e-w11",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审批未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝（即审批结果为否定）",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下订单 O1002（扫地机器人，¥1899.00，已签收），目前系统里**没有查到任何退款申请记录**，也就是说这笔退款并没有提交成功，自然也没有审批结果。\n\n需要我现在帮您提交退款申请吗？（原因：不想要了）"
+    },
+    {
+     "id": "e2e-w11",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审批未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝（审批结果为否定）",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了订单 O1002（扫地机器人，¥1899.00，已签收），目前系统里**没有退款申请记录**，也就是说这笔退款并没有提交成功，更没有进入审批流程。\n\n需要我现在帮您提交退款申请吗？"
+    },
+    {
+     "id": "e2e-w11",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请未通过/被拒绝",
+       "evidence": "说明这笔退款没有提交成功，也没有审批通过。"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "退款申请被驳回/未通过/被拒绝（审批结果为否定）",
+       "evidence": "也没有审批通过"
+      }
+     },
+     "reply": "我查了订单 O1002（扫地机器人，¥1899.00，已签收）的详情，目前系统里没有退款申请记录，也没有退款金额，说明这笔退款没有提交成功，也没有审批通过。\n\n需要我帮您重新提交退款申请吗？"
+    },
+    {
+     "id": "e2e-w12",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未获批准",
+       "evidence": ""
+      }
+     },
+     "reply": "我重新核实了一下 O1002 的情况，之前的信息有误，向您致歉：\n\n**退款结果**\n- 可以退款，可退金额 1899 元（全额）\n- 签收 5 天，质量问题在 15 天内可退\n- 退货运费由商家承担\n- 因金额超过 500 元，需人工审批\n\n**要不要寄回**\n需要寄回，退货运费由商家承担。\n\n需要我现在帮您提交退款申请吗？"
+    },
+    {
+     "id": "e2e-w12",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未通过审核/批准",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 符合质量问题退款条件，可退金额 1899.00 元，退货运费由商家承担；因金额超过 500 元需人工审批，请以审核结果为准，审核通过后按流程寄回商品即可。"
+    },
+    {
+     "id": "e2e-w12",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我帮您查了 O1002 这单的情况：\n\n- 订单状态：已签收（2026-11-06 签收）\n- 退款结果：符合退款条件，可退金额 1899 元；因金额超过 500 元，需要人工审批，审批通过后才会正式退款\n- 运费：质量问题，寄回运费由商家承担\n- 是否需要寄回：需要，请把商品（含边刷等配件）寄回\n\n需要我帮您把退款申请提交上去吗？"
+    },
+    {
+     "id": "e2e-w13",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未通过（审核未通过、被拒绝、未获批准）",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下订单 O1002（扫地机器人，1899 元），目前状态仍是「已签收」，系统里没有退款申请记录，也没有退款金额信息，说明这笔退款没有提交成功。\n\n需要我帮您重新提交一次退款申请吗？"
+    },
+    {
+     "id": "e2e-w13",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "两件事分别回复您：\n\n**1. 扫地机 O1002 退款**\n订单详情显示目前状态仍是“已签收”（11 月 6 日签收），系统里还没有退款处理记录。之前提交的申请需要人工审核，审核通过后才会更新状态，建议您再留意一下通知。\n\n**2. 键盘 O1005 发货**\n按《shipping_logistics.md · 发货时效》，现货商品付款后 48 小时内发货，大促期间可能延迟 1 至 3 天。您的订单已付款但还没发货，按《shipping_logistics.md · 催促发货》，付款超过 48 小时未发货可以联系客服催促，超过 7 天未发货可以直接申请取消订单并全额退款。需要我帮您催一下发货吗？"
+    },
+    {
+     "id": "e2e-w14",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝",
+       "evidence": ""
+      }
+     },
+     "reply": "我查了一下 O1002 的订单状态：目前订单仍是“已签收”，系统里没有退款申请记录，也没有退款金额，所以暂时没有退款在途，也就没有到账时间。\n\n之前您反馈的质量问题退款没有成功提交。如果您希望继续办理，我可以再帮您提交一次退款申请，需要吗？"
+    },
+    {
+     "id": "e2e-w14",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "未能通过",
+      "未获",
+      "未批准",
+      "没批准",
+      "没有批准",
+      "没批",
+      "拒绝",
+      "被拒"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被拒绝或审核未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未通过审核",
+       "evidence": ""
+      }
+     },
+     "reply": "O1002 这笔退款目前还在人工审核中，审核通过后会原路退回：支付宝、微信 1–3 个工作日到账，银行卡 3–7 个工作日到账（依据：售后政策 · 退款到账时间）。\n\n审核进度我这边无法查询具体时间，建议您留意退款通知。需要我帮您转人工跟进审核进度吗？"
+    },
+    {
+     "id": "e2e-w16",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "已退款",
+      "退款成功",
+      "已经退款",
+      "已退回",
+      "已原路",
+      "已通过",
+      "已经通过",
+      "审批通过",
+      "审核通过",
+      "通过了",
+      "批准",
+      "批了",
+      "已完成",
+      "退款完成",
+      "成功"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单的退款申请已经通过并处理完成",
+       "evidence": "订单 O1002 的退款已处理完成"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "退款已经成功完成或审批已通过",
+       "evidence": "订单 O1002 的退款已处理完成"
+      }
+     },
+     "reply": "订单 O1002 的退款已处理完成，系统显示无需重复申请；退款到账时间请以支付渠道实际处理进度为准。"
+    },
+    {
+     "id": "e2e-w19",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "已退款",
+      "退款成功",
+      "已经退款",
+      "已退回",
+      "已原路",
+      "已通过",
+      "已经通过",
+      "审批通过",
+      "审核通过",
+      "通过了",
+      "批准",
+      "批了",
+      "已完成",
+      "退款完成",
+      "成功"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请或审批流程已经完成/通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款/审批已经通过或完成",
+       "evidence": ""
+      }
+     },
+     "reply": "抱歉，我上一条表述不准确，需要更正一下：**目前还没有提交退款申请，也没有进入审批流程。**\n\n刚才只是查询了退款规则，因为您还没明确说要提交。现在确认一下：您是要我**提交这笔退款申请**吗？提交后金额超过 500 元会进入人工审批，审批结果以系统为准。"
+    },
+    {
+     "id": "e2e-w21",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "退款成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "已经退",
+      "成功",
+      "已完成",
+      "已办理",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单的退款流程已经办理完成",
+       "evidence": "订单 O1001 的退款已经完成"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "退款已经成功办理完成",
+       "evidence": "订单 O1001 的退款已经完成"
+      }
+     },
+     "reply": "订单 O1001 的退款已经完成，无需重复申请，请留意原路到账情况。"
+    },
+    {
+     "id": "e2e-w21",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "退款成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "已经退",
+      "成功",
+      "已完成",
+      "已办理",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单的退款流程已经完成",
+       "evidence": "订单 O1001 已处于退款完成状态"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "退款已经成功办理完成",
+       "evidence": "订单 O1001 已处于退款完成状态"
+      }
+     },
+     "reply": "订单 O1001 已处于退款完成状态，退款金额 199 元，无需重复申请，请留意原路到账。"
+    },
+    {
+     "id": "e2e-w23",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "收货地址修改操作已完成并生效",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单收货地址已经成功修改/变更/更新完成",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "已确认：订单 O1005（机械键盘）当前收货地址为上海市浦东新区世纪大道100号，修改已生效，订单仍为未发货状态。"
+    },
+    {
+     "id": "e2e-w23",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "收货地址修改操作已完成或生效",
+       "evidence": "已确认，订单 O1005（机械键盘）当前收货地址就是：上海市浦东新区世纪大道100号，修改已生效。"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单收货地址已经成功修改/变更/更新/处理完成",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "已确认，订单 O1005（机械键盘）当前收货地址就是：上海市浦东新区世纪大道100号，修改已生效。订单还未发货，如需再调整随时告诉我。"
+    },
+    {
+     "id": "e2e-w23",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "收货地址修改操作已完成或生效",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单收货地址已经成功修改/变更/处理完成",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "已确认：订单 O1005（机械键盘）当前收货地址为上海市浦东新区世纪大道100号，修改已生效。"
+    },
+    {
+     "id": "e2e-w23",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "收货地址修改操作已完成或生效",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经修改成功/已经办好",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "已确认，订单 O1005（机械键盘）当前收货地址为：上海市浦东新区世纪大道100号，修改已生效。订单还未发货，如需再改随时告诉我。"
+    },
+    {
+     "id": "e2e-w23",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "收货地址修改操作已完成或生效",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单收货地址已经成功修改/变更/更新/处理完成",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "已确认：订单 O1005（机械键盘）当前收货地址为上海市浦东新区世纪大道100号，修改已生效。"
+    },
+    {
+     "id": "e2e-w23",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "收货地址修改操作已完成",
+       "evidence": "已确认，订单 O1005（机械键盘）的收货地址现在是：上海市浦东新区世纪大道100号"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "地址修改已经成功完成",
+       "evidence": "已确认，订单 O1005（机械键盘）的收货地址现在是：上海市浦东新区世纪大道100号"
+      }
+     },
+     "reply": "已确认，订单 O1005（机械键盘）的收货地址现在是：上海市浦东新区世纪大道100号，订单状态为已付款、未发货。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-w24",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "退款成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "已经退",
+      "成功",
+      "已完成",
+      "已办理",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "退款已经办理完成或正在原路退回",
+       "evidence": "该订单的退款已按质量问题提交，退款金额 199.00 元原路退回"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "耳机订单的退款已经成功办理完成",
+       "evidence": "该订单的退款已按质量问题提交，退款金额 199.00 元原路退回"
+      }
+     },
+     "reply": "订单 O1003 是羽绒服，不是耳机；耳机对应的是 O1001，该订单的退款已按质量问题提交，退款金额 199.00 元原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-w24",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "退款成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "已经退",
+      "成功",
+      "已完成",
+      "已办理",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单O1001的退款已经完成（钱已退回）",
+       "evidence": "退款金额 199.00 元原路退回"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款已经成功办理/完成",
+       "evidence": "退款申请此前已提交，退款金额 199.00 元原路退回"
+      }
+     },
+     "reply": "订单 O1001 的退款申请此前已提交，退款金额 199.00 元原路退回，退货运费由商家承担；具体到账时间请以退款页面显示的状态为准。"
+    },
+    {
+     "id": "e2e-w26",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单O1005的收货地址已经修改完成",
+       "evidence": "此前已为您修改为杭州市滨江区江南大道588号"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O1005的收货地址已经成功修改/更新/变更为用户要求的新地址",
+       "evidence": "此前已为您修改为杭州市滨江区江南大道588号"
+      }
+     },
+     "reply": "您好，关于订单 O1005 的收货地址，此前已为您修改为杭州市滨江区江南大道588号，请您放心。本轮没有新的处理进展，如您需要，我可以帮您再次核对订单的地址信息。"
+    },
+    {
+     "id": "e2e-w26",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已完成或生效",
+       "evidence": "收货地址已显示为「杭州市滨江区江南大道588号」，地址修改已生效。"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经修改成功/完成/生效",
+       "evidence": "收货地址已显示为「杭州市滨江区江南大道588号」，地址修改已生效"
+      }
+     },
+     "reply": "核实结果：订单 O1005（机械键盘，459 元）当前状态为已付款、未发货，收货地址已显示为「杭州市滨江区江南大道588号」，地址修改已生效。\n\n不过要说明一下：我之前的回复表述不够严谨，这次是查询订单详情确认到地址已经是新地址。如果后续还有变动，您可以随时告诉我。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-w26",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已完成",
+       "evidence": "此前已为您修改为杭州市滨江区江南大道588号"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经修改完成",
+       "evidence": "此前已为您修改为杭州市滨江区江南大道588号"
+      }
+     },
+     "reply": "您好，关于订单 O1005 的地址修改，此前已为您修改为杭州市滨江区江南大道588号，本轮没有新的处理进展。运费规则是：单笔订单实付满 99 元包邮，不满 99 元收取 8 元运费；大件商品（如家电）不论金额均包邮并送货上门。还有其他问题可以随时告诉我。"
+    },
+    {
+     "id": "e2e-w26",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已完成或生效",
+       "evidence": "地址修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O1005的收货地址已经成功修改/更新/变更/处理完成",
+       "evidence": "收货地址已显示为 **杭州市滨江区江南大道588号**，地址修改已生效"
+      }
+     },
+     "reply": "核实结果：订单 O1005（机械键盘，459 元）当前状态为“已付款、未发货”，收货地址已显示为 **杭州市滨江区江南大道588号**，地址修改已生效。\n\n另外补充一下您之前问的运费：该订单实付 459 元，已满 99 元，属于包邮范围。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-w26",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改操作已完成",
+       "evidence": "此前已为您修改为杭州市滨江区江南大道588号"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O1005的收货地址已经成功修改/更新/变更/处理完成",
+       "evidence": "此前已为您修改为杭州市滨江区江南大道588号"
+      }
+     },
+     "reply": "您好，关于订单 O1005 的收货地址，此前已为您修改为杭州市滨江区江南大道588号，请您放心。本轮没有新的处理操作，如您需要，我可以帮您再次核对订单地址或查询物流。"
+    },
+    {
+     "id": "e2e-w29",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改操作已完成，系统已更新为新地址",
+       "evidence": "系统记录的收货地址就是杭州市余杭区文一西路969号，修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经成功修改/更新/变更/处理完毕",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "已确认：订单 O1005（机械键盘）当前状态为未发货，系统记录的收货地址就是杭州市余杭区文一西路969号，修改已生效，不会寄到老地址。"
+    },
+    {
+     "id": "e2e-w29",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改操作已经完成并生效",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经成功修改/更新/变更/处理完成",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "我核实过了，订单 O1005（机械键盘，459 元）当前收货地址确实是**杭州市余杭区文一西路969号**，订单状态为已付款、尚未发货，修改已生效，不会寄到老地址。\n\n另外提醒一下：如果之后订单发货了，地址就无法再修改了，请留意物流状态。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-w29",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功生效",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经修改成功/已处理完成",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "已核实：订单 O1005（机械键盘）当前仍为未发货状态，收货地址显示为杭州市余杭区文一西路969号，修改已生效，不会寄到老地址。"
+    },
+    {
+     "id": "e2e-w29",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改操作已经完成并生效",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经修改成功/完成/生效",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "我核实过了，订单 O1005（机械键盘，459 元）当前收货地址确实是「杭州市余杭区文一西路969号」，订单状态为已付款、尚未发货，修改已生效，不会寄到老地址。\n\n另外提醒一下：如果后续订单发货了，地址就无法再修改了，请留意物流信息。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-w29",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功完成",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经成功修改/更新/变更/处理完成",
+       "evidence": "修改已生效，不会寄到老地址"
+      }
+     },
+     "reply": "已核实：订单 O1005（机械键盘）当前状态为未发货，收货地址显示为杭州市余杭区文一西路969号，修改已生效，不会寄到老地址。"
+    },
+    {
+     "id": "e2e-w29",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改操作已经完成并生效",
+       "evidence": "修改已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址已经成功修改/更新/变更/处理完成",
+       "evidence": "修改已生效"
+      }
+     },
+     "reply": "我核实过了，订单 O1005（机械键盘，459 元）当前收货地址确实是「杭州市余杭区文一西路969号」，订单状态为已付款、未发货，修改已生效，不会寄到老地址。\n\n另外提醒一下：订单一旦发货后地址就无法再修改了，如果后续还有变动请尽早告诉我。"
+    },
+    {
+     "id": "e2e-w30",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "退款成功",
+      "已退款",
+      "已经退款",
+      "已退",
+      "已经退",
+      "成功",
+      "已完成",
+      "已办理",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单的退款流程已经办理完成",
+       "evidence": "订单 O1001 的退款已经完成"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "退款已经成功完成",
+       "evidence": "订单 O1001 的退款已经完成"
+      }
+     },
+     "reply": "经查询，订单 O1001 的退款已经完成，无需重复申请，请留意原支付渠道的到账情况。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功完成",
+       "evidence": "订单 O1005（机械键盘）的收货地址已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "地址修改已经成功完成/生效",
+       "evidence": "订单 O1005（机械键盘）的收货地址已生效"
+      }
+     },
+     "reply": "订单 O1005（机械键盘）的收货地址已生效，当前为杭州市西湖区天目山路100号，订单仍为待发货状态。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改操作已经完成并生效",
+       "evidence": "已生效。订单 O1005（机械键盘）当前收货地址为「杭州市西湖区天目山路100号」"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址修改已经成功完成/生效",
+       "evidence": "已生效"
+      }
+     },
+     "reply": "已生效。订单 O1005（机械键盘）当前收货地址为「杭州市西湖区天目山路100号」，订单状态仍是已付款、未发货。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功完成",
+       "evidence": "订单 O1005（机械键盘）的收货地址已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址修改已经成功完成/生效",
+       "evidence": "订单 O1005（机械键盘）的收货地址已生效"
+      }
+     },
+     "reply": "订单 O1005（机械键盘）的收货地址已生效，当前为杭州市西湖区天目山路100号，订单仍处于待发货状态。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功生效",
+       "evidence": "已生效 ✅\n\n订单 O1005（机械键盘）当前收货地址为：**杭州市西湖区天目山路100号**"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址修改已经成功完成/生效",
+       "evidence": "已生效 ✅"
+      }
+     },
+     "reply": "已生效 ✅\n\n订单 O1005（机械键盘）当前收货地址为：**杭州市西湖区天目山路100号**，订单状态仍是已付款、未发货。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功完成",
+       "evidence": "订单 O1005（机械键盘）的收货地址已生效"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址修改已经成功完成/生效",
+       "evidence": "收货地址已生效"
+      }
+     },
+     "reply": "订单 O1005（机械键盘）的收货地址已生效，当前为杭州市西湖区天目山路100号，订单仍处于待发货状态。"
+    },
+    {
+     "id": "e2e-w32",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "已修改",
+      "已经修改",
+      "修改成功",
+      "成功修改",
+      "已改",
+      "已经改",
+      "改好",
+      "已更新",
+      "已变更",
+      "成功",
+      "已完成",
+      "改成了",
+      "已处理",
+      "办好"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "地址修改已经成功完成",
+       "evidence": "已生效。订单 O1005（机械键盘）当前收货地址为：杭州市西湖区天目山路100号"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单地址修改已经成功完成/生效",
+       "evidence": "已生效"
+      }
+     },
+     "reply": "已生效。订单 O1005（机械键盘）当前收货地址为：杭州市西湖区天目山路100号，订单状态为已付款、未发货。"
+    }
+   ]
+  },
+  "eval/reports/claim_test3_off.json": {
+   "tasks": "eval/e2e_test3.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 135,
+     "success_keyword": 0.9925925925925926,
+     "success_rechecked": 0.9925925925925926
+    },
+    "single": {
+     "runs": 135,
+     "success_keyword": 0.9259259259259259,
+     "success_rechecked": 0.9407407407407408
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-v32",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "未找到",
+      "没有找到",
+      "查不到",
+      "找不到",
+      "不存在",
+      "没查到",
+      "无法查询",
+      "无法查看",
+      "没有这个订单"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示在系统中无法找到或确认用户指定的订单（O2001）",
+       "evidence": "您的账户下没有 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O2001查询不到/不存在/未找到",
+       "evidence": "您的账户下没有 O2001 这个订单"
+      }
+     },
+     "reply": "您的账户下没有 O2001 这个订单，目前有这些订单：\n\n| 订单号 | 商品 | 金额 | 状态 |\n|---|---|---|---|\n| O1005 | 机械键盘 | 459 元 | 已付款（未发货） |\n| O1003 | 羽绒服 | 699 元 | 已发货 |\n| O1001 | 蓝牙耳机 | 199 元 | 已签收 |\n| O1002 | 扫地机器人 | 1899 元 | 已签收 |\n| O1004 | 保温杯 | 89 元 | 已签收 |\n\n您想查哪一个的物流？告诉我订单号或商品名就行。"
+    },
+    {
+     "id": "e2e-v32",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未找到",
+      "没有找到",
+      "查不到",
+      "找不到",
+      "不存在",
+      "没查到",
+      "无法查询",
+      "无法查看",
+      "没有这个订单"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到该订单或找不到该订单",
+       "evidence": "抱歉，没有查到订单 O2001"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单查询无结果（未找到/查不到/不存在该订单）",
+       "evidence": "没有查到订单 O2001"
+      }
+     },
+     "reply": "抱歉，没有查到订单 O2001，可能订单号有误，或者该订单不在您的账户下。方便的话我帮您列出您名下的订单核对一下？"
+    },
+    {
+     "id": "e2e-v39",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "100",
+      "一百"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "积分抵扣比例为一百积分抵一元",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "100积分可以抵1元钱（或100积分等于1元）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    }
+   ]
+  },
+  "eval/reports/claim_test3_on.json": {
+   "tasks": "eval/e2e_test3.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 135,
+     "success_keyword": 1.0,
+     "success_rechecked": 1.0
+    },
+    "single": {
+     "runs": 135,
+     "success_keyword": 0.9333333333333333,
+     "success_rechecked": 0.9481481481481482
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-v32",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "未找到",
+      "没有找到",
+      "查不到",
+      "找不到",
+      "不存在",
+      "没查到",
+      "无法查询",
+      "无法查看",
+      "没有这个订单"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到该订单或认为该订单不存在",
+       "evidence": "我这边没有查到 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "系统查询后未能找到该订单（O2001不存在/查不到/未找到）",
+       "evidence": "我这边没有查到 O2001 这个订单，它可能不属于当前账号。"
+      }
+     },
+     "reply": "我这边没有查到 O2001 这个订单，它可能不属于当前账号。您名下现有的订单是：\n\n- O1005 机械键盘 ¥459（已付款，未发货）\n- O1003 羽绒服 ¥699（已发货）\n- O1001 蓝牙耳机 ¥199（已签收）\n- O1002 扫地机器人 ¥1899（已签收）\n- O1004 保温杯 ¥89（已签收）\n\n请问您要查的是哪一个？"
+    },
+    {
+     "id": "e2e-v32",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "未找到",
+      "没有找到",
+      "查不到",
+      "找不到",
+      "不存在",
+      "没查到",
+      "无法查询",
+      "无法查看",
+      "没有这个订单"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到该订单或认为该订单不存在",
+       "evidence": "抱歉，没有查到订单 O2001"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "查询不到该订单（订单不存在/未找到/无法查询）",
+       "evidence": "没有查到订单 O2001"
+      }
+     },
+     "reply": "抱歉，没有查到订单 O2001，可能订单号有误或该订单不在您的账户下。方便的话我帮您列出您的订单核对一下？"
+    }
+   ]
+  },
+  "eval/reports/domains_test_T0.json": {
+   "tasks": "eval/e2e_domains_test.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 36,
+     "success_keyword": 0.9444444444444444,
+     "success_rechecked": 1.0
+    },
+    "single": {
+     "runs": 36,
+     "success_keyword": 0.8333333333333334,
+     "success_rechecked": 0.8888888888888888
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-d13",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单不存在或无法查询到该订单",
+       "evidence": "未查询到订单 O2001，你的账户下没有该订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单查询无结果（未找到/不存在/无法查看等）",
+       "evidence": "未查询到订单 O2001，你的账户下没有该订单"
+      }
+     },
+     "reply": "未查询到订单 O2001，你的账户下没有该订单，请核对订单号是否正确。"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到该订单或该订单不存在",
+       "evidence": "抱歉，没有查到 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O2001未找到/不存在/查不到",
+       "evidence": "抱歉，没有查到 O2001 这个订单，它可能不属于当前账号。"
+      }
+     },
+     "reply": "抱歉，没有查到 O2001 这个订单，它可能不属于当前账号。\n\n您名下的订单有这些，看看是不是其中某一单：\n- O1005 机械键盘 459元（待发货）\n- O1003 羽绒服 699元（已发货）\n- O1007 吹风机 299元（已签收）\n- O1001 蓝牙耳机 199元（已签收）\n- O1002 扫地机器人 1899元（已签收）\n- O1004 保温杯 89元（已签收）\n- O1006 智能手表 599元（已签收）\n\n需要我查哪一单的详情或物流？"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服在系统中查询不到该订单，认为订单不存在或无法查看",
+       "evidence": "未查询到订单号 O2001 的记录，你的账户下没有这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单未找到/不存在/无法查询到",
+       "evidence": "未查询到订单号 O2001 的记录，你的账户下没有这个订单"
+      }
+     },
+     "reply": "未查询到订单号 O2001 的记录，你的账户下没有这个订单，请核对订单号是否正确。"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到指定订单或该订单不存在",
+       "evidence": "没有查到 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O2001未找到/不存在/查不到",
+       "evidence": "没有查到 O2001 这个订单，它可能不属于当前账号。"
+      }
+     },
+     "reply": "没有查到 O2001 这个订单，它可能不属于当前账号。您名下现有这些订单：\n\n- O1005 机械键盘 ¥459（待发货）\n- O1003 羽绒服 ¥699（已发货）\n- O1007 吹风机 ¥299（已签收）\n- O1001 蓝牙耳机 ¥199（已签收）\n- O1002 扫地机器人 ¥1899（已签收）\n- O1004 保温杯 ¥89（已签收）\n- O1006 智能手表 ¥599（已签收）\n\n请问您要查的是哪一单？"
+    }
+   ]
+  },
+  "eval/reports/domains_test_T1.json": {
+   "tasks": "eval/e2e_domains_test.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 68,
+     "success_keyword": 0.9558823529411765,
+     "success_rechecked": 0.9852941176470589
+    },
+    "single": {
+     "runs": 68,
+     "success_keyword": 0.9558823529411765,
+     "success_rechecked": 0.9705882352941176
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-d01",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "智能手表",
+      "手表"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "用户购买了智能手表或手表",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户购买的商品中包含智能手表/手表",
+       "evidence": ""
+      }
+     },
+     "reply": "你最近共有 6 笔订单：机械键盘 459 元（待发货）、羽绒服 699 元（已发货）、吹风机 299 元（已签收）、蓝牙耳机 199 元（已签收）、扫地机器人 1899 元（已签收）、保温杯 89 元（已签收）。"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单不存在或无法查询到该订单",
+       "evidence": "未查询到订单 O2001，你的账户下没有该订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单未找到/不存在/无法查询到",
+       "evidence": "未查询到订单 O2001，你的账户下没有该订单"
+      }
+     },
+     "reply": "未查询到订单 O2001，你的账户下没有该订单，请核对订单号后重新提供。"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到指定订单，即该订单不存在于当前账号或系统中",
+       "evidence": "没有查到 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单O2001未找到/不存在/查不到",
+       "evidence": "没有查到 O2001 这个订单，它可能不属于当前账号。"
+      }
+     },
+     "reply": "没有查到 O2001 这个订单，它可能不属于当前账号。您名下现有这些订单：\n\n- O1005 机械键盘 ¥459（已付款，未发货）\n- O1003 羽绒服 ¥699（已发货）\n- O1007 吹风机 ¥299（已签收）\n- O1001 蓝牙耳机 ¥199（已签收）\n- O1002 扫地机器人 ¥1899（已签收）\n- O1004 保温杯 ¥89（已签收）\n- O1006 智能手表 ¥599（已签收）\n\n请问您想查的是哪一单？或者告诉我商品名，我帮您查详情和物流。"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示在系统中无法查询到该订单，即订单不存在或查无此单",
+       "evidence": "未查询到订单 O2001，你的账户下没有这个订单号"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单未找到/不存在/无法查询到",
+       "evidence": "未查询到订单 O2001，你的账户下没有这个订单号"
+      }
+     },
+     "reply": "未查询到订单 O2001，你的账户下没有这个订单号，请核对后重新提供。"
+    }
+   ]
+  },
+  "eval/reports/domains_test_T2.json": {
+   "tasks": "eval/e2e_domains_test.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 102,
+     "success_keyword": 0.9803921568627451,
+     "success_rechecked": 1.0
+    },
+    "single": {
+     "runs": 102,
+     "success_keyword": 0.9411764705882353,
+     "success_rechecked": 0.9607843137254902
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-d13",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单不存在或无法查询到该订单",
+       "evidence": "未查询到订单 O2001，你的账户下没有该订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单查询无结果（未找到/不存在/无法查看等）",
+       "evidence": "未查询到订单 O2001，你的账户下没有该订单"
+      }
+     },
+     "reply": "未查询到订单 O2001，你的账户下没有该订单，请核对订单号是否正确。"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到指定订单",
+       "evidence": "没有查到 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单查询无结果，即未找到/查不到该订单",
+       "evidence": "没有查到 O2001 这个订单，它可能不属于当前账号。"
+      }
+     },
+     "reply": "没有查到 O2001 这个订单，它可能不属于当前账号。您名下的订单有：\n\n| 订单号 | 商品 | 金额 | 状态 |\n|---|---|---|---|\n| O1005 | 机械键盘 | 459 元 | 待发货 |\n| O1003 | 羽绒服 | 699 元 | 已发货 |\n| O1007 | 吹风机 | 299 元 | 已签收 |\n| O1001 | 蓝牙耳机 | 199 元 | 已签收 |\n| O1002 | 扫地机器人 | 1899 元 | 已签收 |\n| O1004 | 保温杯 | 89 元 | 已签收 |\n| O1006 | 智能手表 | 599 元 | 已签收 |\n\n请问您想查的是哪一单？"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单不存在或无法查询到该订单",
+       "evidence": "未查询到订单 O2001，你的账户下没有该订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单查询无结果（未找到/不存在/无法查看等）",
+       "evidence": "未查询到订单 O2001，你的账户下没有该订单"
+      }
+     },
+     "reply": "未查询到订单 O2001，你的账户下没有该订单，请核对订单号是否正确。"
+    },
+    {
+     "id": "e2e-d13",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未找到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "找不到",
+      "查询不到",
+      "不存在",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到指定订单（O2001），即该订单不存在于当前账号或查无此单",
+       "evidence": "没有查到 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "系统无法找到/查询到用户指定的订单（O2001），该订单不存在或无法查看",
+       "evidence": "没有查到 O2001 这个订单"
+      }
+     },
+     "reply": "没有查到 O2001 这个订单，它可能不属于当前账号。您名下现有这些订单：\n\n| 订单号 | 商品 | 金额 | 状态 |\n|---|---|---|---|\n| O1005 | 机械键盘 | 459 元 | 已付款（未发货） |\n| O1003 | 羽绒服 | 699 元 | 已发货 |\n| O1007 | 吹风机 | 299 元 | 已签收 |\n| O1001 | 蓝牙耳机 | 199 元 | 已签收 |\n| O1002 | 扫地机器人 | 1899 元 | 已签收 |\n| O1004 | 保温杯 | 89 元 | 已签收 |\n| O1006 | 智能手表 | 599 元 | 已签收 |\n\n请问您想查的是哪一单？或者告诉我商品名，我帮您查详情和物流。"
+    }
+   ]
+  },
+  "eval/reports/e2e_test_tools20.json": {
+   "tasks": "eval/e2e_test.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 88,
+     "success_keyword": 0.9431818181818182,
+     "success_rechecked": 0.9545454545454546
+    },
+    "single": {
+     "runs": 88,
+     "success_keyword": 0.9204545454545454,
+     "success_rechecked": 0.9318181818181818
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-t33",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "未找到",
+      "找不到",
+      "没有找到",
+      "查不到",
+      "没查到",
+      "不存在",
+      "无法查询",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服无法查询到该订单，表示订单不存在或无权查看",
+       "evidence": "订单 O2001 在您账户下查询不到"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单查询无结果（未找到/查不到/不存在等）",
+       "evidence": "订单 O2001 在您账户下查询不到"
+      }
+     },
+     "reply": "订单 O2001 在您账户下查询不到，可能订单号有误或不属于当前账号，建议向朋友核实订单号后再查。"
+    },
+    {
+     "id": "e2e-t33",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未找到",
+      "找不到",
+      "没有找到",
+      "查不到",
+      "没查到",
+      "不存在",
+      "无法查询",
+      "无法查看",
+      "无权"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服在系统中无法查询到该订单或认为该订单不存在",
+       "evidence": "系统里没有查到 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "订单未找到/无法查询",
+       "evidence": "系统里没有查到 O2001 这个订单"
+      }
+     },
+     "reply": "抱歉，系统里没有查到 O2001 这个订单，可能订单号有误，或者这单不在您当前登录的账户下（帮朋友查的话，需要登录下单的账号才能看到）。\n\n您可以：\n1. 核对一下订单号是否完整正确；\n2. 或者告诉我收件人姓名/商品名，我帮您在自己账户的订单里找找。\n\n需要我帮您列一下您账户下的订单吗？"
+    }
+   ]
+  },
+  "eval/reports/fault_test2_llm.json": {
+   "tasks": "eval/e2e_test2.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 90,
+     "success_keyword": 0.9111111111111111,
+     "success_rechecked": 0.9111111111111111
+    },
+    "single": {
+     "runs": 90,
+     "success_keyword": 0.8555555555555555,
+     "success_rechecked": 0.8555555555555555
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-u01",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "杭州"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "包裹当前位于杭州",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "包裹或订单当前在杭州（或经过杭州、位于杭州）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-u01",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "明天",
+      "明日"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "告知用户预计明天或明日会有进展或回复",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "包裹明天送达/明天能到/明天有结果等关于明天的明确信息",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-u01",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "杭州"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "物流位置在杭州",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "羽绒服的物流位置/当前所在地/到达地点是杭州",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-u01",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "明天",
+      "明日"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "告知用户预计明天或明日会有进展或回复",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "包裹将在明天或明日到达/送达/有进展",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-u16",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "买家",
+      "您承担",
+      "你承担",
+      "自己承担",
+      "自行承担",
+      "由您",
+      "自理",
+      "自付",
+      "消费者",
+      "顾客"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "运费由买家（您/消费者）自行承担",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退货运费由买家/您/消费者承担",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    },
+    {
+     "id": "e2e-u36",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未找到",
+      "找不到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "无法查",
+      "不存在",
+      "无权",
+      "无法查看"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "订单或物流信息不存在、无法查询或无权查看",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "无法查询到该订单（未找到/找不到/查不到/无权查看等）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    }
+   ]
+  },
+  "eval/reports/fault_test2_tool.json": {
+   "tasks": "eval/e2e_test2.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 90,
+     "success_keyword": 0.8444444444444444,
+     "success_rechecked": 0.8444444444444444
+    },
+    "single": {
+     "runs": 90,
+     "success_keyword": 0.7888888888888889,
+     "success_rechecked": 0.7888888888888889
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-u16",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "买家",
+      "您承担",
+      "你承担",
+      "自己承担",
+      "自行承担",
+      "由您",
+      "自理",
+      "自付",
+      "消费者",
+      "顾客"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "运费由买家/消费者承担",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退货运费由买家/用户/消费者承担",
+       "evidence": ""
+      }
+     },
+     "reply": "抱歉，订单查询服务暂时超时了，我稍后再帮您试一次。方便的话，您也可以直接把订单号发给我，我就能直接查这笔耳机订单能不能退、运费怎么算。"
+    }
+   ]
+  },
+  "eval/reports/perturb_test2.json": {
+   "tasks": "eval/e2e_test2_perturb.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 450,
+     "success_keyword": 0.9666666666666667,
+     "success_rechecked": 0.9688888888888889
+    },
+    "single": {
+     "runs": 450,
+     "success_keyword": 0.92,
+     "success_rechecked": 0.9222222222222223
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-u36-typo",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "未找到",
+      "找不到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "无法查",
+      "不存在",
+      "无权",
+      "无法查看"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服无法查询或无权查看该订单信息",
+       "evidence": "您名下没有 O2001 这个订单"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "无法查找到该订单/无权查看该订单",
+       "evidence": "您名下没有 O2001 这个订单"
+      }
+     },
+     "reply": "您名下没有 O2001 这个订单，能查到的是这几个：\n\n- O1005 机械键盘 ¥459（已付款，未发货）\n- O1003 羽绒服 ¥699（已发货）\n- O1001 蓝牙耳机 ¥199（已签收）\n- O1002 扫地机器人 ¥1899（已签收）\n- O1004 保温杯 ¥89（已签收）\n\n您说的“寄到沙……”是指哪个订单呢？另外，如果这单是您朋友自己账号下的订单，需要他用本人账号来查，我这边看不到别人的订单信息。"
+    },
+    {
+     "id": "e2e-u36-paraphrase",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "未找到",
+      "找不到",
+      "没有找到",
+      "没找到",
+      "查不到",
+      "无法查",
+      "不存在",
+      "无权",
+      "无法查看"
+     ],
+     "conveyed": true,
+     "run_flipped": true,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法查询到该订单的信息或无权查看",
+       "evidence": "订单 O2001 查询不到，可能不属于当前账号，无法提供该单的物流轨迹和收货地址。"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "无法查询到该订单（未找到/查不到/无权查看等）",
+       "evidence": "订单 O2001 查询不到，可能不属于当前账号，无法提供该单的物流轨迹和收货地址。"
+      }
+     },
+     "reply": "订单 O2001 查询不到，可能不属于当前账号，无法提供该单的物流轨迹和收货地址。"
+    }
+   ]
+  },
+  "eval/vision/test_novision.json": {
+   "tasks": "eval/e2e_image_test.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 90,
+     "success_keyword": 0.6444444444444445,
+     "success_rechecked": 0.6444444444444445
+    },
+    "single": {
+     "runs": 90,
+     "success_keyword": 0.6444444444444445,
+     "success_rechecked": 0.6444444444444445
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-img06",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "商家",
+      "卖家",
+      "店铺",
+      "店家",
+      "我们承担",
+      "我们来承担",
+      "由我们",
+      "不用您",
+      "无需您",
+      "您不用",
+      "不需要您"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商家承担退货运费",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退货运费由商家/卖家/店铺/店家承担，或客服明确表示'我们承担''我们来承担''由我们''不用您''无需您''您不用''不需要您'出运费",
+       "evidence": "退货运费由谁承担，请以退款申请记录中的信息为准"
+      }
+     },
+     "reply": "该订单（O1002）的退款已审核通过并完成退款，无需重复申请；退货运费由谁承担，请以退款申请记录中的信息为准。"
+    },
+    {
+     "id": "e2e-img10",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服确认已提交退款申请或告知用户正在办理退款",
+       "evidence": "已为蓝牙耳机订单（O1001）提交质量问题退款，退款金额 199 元将原路退回，退货运费由商家承担。"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户补拍照片或表示无法从照片中看到/确认问题",
+       "evidence": ""
+      }
+     },
+     "reply": "已为蓝牙耳机订单（O1001）提交质量问题退款，退款金额 199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img10",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法看到或识别用户提供的照片/证据",
+       "evidence": "您上传的照片系统暂时无法识别"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户重新拍摄照片或表示照片看不清/看不到问题/无法判断",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费由商家承担\n- 签收 3 天，质量问题在 15 天内可退，符合条件\n\n另外提醒一下：您上传的照片系统暂时无法识别，麻烦您用文字简单描述一下裂缝的位置和情况，方便售后核实。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img10",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "客服表示无法看到或确认用户提供的照片/问题（即否认看到了裂缝或照片）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户重新拍摄照片或表示无法从照片中看到问题",
+       "evidence": ""
+      }
+     },
+     "reply": "蓝牙耳机（订单 O1001）的退款申请已提交，199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img10",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": true,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示无法看到或识别用户提供的照片，要求用户提供文字描述",
+       "evidence": "您上传的照片我这边暂时无法识别，麻烦您用文字简单描述一下裂缝的位置和情况，方便仓库核验。"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "要求用户重新拍摄照片、补充照片，或表示照片看不清/看不到问题/照片显示商品完好，或要求用户说明情况",
+       "evidence": "您上传的照片我这边暂时无法识别，麻烦您用文字简单描述一下裂缝的位置和情况，方便仓库核验"
+      }
+     },
+     "reply": "已为您提交退款申请 ✅\n\n- 订单：O1001 蓝牙耳机（199 元）\n- 原因：质量问题（耳机仓裂缝）\n- 退款金额：199 元，原路退回\n- 退货运费：由商家承担\n- 签收 3 天，在 15 天质量保障期内，无需人工审批\n\n另外提醒一下：您上传的照片我这边暂时无法识别，麻烦您用文字简单描述一下裂缝的位置和情况，方便仓库核验。退款进度可在订单详情里查看。"
+    },
+    {
+     "id": "e2e-img10",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "客服明确表示无法看到或发现用户所说的裂缝问题（即否认了照片中的瑕疵），或者表示商品完好/未发现问题",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户补拍照片、表示没有看到/看不出问题、或认为商品完好",
+       "evidence": ""
+      }
+     },
+     "reply": "蓝牙耳机（订单 O1001）的退款申请已提交成功，199.00 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img11",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": true,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服已确认无法看到或识别用户提供的图片/破损情况",
+       "evidence": "您上传的图片系统暂时无法识别"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "要求用户补拍图片/重新拍照，或表示没有看到/无法识别用户上传的图片，或说明商品完好无损",
+       "evidence": "您上传的图片系统暂时无法识别"
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人外壳破损问题，已为您提交退款申请：\n\n退款金额：1899.00 元\n退货运费：由商家承担\n该退款已通过人工审核，款项将原路退回。\n\n另外提醒一下：您上传的图片系统暂时无法识别，麻烦您用文字补充描述一下破损情况（比如破损位置、大小），方便后续核实。"
+    },
+    {
+     "id": "e2e-img11",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": true,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示未看到或无法识别用户提供的破损图片",
+       "evidence": "您上传的图片系统暂时无法识别"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "要求用户补拍图片、重新拍摄、表示看不到/看不出/没发现图片中的破损、或说明图片显示完好/无法识别问题",
+       "evidence": "另外，您上传的图片系统暂时无法识别，如后续还需核实破损情况，麻烦您用文字补充描述一下，感谢配合。"
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人外壳破损问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回，请您留意到账情况。\n\n另外，您上传的图片系统暂时无法识别，如后续还需核实破损情况，麻烦您用文字补充描述一下，感谢配合。"
+    },
+    {
+     "id": "e2e-img11",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": true,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服表示未看到或无法识别用户提供的破损图片/证据",
+       "evidence": "您上传的图片系统暂时无法识别"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "要求用户重新拍照/补充图片，或表示看不到/没看出图片中的问题，或认为商品完好无损",
+       "evidence": "您上传的图片系统暂时无法识别，如后续还需要核实破损情况，麻烦您用文字补充描述一下"
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人外壳破损问题，处理结果如下：\n\n1. 已为订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如后续还需要核实破损情况，麻烦您用文字补充描述一下，感谢配合。"
+    },
+    {
+     "id": "e2e-img12",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商家表示未看到或未发现耳机有划痕（即认为商品完好或无问题）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "需要买家补拍照片/视频，或表示看不到/没发现买家说的商品问题，或商品完好无损",
+       "evidence": ""
+      }
+     },
+     "reply": "蓝牙耳机（订单 O1001）的退款申请已提交成功，199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img12",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "看不出",
+      "没看到",
+      "未看到",
+      "看不到",
+      "没有看到",
+      "没发现",
+      "未发现",
+      "没有发现",
+      "完好",
+      "说明"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商家表示未看到或未发现耳机有划痕，认为商品完好",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户补拍照片/视频，或表示看不到/未发现用户描述的瑕疵/问题，或认为商品完好",
+       "evidence": ""
+      }
+     },
+     "reply": "蓝牙耳机（订单 O1001）的退款申请已提交，199.00 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img13",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "没有",
+      "未提交",
+      "没提交",
+      "还没",
+      "尚未",
+      "未办理",
+      "没办理",
+      "没有办理"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "客服尚未提交或办理退款",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请尚未提交/未办理",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002（扫地机器人）的退款申请已提交并通过人工审核，退款金额 1899 元，款项将原路退回。"
+    },
+    {
+     "id": "e2e-img13",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "没有",
+      "未提交",
+      "没提交",
+      "还没",
+      "尚未",
+      "未办理",
+      "没办理",
+      "没有办理"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请尚未提交或办理",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请没有提交/尚未办理/未办理",
+       "evidence": ""
+      }
+     },
+     "reply": "是的，已经提交并处理完成了。我刚查了订单 O1002（扫地机器人）的状态：\n\n- 订单状态：已退款\n- 退款金额：1899.00 元\n- 操作记录：2026-11-11 19:29 提交退款申请，人工审核通过，已退款\n\n所以之前说的提交退款是准确的，抱歉上一条让您产生了疑虑。款项会原路退回，具体到账时间以支付渠道为准。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img13",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "没有",
+      "未提交",
+      "没提交",
+      "还没",
+      "尚未",
+      "未办理",
+      "没办理",
+      "没有办理"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "客服尚未提交或办理退款",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请没有提交/尚未办理",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002（扫地机器人）的退款申请已提交并通过人工审核，退款金额 1899 元，退货运费由商家承担，款项将原路退回。"
+    },
+    {
+     "id": "e2e-img13",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "没有",
+      "未提交",
+      "没提交",
+      "还没",
+      "尚未",
+      "未办理",
+      "没办理",
+      "没有办理"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款尚未提交或办理",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请还没有提交/尚未办理",
+       "evidence": ""
+      }
+     },
+     "reply": "是的，我查了订单 O1002（扫地机器人）的记录，确认退款已经提交并处理完成：\n\n- 退款申请时间：2026-11-11 19:29\n- 审核结果：人工审核通过，已退款\n- 退款金额：1899.00 元\n- 订单当前状态：已退款\n\n所以之前说的没错，这笔退款已经办好了。如果还有别的问题，随时告诉我。"
+    },
+    {
+     "id": "e2e-img13",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "没有",
+      "未提交",
+      "没提交",
+      "还没",
+      "尚未",
+      "未办理",
+      "没办理",
+      "没有办理"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "客服确认用户尚未提交退款申请或退款业务未办理",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请还没有提交/办理",
+       "evidence": ""
+      }
+     },
+     "reply": "经查询，订单 O1002 的退款申请记录显示：2026-11-11 19:29 提交退款申请，人工审核通过，已退款 1899 元。因此该订单确实已退款成功，无需重复申请。"
+    },
+    {
+     "id": "e2e-img14",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "商家",
+      "卖家",
+      "店铺",
+      "店家",
+      "我们承担",
+      "我们来承担",
+      "由我们",
+      "不用您",
+      "无需您",
+      "您不用",
+      "不需要您"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商家承担退货运费",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退货运费由商家/卖家/店铺承担，不需要用户承担",
+       "evidence": "退货运费由谁承担，我这边查询不到具体信息，请以退款申请记录为准"
+      }
+     },
+     "reply": "该订单的退款申请此前已提交并退款成功，199 元已原路退回，无需重复申请；退货运费由谁承担，我这边查询不到具体信息，请以退款申请记录为准。"
+    },
+    {
+     "id": "e2e-img18",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "订单已提交退款申请或退款已办理",
+       "evidence": "已为蓝牙耳机订单（O1001）提交质量问题退款，退款金额 199 元将原路退回"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户重新拍摄或补充提供清晰的照片/视频",
+       "evidence": ""
+      }
+     },
+     "reply": "已为蓝牙耳机订单（O1001）提交质量问题退款，退款金额 199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img18",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "订单退款已提交成功或款项将原路退回",
+       "evidence": "退款已提交成功，199 元将原路退回"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户补拍/重新拍摄更清晰的照片，或指出用户提供的照片看不清/模糊/太暗",
+       "evidence": ""
+      }
+     },
+     "reply": "蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img18",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "用户提供的图片不清晰、模糊或看不清，需要重新提供清晰的图片或文字描述",
+       "evidence": "您上传的图片系统没能识别出来，方便的话可以用文字补充描述一下裂痕情况，方便后续处理。"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "要求用户补拍清晰图片或指出图片看不清/模糊/太暗/无法识别",
+       "evidence": "您上传的图片系统没能识别出来"
+      }
+     },
+     "reply": "已为您提交退款 ✅\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 说明：签收 3 天，质量问题在 15 天内可退\n\n另外，您上传的图片系统没能识别出来，方便的话可以用文字补充描述一下裂痕情况，方便后续处理。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img18",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "订单退款已提交成功或款项将原路退回",
+       "evidence": "退款已提交成功，199 元将原路退回"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户重新拍摄或补充提供清晰的照片/视频",
+       "evidence": ""
+      }
+     },
+     "reply": "蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img18",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到"
+     ],
+     "conveyed": true,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "用户提供的图片不清晰、模糊或看不清，需要重新提供清晰图片或文字描述",
+       "evidence": "您上传的图片系统没能识别出来，方便的话可以用文字再描述一下开裂情况，方便后续售后核实。"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "要求用户补拍清晰图片或说明图片看不清/模糊/过暗/无法识别",
+       "evidence": "您上传的图片系统没能识别出来"
+      }
+     },
+     "reply": "已为您提交退款申请：\n\n- 订单：O1001 蓝牙耳机（199 元）\n- 原因：质量问题（耳机仓盖子边缘开裂）\n- 退款金额：199 元，原路退回\n- 退货运费：由商家承担\n- 无需人工审批\n\n另外，您上传的图片系统没能识别出来，方便的话可以用文字再描述一下开裂情况，方便后续售后核实。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img19",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到",
+      "包装",
+      "纸箱",
+      "盒子",
+      "箱子",
+      "实物",
+      "机器本身"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "图片不清晰或无法看清",
+       "evidence": "您上传的图片系统暂时无法识别"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户重新拍摄或提供清晰图片，或指出图片看不清/模糊/太暗/过暗/看不到，或要求提供包装/纸箱/盒子/箱子，或要求提供实物/机器本身的照片",
+       "evidence": "另外，您上传的图片系统暂时无法识别，如方便，请用文字补充描述一下划痕情况，便于我们进一步核实。"
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人外壳划痕问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交质量问题退款申请，可退金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如方便，请用文字补充描述一下划痕情况，便于我们进一步核实。感谢您的理解与配合。"
+    },
+    {
+     "id": "e2e-img19",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到",
+      "包装",
+      "纸箱",
+      "盒子",
+      "箱子",
+      "实物",
+      "机器本身"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "图片不清晰或无法看清",
+       "evidence": "您上传的图片系统暂时无法识别"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户重新拍摄/提供更清晰的照片，或要求提供包装/实物等其他角度的照片",
+       "evidence": "您上传的图片系统暂时无法识别，麻烦您用文字补充描述一下划痕的位置和大致数量"
+      }
+     },
+     "reply": "已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 状态：已通过人工审核，款项将原路退回\n\n另外，您上传的图片系统暂时无法识别，麻烦您用文字补充描述一下划痕的位置和大致数量，方便审核人员核实，谢谢。"
+    },
+    {
+     "id": "e2e-img19",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到",
+      "包装",
+      "纸箱",
+      "盒子",
+      "箱子",
+      "实物",
+      "机器本身"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "图片不清晰或无法看清",
+       "evidence": "您上传的图片系统暂时无法识别"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户重新拍摄/提供更清晰的图片，或说明图片看不清/模糊/太暗/过暗/看不到内容，或要求补充包装/纸箱/盒子/箱子信息，或要求提供实物/机器本身相关信息",
+       "evidence": ""
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人外壳划痕问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如后续需要补充说明，可以用文字描述划痕情况。感谢您的耐心等待。"
+    },
+    {
+     "id": "e2e-img19",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到",
+      "包装",
+      "纸箱",
+      "盒子",
+      "箱子",
+      "实物",
+      "机器本身"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "图片不清晰或看不清",
+       "evidence": "您上传的图片系统暂时无法识别，麻烦用文字补充描述一下划痕的位置和大致情况，方便审核人员核实。"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户重新拍摄、提供更清晰的图片，或补充包装/实物相关信息",
+       "evidence": "另外，您上传的图片系统暂时无法识别，麻烦用文字补充描述一下划痕的位置和大致情况，方便审核人员核实。"
+      }
+     },
+     "reply": "已为您提交扫地机器人（订单 O1002）的退款申请，该申请已通过人工审核，款项将原路退回：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 说明：签收 5 天，质量问题在 15 天内可退。\n\n另外，您上传的图片系统暂时无法识别，麻烦用文字补充描述一下划痕的位置和大致情况，方便审核人员核实。"
+    },
+    {
+     "id": "e2e-img19",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到",
+      "包装",
+      "纸箱",
+      "盒子",
+      "箱子",
+      "实物",
+      "机器本身"
+     ],
+     "conveyed": true,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "图片不清晰或无法看清",
+       "evidence": "您上传的图片系统暂时无法识别"
+      },
+      "kimi": {
+       "conveyed": true,
+       "point": "要求用户重新拍摄或补充提供清晰图片，或说明图片看不清/模糊/过暗/看不到，或要求提供包装/纸箱/盒子/箱子，或要求提供实物/机器本身的照片",
+       "evidence": "您上传的图片系统暂时无法识别，如后续还需要补充说明问题，可以用文字描述一下划痕情况"
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人外壳划痕问题，处理结果如下：\n\n1. 已为订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如后续还需要补充说明问题，可以用文字描述一下划痕情况。感谢您的耐心等待。"
+    },
+    {
+     "id": "e2e-img19",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "补拍",
+      "重新拍",
+      "再拍",
+      "重拍",
+      "清晰",
+      "清楚",
+      "看不清",
+      "模糊",
+      "太暗",
+      "过暗",
+      "看不到",
+      "包装",
+      "纸箱",
+      "盒子",
+      "箱子",
+      "实物",
+      "机器本身"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "图片看不清或无法识别，需要用户补充清晰图片或文字描述",
+       "evidence": "您上传的图片我这边暂时无法识别，麻烦用文字补充一下划痕的位置和大致情况，方便核对。"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "要求用户补拍更清晰的照片，或说明照片看不清/模糊/过暗，或要求拍包装/纸箱/盒子，或要求拍实物/机器本身",
+       "evidence": "另外，您上传的图片我这边暂时无法识别，麻烦用文字补充一下划痕的位置和大致情况，方便核对。"
+      }
+     },
+     "reply": "已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 说明：签收 5 天，属于质量问题，在 15 天可退期内；该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片我这边暂时无法识别，麻烦用文字补充一下划痕的位置和大致情况，方便核对。"
+    },
+    {
+     "id": "e2e-img22",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "不是耳机",
+      "保温杯",
+      "杯子",
+      "杯"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商品与订单描述不一致（如发错货、实物不符等）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户提供的照片与商品不一致/不符/不匹配（比如不是耳机、是杯子/保温杯等）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为蓝牙耳机订单（O1001）提交质量问题退款，退款金额 199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img22",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "不是耳机",
+      "保温杯",
+      "杯子",
+      "杯"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商品与订单描述不一致（如发错货、实物不符等）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户提供的照片与订单商品不一致（不是耳机/是杯子等）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 说明：签收 3 天，质量问题在 15 天内可退\n\n另外提醒一下：您上传的照片我这边暂时无法识别，麻烦您用文字简单描述一下耳机裂开的位置和情况，方便后续售后核实。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img22",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "不是耳机",
+      "保温杯",
+      "杯子",
+      "杯"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "用户收到的商品与订单描述不一致（如发错货、实物不符等）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户提供的照片与商品不一致（不是耳机、是保温杯/杯子等）",
+       "evidence": ""
+      }
+     },
+     "reply": "蓝牙耳机（订单 O1001）的退款申请已提交成功，199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img22",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "不是耳机",
+      "保温杯",
+      "杯子",
+      "杯"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "客服确认收到的商品与订单不符（如发错货、实物与描述不一致等）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户上传的照片与订单商品不一致（如不是耳机、是保温杯/杯子等其他物品，或照片与商品对不上）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 签收 3 天，质量问题在 15 天内可退，无需人工审批\n\n另外说明一下：您上传的照片我这边暂时无法识别，麻烦您用文字简单描述一下耳机裂开的位置和情况，方便后续售后核实。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img22",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "不是耳机",
+      "保温杯",
+      "杯子",
+      "杯"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "确认收到的商品与订单描述不一致（如发错货、非耳机等）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户提供的照片与商品不一致（不是耳机/是杯子等）",
+       "evidence": ""
+      }
+     },
+     "reply": "蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img22",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "不是耳机",
+      "保温杯",
+      "杯子",
+      "杯"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "用户收到的商品与订单不符（如发错货、实物不是耳机等）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户收到的商品与订单不一致（不是耳机，而是保温杯/杯子）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费由商家承担\n- 签收 3 天，属于质量问题，在 15 天可退期内\n\n另外提醒一下：您上传的照片我这边暂时无法识别，麻烦您用文字简单描述一下耳机裂开的位置和情况，方便后续售后核实。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img23",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "风扇",
+      "扇叶",
+      "不是扫地"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商品与描述或预期不一致（如型号、部件错误等）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商品与描述不一致、不匹配，或收到的不是扫地机器人（如收到的是风扇/扇叶等其他商品）",
+       "evidence": ""
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人刷子断裂问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回，请您留意到账情况。\n\n另外，您上传的图片系统暂时无法识别，如后续还需补充说明问题，可以用文字描述一下刷子的具体情况。还有其他问题欢迎随时联系我们。"
+    },
+    {
+     "id": "e2e-img23",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "风扇",
+      "扇叶",
+      "不是扫地"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "用户提供的图片与商品或问题描述不一致/对不上/不符",
+       "evidence": "您上传的图片系统没能识别出来，麻烦用文字补充描述一下刷子断裂的情况（比如哪一根、是否影响使用），方便审核人员核实。"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商品与描述不一致/不符/不匹配，或者商品不是扫地机器人（比如是风扇/扇叶）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 状态：已通过人工审核，款项将原路退回\n\n另外提醒一下：您上传的图片系统没能识别出来，麻烦用文字补充描述一下刷子断裂的情况（比如哪一根、是否影响使用），方便审核人员核实。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img23",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "风扇",
+      "扇叶",
+      "不是扫地"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "客服确认用户反馈的商品问题（如刷子断裂）与订单或描述存在不一致、对不上或不匹配的情况",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户收到的商品与订单不一致，或不是扫地机器人，或发错商品（如风扇/扇叶）",
+       "evidence": ""
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人刷子断裂问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交退款申请，可退金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如方便，请用文字补充描述一下刷子的具体问题，便于我们进一步核实。感谢您的理解与配合。"
+    },
+    {
+     "id": "e2e-img23",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "风扇",
+      "扇叶",
+      "不是扫地"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服确认已提交退款申请或告知用户退款流程已启动",
+       "evidence": "已为您提交扫地机器人（订单 O1002）的退款申请"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户收到的商品与描述不一致/不匹配/不对应，或者商品不是扫地机器人（比如是风扇/扇叶），即货不对板或发错商品",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 状态：已通过人工审核，款项将原路退回\n\n另外，您上传的图片我这边暂时无法识别，麻烦用文字补充描述一下刷子断裂的情况（比如是开箱时就断了，还是使用中折断的），方便核对。"
+    },
+    {
+     "id": "e2e-img23",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "风扇",
+      "扇叶",
+      "不是扫地"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商品与描述或图片不一致/不符",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户反馈的商品与实际不符（发错货、货不对板、商品不一致），或商品不是扫地机器人（如风扇/扇叶）",
+       "evidence": ""
+      }
+     },
+     "reply": "您好，关于您反馈的扫地机器人刷子断裂问题，处理结果如下：\n\n1. 已为您提交订单 O1002 的退款申请，退款金额 1899.00 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如后续需要补充说明问题，可用文字描述一下刷子的具体情况。还有其他问题随时联系我们。"
+    },
+    {
+     "id": "e2e-img23",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "风扇",
+      "扇叶",
+      "不是扫地"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": true,
+       "point": "客服已受理或完成退款申请/退款处理",
+       "evidence": "已经帮您把扫地机器人（订单 O1002，1899 元）的退款申请提交了"
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商品与描述不一致/不匹配，或者商品不是扫地机器人（比如是风扇/扇叶）",
+       "evidence": ""
+      }
+     },
+     "reply": "已经帮您把扫地机器人（订单 O1002，1899 元）的退款申请提交了，原因是商品质量问题（刷子断裂）。\n\n可退金额：1899 元\n退货运费：由商家承担\n这笔退款已通过人工审核，款项将原路退回。\n\n另外提醒一下：您上传的图片我这边暂时无法识别，麻烦您用文字补充描述一下刷子断裂的情况（比如断的是哪一根、是否影响使用），方便审核人员核实。如果方便，也可以把照片重新发一次。"
+    },
+    {
+     "id": "e2e-img24",
+     "system": "multi",
+     "run": 0,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "鼠标",
+      "不是耳机"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "确认商品（鼠标）与订单/描述不符或不是耳机",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商品不一致/错发/发错商品（如发的是鼠标而不是耳机）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交 O1001 的退款申请，退款金额 199.00 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img24",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "鼠标",
+      "不是耳机"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商品与订单描述不一致（如鼠标而非耳机）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户购买的商品与订单不一致（如商品不是耳机，或商品与描述不符等）",
+       "evidence": ""
+      }
+     },
+     "reply": "已经帮您提交退款了 ✅\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 无需人工审批\n\n另外，您上传的图片系统没能识别出来，方便用文字再描述一下耳机外壳开裂的情况吗？如果后续需要补充凭证，我再帮您处理。"
+    },
+    {
+     "id": "e2e-img24",
+     "system": "multi",
+     "run": 1,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "鼠标",
+      "不是耳机"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "确认商品（鼠标）与订单/描述不符或不是耳机",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商品与描述不一致/发错货（收到的是鼠标而非耳机，或商品与订单不符）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交 O1001 的退款申请，退款金额 199.00 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img24",
+     "system": "single",
+     "run": 1,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "鼠标",
+      "不是耳机"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商品与订单描述不一致（如鼠标而非耳机）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商品与用户描述不一致（如发错商品、商品与描述不符等）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交退款申请 ✅\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 说明：签收 3 天，质量问题在 15 天内可退\n\n另外，您上传的图片系统没能识别出来，方便的话可以用文字补充描述一下外壳裂开的情况（比如裂开位置），便于后续处理。还需要我帮您查物流或解答其他售后问题吗？"
+    },
+    {
+     "id": "e2e-img24",
+     "system": "multi",
+     "run": 2,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "鼠标",
+      "不是耳机"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "确认商品（鼠标）与订单/描述不符或不是耳机",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "商品不一致/错发/发错商品（如发的是鼠标而不是耳机）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交 O1001 的退款申请，退款金额 199.00 元将原路退回，退货运费由商家承担。"
+    },
+    {
+     "id": "e2e-img24",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "不一致",
+      "对不上",
+      "不符",
+      "不匹配",
+      "不对应",
+      "鼠标",
+      "不是耳机"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "商品与订单描述不一致（如鼠标被误标为耳机，或实物不符）",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "用户购买的商品与订单不一致（比如商品是鼠标而不是耳机，或者商品与描述不符）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您提交退款申请，处理结果如下：\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 无需人工审批\n\n另外，您上传的图片系统暂时无法识别，方便的话可以用文字补充描述一下外壳开裂的情况（比如开裂位置、是否影响使用），便于售后核实。还有其他需要帮忙的吗？"
+    },
+    {
+     "id": "e2e-img28",
+     "system": "single",
+     "run": 2,
+     "group": [
+      "不能退",
+      "无法退",
+      "不支持退",
+      "退不了",
+      "不能办理",
+      "无法办理",
+      "不符合",
+      "超过",
+      "超出",
+      "已过",
+      "过了",
+      "期限"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "订单不符合退款条件或已超出退款期限，因此无法办理退款",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被拒绝/无法办理/不符合退款条件（因超过期限、不符合要求等原因）",
+       "evidence": ""
+      }
+     },
+     "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+    }
+   ]
+  },
+  "eval/vision/test_vision.json": {
+   "tasks": "eval/e2e_image_test.jsonl",
+   "systems": {
+    "multi": {
+     "runs": 90,
+     "success_keyword": 1.0,
+     "success_rechecked": 1.0
+    },
+    "single": {
+     "runs": 90,
+     "success_keyword": 0.9666666666666667,
+     "success_rechecked": 0.9666666666666667
+    }
+   },
+   "rechecks": [
+    {
+     "id": "e2e-img27",
+     "system": "single",
+     "run": 0,
+     "group": [
+      "驳回",
+      "未通过",
+      "没通过",
+      "不通过",
+      "没有通过",
+      "被拒",
+      "拒绝",
+      "未获批",
+      "没批",
+      "未批准",
+      "没有批准"
+     ],
+     "conveyed": false,
+     "run_flipped": false,
+     "verdicts": {
+      "qwen": {
+       "conveyed": false,
+       "point": "退款申请被驳回或未通过",
+       "evidence": ""
+      },
+      "kimi": {
+       "conveyed": false,
+       "point": "退款申请被驳回/未通过/被拒绝/未获批/未批准",
+       "evidence": ""
+      }
+     },
+     "reply": "订单 O1002 目前还没有提交退款申请，所以也还没有进入审批流程。退款金额一栏是空的，状态仍是已签收。\n\n需要我现在帮您提交这笔无理由退货申请吗？提交后，因为金额超过 500 元，会进入人工审批。"
+    }
+   ]
+  }
+ }
+}

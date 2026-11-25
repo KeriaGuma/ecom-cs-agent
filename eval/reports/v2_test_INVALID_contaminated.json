@@ -1,0 +1,111 @@
+{
+  "n": 123,
+  "correct": 120,
+  "accuracy": 0.975609756097561,
+  "ci95": [
+    0.9307392268204814,
+    0.9916710865152064
+  ],
+  "recall_by_label": {
+    "order_agent": {
+      "n": 22,
+      "recall": 1.0
+    },
+    "refund_agent": {
+      "n": 26,
+      "recall": 0.8846153846153846
+    },
+    "kb_agent": {
+      "n": 23,
+      "recall": 1.0
+    },
+    "clarify": {
+      "n": 14,
+      "recall": 1.0
+    },
+    "handoff_human": {
+      "n": 18,
+      "recall": 1.0
+    },
+    "FINISH": {
+      "n": 20,
+      "recall": 1.0
+    }
+  },
+  "acc_by_tag": {
+    "single": {
+      "n": 93,
+      "acc": 0.967741935483871
+    },
+    "colloquial": {
+      "n": 18,
+      "acc": 0.9444444444444444
+    },
+    "hard": {
+      "n": 25,
+      "acc": 0.96
+    },
+    "context": {
+      "n": 14,
+      "acc": 1.0
+    },
+    "adversarial": {
+      "n": 5,
+      "acc": 1.0
+    },
+    "partial": {
+      "n": 10,
+      "acc": 1.0
+    },
+    "multi": {
+      "n": 11,
+      "acc": 1.0
+    }
+  },
+  "p50_ms": 1478.9933329448104,
+  "p95_ms": 2236.8490828666836,
+  "errors": [
+    {
+      "id": "t-refund-04",
+      "expected": "refund_agent",
+      "pred": "kb_agent",
+      "text": "羽绒服能退吗"
+    },
+    {
+      "id": "t-refund-10",
+      "expected": "refund_agent",
+      "pred": "handoff_human",
+      "text": "耳机帮我推款"
+    },
+    {
+      "id": "t-refund-11",
+      "expected": "refund_agent",
+      "pred": "kb_agent",
+      "text": "扫地机器人用了一次就坏了，退货要我出运费吗"
+    }
+  ],
+  "confusion": {
+    "order_agent": {
+      "order_agent": 22
+    },
+    "refund_agent": {
+      "refund_agent": 23,
+      "kb_agent": 2,
+      "handoff_human": 1
+    },
+    "kb_agent": {
+      "kb_agent": 23
+    },
+    "clarify": {
+      "clarify": 14
+    },
+    "handoff_human": {
+      "handoff_human": 18
+    },
+    "FINISH": {
+      "FINISH": 20
+    }
+  },
+  "model": "deepseek-flash",
+  "split": "test"
+}

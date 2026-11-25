@@ -1,0 +1,64 @@
+{"id": "kb-01", "query": "买了不喜欢能直接退吗，要出邮费吗", "expected": ["after_sales_policy.md · 七天无理由退货"], "tag": "colloquial"}
+{"id": "kb-02", "query": "东西坏了退回去，快递费谁掏", "expected": ["after_sales_policy.md · 质量问题退换货"], "tag": "colloquial"}
+{"id": "kb-03", "query": "钱退回来要几天", "expected": ["after_sales_policy.md · 退款到账时间"], "tag": "colloquial"}
+{"id": "kb-04", "query": "退到银行卡的话多久能到", "expected": ["after_sales_policy.md · 退款到账时间"], "tag": "colloquial"}
+{"id": "kb-05", "query": "下单时买的那个退货保险怎么理赔", "expected": ["after_sales_policy.md · 运费险"], "tag": "colloquial"}
+{"id": "kb-06", "query": "耳机用了两个月坏了，还管修吗", "expected": ["after_sales_policy.md · 保修政策", "exchange_and_repair.md · 维修申请"], "tag": "colloquial"}
+{"id": "kb-07", "query": "还没发货想换个收货地方", "expected": ["after_sales_policy.md · 修改收货地址"], "tag": "colloquial"}
+{"id": "kb-08", "query": "鞋子码数小了想换大一码", "expected": ["exchange_and_repair.md · 换货条件"], "tag": "colloquial"}
+{"id": "kb-09", "query": "换货的话来回邮费谁出", "expected": ["exchange_and_repair.md · 换货运费"], "tag": "colloquial"}
+{"id": "kb-10", "query": "申请换货以后多久能收到新的", "expected": ["exchange_and_repair.md · 换货流程"], "tag": "colloquial"}
+{"id": "kb-11", "query": "我要换的那个颜色没货了怎么办", "expected": ["exchange_and_repair.md · 换货缺货处理"], "tag": "colloquial"}
+{"id": "kb-12", "query": "过了退货期但东西出毛病了", "expected": ["exchange_and_repair.md · 维修申请", "after_sales_policy.md · 保修政策"], "tag": "colloquial"}
+{"id": "kb-13", "query": "寄去修要修多久", "expected": ["exchange_and_repair.md · 维修时效"], "tag": "colloquial"}
+{"id": "kb-14", "query": "手机掉水里了能免费修吗", "expected": ["exchange_and_repair.md · 不在保修范围的情况"], "tag": "colloquial"}
+{"id": "kb-15", "query": "修好之后又坏了，同一个毛病", "expected": ["exchange_and_repair.md · 维修后仍有问题"], "tag": "colloquial"}
+{"id": "kb-16", "query": "付完款一般多久发出", "expected": ["shipping_logistics.md · 发货时效"], "tag": "colloquial"}
+{"id": "kb-17", "query": "能寄到香港吗", "expected": ["shipping_logistics.md · 配送范围"], "tag": "colloquial"}
+{"id": "kb-18", "query": "多少钱包邮", "expected": ["shipping_logistics.md · 运费规则"], "tag": "colloquial"}
+{"id": "kb-19", "query": "下单三天了还没发货，能催一下吗", "expected": ["shipping_logistics.md · 催促发货"], "tag": "colloquial"}
+{"id": "kb-20", "query": "快递好几天没动静了", "expected": ["shipping_logistics.md · 物流长时间不更新"], "tag": "colloquial"}
+{"id": "kb-21", "query": "包裹寄丢了谁负责", "expected": ["shipping_logistics.md · 快递丢失或破损"], "tag": "colloquial"}
+{"id": "kb-22", "query": "收到的箱子都压烂了", "expected": ["shipping_logistics.md · 快递丢失或破损"], "tag": "colloquial"}
+{"id": "kb-23", "query": "已经发货了还能改地址吗", "expected": ["shipping_logistics.md · 拒收与改派", "after_sales_policy.md · 修改收货地址"], "tag": "colloquial"}
+{"id": "kb-24", "query": "显示签收了可我根本没拿到", "expected": ["shipping_logistics.md · 签收但没收到货"], "tag": "colloquial"}
+{"id": "kb-25", "query": "买完就降价了能补差价吗", "expected": ["promotions_and_price.md · 价格保护"], "tag": "colloquial"}
+{"id": "kb-26", "query": "两张优惠券能一起用吗", "expected": ["promotions_and_price.md · 优惠券使用规则"], "tag": "colloquial"}
+{"id": "kb-27", "query": "退款后用掉的券还能还给我吗", "expected": ["promotions_and_price.md · 退款时优惠券怎么处理"], "tag": "colloquial"}
+{"id": "kb-28", "query": "退了一件后不够满减了会怎样", "expected": ["promotions_and_price.md · 满减活动"], "tag": "colloquial"}
+{"id": "kb-29", "query": "送的小礼品要一起寄回吗", "expected": ["promotions_and_price.md · 赠品规则"], "tag": "colloquial"}
+{"id": "kb-30", "query": "可以用信用卡付吗", "expected": ["payment_and_invoice.md · 支持的支付方式"], "tag": "colloquial"}
+{"id": "kb-31", "query": "能分期付款吗，分几期", "expected": ["payment_and_invoice.md · 分期付款"], "tag": "colloquial"}
+{"id": "kb-32", "query": "被扣了两次钱", "expected": ["payment_and_invoice.md · 重复扣款"], "tag": "colloquial"}
+{"id": "kb-33", "query": "公司报销要开专票，需要什么资料", "expected": ["payment_and_invoice.md · 发票类型"], "tag": "colloquial"}
+{"id": "kb-34", "query": "发票多久能开好", "expected": ["payment_and_invoice.md · 发票申请时间", "after_sales_policy.md · 发票"], "tag": "colloquial"}
+{"id": "kb-35", "query": "发票抬头写错了能重开吗", "expected": ["payment_and_invoice.md · 发票换开与作废"], "tag": "colloquial"}
+{"id": "kb-36", "query": "怎么才能升金卡", "expected": ["membership.md · 会员等级"], "tag": "colloquial"}
+{"id": "kb-37", "query": "银卡会员有什么好处", "expected": ["membership.md · 会员权益"], "tag": "colloquial"}
+{"id": "kb-38", "query": "积分怎么攒", "expected": ["membership.md · 积分获取"], "tag": "colloquial"}
+{"id": "kb-39", "query": "积分能抵多少钱", "expected": ["membership.md · 积分使用"], "tag": "colloquial"}
+{"id": "kb-40", "query": "用积分抵扣的订单退款，积分退不退", "expected": ["membership.md · 积分退还"], "tag": "colloquial"}
+{"id": "kb-41", "query": "我的号好像被别人登了", "expected": ["account_security.md · 账号被盗"], "tag": "colloquial"}
+{"id": "kb-42", "query": "旧手机号不用了怎么换绑", "expected": ["account_security.md · 修改手机号"], "tag": "colloquial"}
+{"id": "kb-43", "query": "客服找我要验证码是正常的吗", "expected": ["account_security.md · 个人信息保护"], "tag": "colloquial"}
+{"id": "kb-44", "query": "不想用了，怎么把账号删掉", "expected": ["account_security.md · 注销账号"], "tag": "colloquial"}
+{"id": "kb-45", "query": "刻了名字的杯子能退吗", "expected": ["special_goods.md · 定制商品"], "tag": "colloquial"}
+{"id": "kb-46", "query": "买的水果到了有坏的", "expected": ["special_goods.md · 生鲜食品"], "tag": "colloquial"}
+{"id": "kb-47", "query": "口红拆开试了色不喜欢能退吗", "expected": ["special_goods.md · 个人护理用品", "after_sales_policy.md · 七天无理由退货"], "tag": "colloquial"}
+{"id": "kb-48", "query": "空调送到了谁来装", "expected": ["special_goods.md · 大家电安装"], "tag": "colloquial"}
+{"id": "kb-49", "query": "平板开机激活了还能七天无理由吗", "expected": ["special_goods.md · 数码产品激活"], "tag": "colloquial"}
+{"id": "kbt-01", "query": "运费险多久到账", "expected": ["after_sales_policy.md · 运费险"], "tag": "term"}
+{"id": "kbt-02", "query": "增值税专用发票需要提供哪些资料", "expected": ["payment_and_invoice.md · 发票类型"], "tag": "term"}
+{"id": "kbt-03", "query": "七天无理由退货的条件", "expected": ["after_sales_policy.md · 七天无理由退货"], "tag": "term"}
+{"id": "kbt-04", "query": "质量问题退货 15 天", "expected": ["after_sales_policy.md · 质量问题退换货"], "tag": "term"}
+{"id": "kbt-05", "query": "金卡会员退货免运费几次", "expected": ["membership.md · 会员权益"], "tag": "term"}
+{"id": "kbt-06", "query": "价格保护规则", "expected": ["promotions_and_price.md · 价格保护"], "tag": "term"}
+{"id": "kbt-07", "query": "满 99 元包邮吗", "expected": ["shipping_logistics.md · 运费规则"], "tag": "term"}
+{"id": "kbt-08", "query": "花呗分期 12 期", "expected": ["payment_and_invoice.md · 分期付款"], "tag": "term"}
+{"id": "kbt-09", "query": "数码产品激活后折旧费", "expected": ["special_goods.md · 数码产品激活"], "tag": "term"}
+{"id": "kbt-10", "query": "积分有效期", "expected": ["membership.md · 积分使用"], "tag": "term"}
+{"id": "kbt-11", "query": "发票冲红", "expected": ["payment_and_invoice.md · 发票换开与作废"], "tag": "term"}
+{"id": "kbt-12", "query": "注销账号条件", "expected": ["account_security.md · 注销账号"], "tag": "term"}
+{"id": "kbt-13", "query": "大家电安装辅材收费", "expected": ["special_goods.md · 大家电安装"], "tag": "term"}
+{"id": "kbt-14", "query": "物流核查需要几个工作日", "expected": ["shipping_logistics.md · 签收但没收到货"], "tag": "term"}
+{"id": "kbt-15", "query": "换货缺货差价", "expected": ["exchange_and_repair.md · 换货缺货处理"], "tag": "term"}

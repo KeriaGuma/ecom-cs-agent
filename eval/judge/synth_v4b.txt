@@ -1,0 +1,139 @@
+两位评委都给满分的对话：180 / 204
+{
+ "prompt_version": "e91fa39c",
+ "clean_pool": 180,
+ "n": 145,
+ "usage": {
+  "qwen": {
+   "calls": 22,
+   "input": 29200,
+   "output": 7542
+  },
+  "kimi": {
+   "calls": 22,
+   "input": 26859,
+   "output": 5682
+  }
+ },
+ "detection": {
+  "kimi": {
+   "answered": {
+    "n": 25,
+    "detected": 0.56,
+    "spill_from_other_defects": 0.042,
+    "missed": [
+     "d-inject-expired/single/0",
+     "e2e-cd16/single/0",
+     "e2e-cd10/single/0",
+     "e2e-cd11/multi/0",
+     "e2e-cd19/single/1",
+     "d-multi-query/single/0",
+     "e2e-cd15/multi/0",
+     "d-address-shipped/single/1",
+     "d-refund-shipped/single/1",
+     "d-address-shipped/single/0",
+     "e2e-cd03/single/0"
+    ]
+   },
+   "faithful": {
+    "n": 30,
+    "detected": 1.0,
+    "spill_from_other_defects": 0.148,
+    "missed": []
+   },
+   "no_overpromise": {
+    "n": 30,
+    "detected": 0.967,
+    "spill_from_other_defects": 0.0,
+    "missed": [
+     "e2e-cd03/single/1"
+    ]
+   },
+   "concise": {
+    "n": 30,
+    "detected": 1.0,
+    "spill_from_other_defects": 0.443,
+    "missed": []
+   },
+   "tone": {
+    "n": 30,
+    "detected": 0.767,
+    "spill_from_other_defects": 0.348,
+    "missed": [
+     "e2e-cd24/multi/1",
+     "e2e-cd12/single/1",
+     "e2e-cd13/single/1",
+     "d-context-refund/single/0",
+     "d-refund-ask-reason/single/1",
+     "d-refund-small/single/0",
+     "d-long-address/single/1"
+    ]
+   }
+  },
+  "qwen": {
+   "answered": {
+    "n": 25,
+    "detected": 0.32,
+    "spill_from_other_defects": 0.0,
+    "missed": [
+     "d-inject-expired/single/0",
+     "d-multi-refund-policy/single/0",
+     "d-multi-refund-policy/multi/0",
+     "e2e-cd16/single/0",
+     "e2e-cd12/multi/1",
+     "e2e-cd12/single/0",
+     "d-multi-query/single/1",
+     "e2e-cd10/single/0",
+     "e2e-cd11/multi/0",
+     "e2e-cd19/single/1",
+     "e2e-cd15/multi/0",
+     "d-address-shipped/single/1",
+     "d-multi-write/multi/1",
+     "d-multi-write/multi/0",
+     "d-refund-shipped/single/1",
+     "d-address-shipped/single/0",
+     "e2e-cd03/single/0"
+    ]
+   },
+   "faithful": {
+    "n": 30,
+    "detected": 0.967,
+    "spill_from_other_defects": 0.183,
+    "missed": [
+     "e2e-cd22/multi/0"
+    ]
+   },
+   "no_overpromise": {
+    "n": 30,
+    "detected": 0.9,
+    "spill_from_other_defects": 0.0,
+    "missed": [
+     "e2e-cd07/multi/0",
+     "d-refund-quality/single/0",
+     "e2e-cd03/single/1"
+    ]
+   },
+   "concise": {
+    "n": 30,
+    "detected": 1.0,
+    "spill_from_other_defects": 0.296,
+    "missed": []
+   },
+   "tone": {
+    "n": 30,
+    "detected": 0.733,
+    "spill_from_other_defects": 0.357,
+    "missed": [
+     "e2e-cd24/multi/1",
+     "e2e-cd12/single/1",
+     "e2e-cd13/single/1",
+     "d-context-refund/single/0",
+     "d-refund-expired/multi/1",
+     "d-refund-ask-reason/single/1",
+     "d-refund-small/single/0",
+     "d-long-address/single/1"
+    ]
+   }
+  }
+ }
+}

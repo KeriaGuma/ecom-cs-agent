@@ -1,0 +1,2751 @@
+{
+  "summaries": {
+    "multi": {
+      "tasks": 8,
+      "runs": 24,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8620194241710247,
+        1.0
+      ],
+      "pass_k": 1.0,
+      "by_tag": {
+        "unsupported": {
+          "n": 24,
+          "success": 1.0
+        }
+      },
+      "turn_p50_ms": 7824.805542128161,
+      "turn_p95_ms": 17284.669290995225,
+      "llm_calls_per_task": 4.5,
+      "tokens_per_task": 4847.875,
+      "input_tokens_per_task": 4607.458333333333,
+      "output_tokens_per_task": 240.41666666666666,
+      "task_success": {
+        "ud01": 1.0,
+        "ud02": 1.0,
+        "ud03": 1.0,
+        "ud04": 1.0,
+        "ud05": 1.0,
+        "ud06": 1.0,
+        "ud07": 1.0,
+        "ud08": 1.0
+      },
+      "severity": {
+        "运行出错": 0,
+        "严重": 0,
+        "未办成": 0,
+        "流程": 0,
+        "沟通": 0
+      },
+      "critical_rate": 0.0,
+      "critical_ci95": [
+        0.0,
+        0.13798057582897535
+      ],
+      "false_claims": 0,
+      "degraded_runs": 0,
+      "tool_faults": 0,
+      "extra_tools": 0,
+      "domains": "",
+      "prompt": "1bf93c51",
+      "success_old_domains": 1.0,
+      "success_new_domains": null
+    },
+    "single": {
+      "tasks": 8,
+      "runs": 24,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.8620194241710247,
+        1.0
+      ],
+      "pass_k": 1.0,
+      "by_tag": {
+        "unsupported": {
+          "n": 24,
+          "success": 1.0
+        }
+      },
+      "turn_p50_ms": 6192.815541988239,
+      "turn_p95_ms": 16056.360417045653,
+      "llm_calls_per_task": 3.375,
+      "tokens_per_task": 7431,
+      "input_tokens_per_task": 7245.208333333333,
+      "output_tokens_per_task": 185.79166666666666,
+      "task_success": {
+        "ud01": 1.0,
+        "ud02": 1.0,
+        "ud03": 1.0,
+        "ud04": 1.0,
+        "ud05": 1.0,
+        "ud06": 1.0,
+        "ud07": 1.0,
+        "ud08": 1.0
+      },
+      "severity": {
+        "运行出错": 0,
+        "严重": 0,
+        "未办成": 0,
+        "流程": 0,
+        "沟通": 0
+      },
+      "critical_rate": 0.0,
+      "critical_ci95": [
+        0.0,
+        0.13798057582897535
+      ],
+      "false_claims": 0,
+      "degraded_runs": 0,
+      "tool_faults": 0,
+      "extra_tools": 0,
+      "domains": "",
+      "prompt": "a502accc",
+      "success_old_domains": 1.0,
+      "success_new_domains": null
+    },
+    "paired": {
+      "a_better": 0,
+      "b_better": 0,
+      "tie": 8,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "diff_by_task": {}
+    }
+  },
+  "results": [
+    {
+      "id": "ud01",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        16787.733000004664
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3781,
+      "output_tokens": 215,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。收件人和联系电话无法修改，本次未做变更。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud01",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5754.336207872257
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6497,
+      "output_tokens": 165,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已为您把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n另外提醒一下：收件人和联系电话在订单上无法修改，您提供的电话 13812345678 这边改不了，建议留意物流派送时与快递员沟通。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud01",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        17284.669290995225
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3781,
+      "output_tokens": 219,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。收件人和联系电话无法修改，如需变更请联系收件人本人处理。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud01",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8814.056457951665
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6487,
+      "output_tokens": 147,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n提醒一下：收件人和联系电话这边无法修改，需要您自行在账户设置里处理，或联系人工客服协助。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud01",
+      "system": "multi",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        21666.685541858897
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3781,
+      "output_tokens": 219,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。收件人和联系电话无法修改，如需变更请联系收件人本人处理。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud01",
+      "system": "single",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        16056.360417045653
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6497,
+      "output_tokens": 152,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n另外提醒一下：收件人和联系电话这边改不了，需要您在账户设置里自行修改，或联系人工客服处理。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud02",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        7628.0199161265045
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3813,
+      "output_tokens": 222,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。收件人和联系电话无法修改，仍需保持原信息。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud02",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6875.54325000383
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6515,
+      "output_tokens": 152,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已为您把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n需要说明的是：收件人和联系电话这里无法修改，目前仍为原信息，如需变更请联系人工客服处理。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud02",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6001.974291168153
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3805,
+      "output_tokens": 216,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号；收件人和联系电话无法修改，本次未做变更。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud02",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5787.863832898438
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6515,
+      "output_tokens": 166,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已为您把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n需要说明的是：收件人和联系电话这里无法修改，目前仍为原订单上的信息。如果收件人、电话也需要变更，建议联系快递员或人工客服协助处理。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud02",
+      "system": "multi",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8625.807458069175
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3805,
+      "output_tokens": 219,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号；收件人和联系电话无法修改，如需变更请联系人工客服。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud02",
+      "system": "single",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        7631.35483302176
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6515,
+      "output_tokens": 150,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已为您把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n需要提醒您：收件人和联系电话这两项无法修改，目前订单上的收件人、电话保持不变。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud03",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8090.27637494728
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3777,
+      "output_tokens": 226,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。周末配送的备注无法在系统里添加，建议您直接联系快递员或配送方说明。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud03",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5943.046708824113
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6484,
+      "output_tokens": 153,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已帮您把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n另外，“周末再送”这个配送备注我这边无法添加，建议您联系快递员或承运方说明，或者我帮您转人工处理，需要吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud03",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8283.79066591151
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3777,
+      "output_tokens": 224,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。周末配送的备注无法添加，建议您联系快递员或承运方说明。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud03",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6352.358416887
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6494,
+      "output_tokens": 161,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已经帮您把机械键盘订单（O1005）的收货地址改成：杭州市滨江区网商路 699 号。\n\n另外，关于“周末再送”的备注，我这边没有添加订单备注的功能，建议您直接联系快递员或快递公司说明配送时间。请问还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ],
+      "keyword_failures": [
+        "回复：缺少 无法/不能/没法/不支持/办不了/做不了/改不了/暂不/人工/不提供/没有办法"
+      ],
+      "reply_rechecks": [
+        {
+          "group": [
+            "无法",
+            "不能",
+            "没法",
+            "不支持",
+            "办不了",
+            "做不了",
+            "改不了",
+            "暂不",
+            "人工",
+            "不提供",
+            "没有办法"
+          ],
+          "verdicts": {
+            "qwen": {
+              "point": "客服无法或不能执行用户提出的某项操作（如修改地址、添加备注等）",
+              "evidence": "我这边没有添加订单备注的功能",
+              "conveyed": true,
+              "said": true,
+              "quoted": true
+            },
+            "kimi": {
+              "point": "无法/不能/没法/不支持/办不了/做不了/改不了/暂不/人工/不提供/没有办法做某事（如修改地址、添加备注等）",
+              "evidence": "我这边没有添加订单备注的功能",
+              "conveyed": true,
+              "said": true,
+              "quoted": true
+            }
+          },
+          "conveyed": true
+        }
+      ]
+    },
+    {
+      "id": "ud03",
+      "system": "multi",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        7198.961250018328
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3777,
+      "output_tokens": 216,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。周末配送的备注无法添加，请知悉。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud03",
+      "system": "single",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5309.955999953672
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6494,
+      "output_tokens": 180,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已为您把机械键盘（订单 O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n另外两点说明：\n- 订单上只能修改收货地址，收件人和联系电话无法修改。\n- “周末再送”这类配送备注我这边无法添加，建议您留意物流信息，或直接联系快递员/快递公司约定派送时间。\n\n还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud04",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        7824.805542128161
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3748,
+      "output_tokens": 204,
+      "tools": [
+        "list_my_orders",
+        "get_logistics"
+      ],
+      "replies": [
+        "羽绒服订单（O1003）已发货，中通快递单号 ZT987654，11月11日到达杭州转运中心，预计明天送达。催件我这边无法直接操作，建议您联系中通客服加急。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_logistics",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"status\": \"shipped\", \"events\": [{\"ts\": \"2026-11-10\", \"event\": \"商家已发货，中通 ZT987654\"}, {\"ts\": \"2026-11-11\", \"event\": \"到达杭州转运中心，预计明天送达\"}]}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud04",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        16512.648249976337
+      ],
+      "llm_calls": 4,
+      "input_tokens": 7086,
+      "output_tokens": 438,
+      "tools": [
+        "list_my_orders",
+        "get_logistics",
+        "transfer_to_human"
+      ],
+      "replies": [
+        "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_logistics",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"status\": \"shipped\", \"events\": [{\"ts\": \"2026-11-10\", \"event\": \"商家已发货，中通 ZT987654\"}, {\"ts\": \"2026-11-11\", \"event\": \"到达杭州转运中心，预计明天送达\"}]}"
+          },
+          {
+            "tool": "transfer_to_human",
+            "args": {
+              "reason": "用户要求催促快递（订单 O1003 羽绒服，中通 ZT987654），需人工协助联系快递跟进"
+            },
+            "output": "已转接人工客服"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud04",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        7421.940959058702
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3748,
+      "output_tokens": 209,
+      "tools": [
+        "list_my_orders",
+        "get_logistics"
+      ],
+      "replies": [
+        "羽绒服订单（O1003）已由中通发出，运单号 ZT987654，11月11日到达杭州转运中心，预计明天送达。催件我这边无法直接操作，建议您通过中通客服或快递员电话催一下。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_logistics",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"status\": \"shipped\", \"events\": [{\"ts\": \"2026-11-10\", \"event\": \"商家已发货，中通 ZT987654\"}, {\"ts\": \"2026-11-11\", \"event\": \"到达杭州转运中心，预计明天送达\"}]}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud04",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6070.524750044569
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6482,
+      "output_tokens": 164,
+      "tools": [
+        "list_my_orders",
+        "get_logistics"
+      ],
+      "replies": [
+        "您的羽绒服订单（O1003）物流情况如下：\n\n- 11月10日：商家已发货，中通快递 ZT987654\n- 11月11日：到达杭州转运中心，预计明天送达\n\n关于催快递，我这边没有直接联系快递公司催件的功能，建议您凭单号 ZT987654 联系中通客服加急处理。需要我帮您转人工客服跟进吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_logistics",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"status\": \"shipped\", \"events\": [{\"ts\": \"2026-11-10\", \"event\": \"商家已发货，中通 ZT987654\"}, {\"ts\": \"2026-11-11\", \"event\": \"到达杭州转运中心，预计明天送达\"}]}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud04",
+      "system": "multi",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        7437.335500027984
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3748,
+      "output_tokens": 210,
+      "tools": [
+        "list_my_orders",
+        "get_logistics"
+      ],
+      "replies": [
+        "羽绒服订单（O1003）已由中通快递发出，运单号 ZT987654，11月11日到达杭州转运中心，预计明天送达。催件我这边无法直接操作，建议您通过中通客服或快递员电话催一下。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_logistics",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"status\": \"shipped\", \"events\": [{\"ts\": \"2026-11-10\", \"event\": \"商家已发货，中通 ZT987654\"}, {\"ts\": \"2026-11-11\", \"event\": \"到达杭州转运中心，预计明天送达\"}]}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud04",
+      "system": "single",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5937.235458055511
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6466,
+      "output_tokens": 155,
+      "tools": [
+        "list_my_orders",
+        "get_logistics"
+      ],
+      "replies": [
+        "您的羽绒服订单（O1003）物流情况如下：\n\n- 11月10日：商家已发货，中通快递 ZT987654\n- 11月11日：到达杭州转运中心，预计明天送达\n\n关于催快递，我这边没有直接联系快递公司催件的功能，建议您凭单号 ZT987654 联系中通客服催一下。需要我帮您转人工客服处理吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_logistics",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"status\": \"shipped\", \"events\": [{\"ts\": \"2026-11-10\", \"event\": \"商家已发货，中通 ZT987654\"}, {\"ts\": \"2026-11-11\", \"event\": \"到达杭州转运中心，预计明天送达\"}]}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud05",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": true,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        9333.922125166282
+      ],
+      "llm_calls": 5,
+      "input_tokens": 7779,
+      "output_tokens": 280,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund"
+      ],
+      "replies": [
+        "蓝牙耳机（订单 O1001）的退款已提交成功，可退 199 元，将按原支付路径退回；退货运费需由您承担。退款无法指定退到银行卡，只能原路退回。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "check_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "{\"eligible\": true, \"refund_amount\": 199.0, \"return_shipping_paid_by\": \"buyer\", \"needs_approval\": false, \"reason\": \"签收 3 天，符合 7 天无理由退货，退货运费由买家承担\"}"
+          },
+          {
+            "tool": "submit_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "退款成功：199.00 元将原路退回。签收 3 天，符合 7 天无理由退货，退货运费由买家承担"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud05",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": true,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8661.67345806025
+      ],
+      "llm_calls": 4,
+      "input_tokens": 8971,
+      "output_tokens": 234,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund"
+      ],
+      "replies": [
+        "已为您提交蓝牙耳机（订单 O1001）的退货退款：\n\n- 退款金额：199.00 元\n- 退货运费：由您承担\n- 退款方式：**原路退回**，也就是退回您原来的付款账户，无法指定退到银行卡或支付宝。\n\n如果原付款方式不是您想要的账户，建议您联系原支付渠道咨询。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "check_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "{\"eligible\": true, \"refund_amount\": 199.0, \"return_shipping_paid_by\": \"buyer\", \"needs_approval\": false, \"reason\": \"签收 3 天，符合 7 天无理由退货，退货运费由买家承担\"}"
+          },
+          {
+            "tool": "submit_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "退款成功：199.00 元将原路退回。签收 3 天，符合 7 天无理由退货，退货运费由买家承担"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud05",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": true,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        9928.863124921918
+      ],
+      "llm_calls": 5,
+      "input_tokens": 7779,
+      "output_tokens": 287,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund"
+      ],
+      "replies": [
+        "蓝牙耳机（订单 O1001）的退款已提交成功，退款金额 199 元将原路退回，退货运费需由您承担。退款会按原支付渠道退回，无法指定退到银行卡。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "check_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "{\"eligible\": true, \"refund_amount\": 199.0, \"return_shipping_paid_by\": \"buyer\", \"needs_approval\": false, \"reason\": \"签收 3 天，符合 7 天无理由退货，退货运费由买家承担\"}"
+          },
+          {
+            "tool": "submit_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "退款成功：199.00 元将原路退回。签收 3 天，符合 7 天无理由退货，退货运费由买家承担"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud05",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": true,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8220.194875029847
+      ],
+      "llm_calls": 4,
+      "input_tokens": 8971,
+      "output_tokens": 233,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund"
+      ],
+      "replies": [
+        "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元\n- 退货运费：由您承担\n- 退款方式：**原路退回**，也就是退回您当初付款时使用的账户，无法指定退到银行卡或支付宝。\n\n如果原支付方式不是您想要的，建议联系支付渠道处理。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "check_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "{\"eligible\": true, \"refund_amount\": 199.0, \"return_shipping_paid_by\": \"buyer\", \"needs_approval\": false, \"reason\": \"签收 3 天，符合 7 天无理由退货，退货运费由买家承担\"}"
+          },
+          {
+            "tool": "submit_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "退款成功：199.00 元将原路退回。签收 3 天，符合 7 天无理由退货，退货运费由买家承担"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud05",
+      "system": "multi",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": true,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        10800.67016580142
+      ],
+      "llm_calls": 5,
+      "input_tokens": 7779,
+      "output_tokens": 282,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund"
+      ],
+      "replies": [
+        "蓝牙耳机（订单 O1001）的退款已提交成功，可退 199.00 元，将按原支付路径退回；退货运费需由您承担。退款无法指定退到银行卡，只能原路退回。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "check_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "{\"eligible\": true, \"refund_amount\": 199.0, \"return_shipping_paid_by\": \"buyer\", \"needs_approval\": false, \"reason\": \"签收 3 天，符合 7 天无理由退货，退货运费由买家承担\"}"
+          },
+          {
+            "tool": "submit_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "退款成功：199.00 元将原路退回。签收 3 天，符合 7 天无理由退货，退货运费由买家承担"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud05",
+      "system": "single",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": true,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8576.448624953628
+      ],
+      "llm_calls": 4,
+      "input_tokens": 8968,
+      "output_tokens": 232,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund"
+      ],
+      "replies": [
+        "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元\n- 退货运费：由您承担\n- 退款方式：**原路退回**，也就是退回到您当初付款的账户，无法指定退到银行卡或支付宝\n\n如果付款账户不是您想要的，建议您联系付款渠道处理。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "check_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "{\"eligible\": true, \"refund_amount\": 199.0, \"return_shipping_paid_by\": \"buyer\", \"needs_approval\": false, \"reason\": \"签收 3 天，符合 7 天无理由退货，退货运费由买家承担\"}"
+          },
+          {
+            "tool": "submit_refund",
+            "args": {
+              "order_id": "O1001",
+              "reason_type": "no_reason"
+            },
+            "output": "退款成功：199.00 元将原路退回。签收 3 天，符合 7 天无理由退货，退货运费由买家承担"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud06",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6382.2946671862155
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3752,
+      "output_tokens": 179,
+      "tools": [
+        "list_my_orders",
+        "get_order"
+      ],
+      "replies": [
+        "羽绒服订单（O1003）已发货，无法更改快递方式，建议联系快递公司协商。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"order_id\": \"O1003\", \"user_id\": \"u001\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud06",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6460.781957954168
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6496,
+      "output_tokens": 165,
+      "tools": [
+        "list_my_orders",
+        "get_logistics"
+      ],
+      "replies": [
+        "您的羽绒服订单（O1003）已于 11 月 10 日由中通发出（单号 ZT987654），目前在杭州转运中心，预计明天送达。\n\n订单已发货，无法再更换快递公司了。如果还有其他需要（查订单物流、退款、售后政策），随时告诉我。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_logistics",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"status\": \"shipped\", \"events\": [{\"ts\": \"2026-11-10\", \"event\": \"商家已发货，中通 ZT987654\"}, {\"ts\": \"2026-11-11\", \"event\": \"到达杭州转运中心，预计明天送达\"}]}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud06",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6874.124666908756
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3752,
+      "output_tokens": 178,
+      "tools": [
+        "list_my_orders",
+        "get_order"
+      ],
+      "replies": [
+        "羽绒服订单（O1003）已发货，无法更改快递方式，也无法修改收货地址。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"order_id\": \"O1003\", \"user_id\": \"u001\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud06",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        4343.238374916837
+      ],
+      "llm_calls": 2,
+      "input_tokens": 4149,
+      "output_tokens": 80,
+      "tools": [
+        "list_my_orders"
+      ],
+      "replies": [
+        "您的羽绒服订单（O1003）目前已经是**已发货**状态，无法再更改快递方式了。\n\n另外说明一下：修改收货地址仅支持未发货订单，快递公司也无法指定或更换。您看还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud06",
+      "system": "multi",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        7101.413207827136
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3752,
+      "output_tokens": 184,
+      "tools": [
+        "list_my_orders",
+        "get_order"
+      ],
+      "replies": [
+        "羽绒服订单（O1003）已发货，无法更改快递方式，建议您联系快递公司咨询。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"order_id\": \"O1003\", \"user_id\": \"u001\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud06",
+      "system": "single",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6192.815541988239
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6587,
+      "output_tokens": 176,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "get_logistics"
+      ],
+      "replies": [
+        "您的羽绒服订单（O1003）已经发货了，承运的是中通快递（单号 ZT987654），目前包裹已到杭州转运中心，预计明天送达。\n\n已发货的订单无法更换快递公司，也无法修改收货地址。如果您对快递有特殊需求，可以联系快递员协商派送方式。请问还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"order_id\": \"O1003\", \"user_id\": \"u001\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          },
+          {
+            "tool": "get_logistics",
+            "args": {
+              "order_id": "O1003"
+            },
+            "output": "{\"status\": \"shipped\", \"events\": [{\"ts\": \"2026-11-10\", \"event\": \"商家已发货，中通 ZT987654\"}, {\"ts\": \"2026-11-11\", \"event\": \"到达杭州转运中心，预计明天送达\"}]}"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud07",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        9130.84925012663
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3777,
+      "output_tokens": 217,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。发货前电话确认的需求无法在此设置，请留意物流通知。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud07",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5660.03324999474
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6484,
+      "output_tokens": 156,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n另外两点说明：\n- 订单上只能修改收货地址，收件人和联系电话无法修改。\n- 发货前电话确认这项需求，我这边无法设置，建议您留意物流通知。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud07",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        10112.195166992024
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3777,
+      "output_tokens": 217,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。发货前电话确认的需求无法在此设置，请留意物流通知。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud07",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6437.435708008707
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6484,
+      "output_tokens": 155,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已帮您把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n两点说明：\n- 订单上只能修改收货地址，收件人和联系电话无法修改。\n- 发货前电话确认这件事我这边无法设置，建议您留意物流通知。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud07",
+      "system": "multi",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        7171.86670913361
+      ],
+      "llm_calls": 4,
+      "input_tokens": 3777,
+      "output_tokens": 221,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）的收货地址已改为杭州市滨江区网商路 699 号。发货前电话确认的需求无法在此设置，建议您联系快递或商家另行备注。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud07",
+      "system": "single",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6989.349041134119
+      ],
+      "llm_calls": 3,
+      "input_tokens": 6484,
+      "output_tokens": 154,
+      "tools": [
+        "list_my_orders",
+        "change_address"
+      ],
+      "replies": [
+        "已把机械键盘订单（O1005）的收货地址改为：杭州市滨江区网商路 699 号。\n\n另外两点说明：\n- 订单上只能修改收货地址，收件人和联系电话无法修改。\n- 发货前电话确认这件事我这边无法设置，建议您留意物流通知。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        []
+      ],
+      "turn_photos": [
+        []
+      ]
+    },
+    {
+      "id": "ud08",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8058.722875081003,
+        6047.203083988279
+      ],
+      "llm_calls": 7,
+      "input_tokens": 6449,
+      "output_tokens": 378,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘（订单 O1005）目前状态为已付款、尚未发货，还没有物流轨迹。如需修改收货地址，可以告诉我新地址。",
+        "订单 O1005 的收货地址已改为杭州市滨江区网商路 699 号。收件人和联系电话无法修改，如需变更请另行处理。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1005"
+            },
+            "output": "{\"order_id\": \"O1005\", \"user_id\": \"u001\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ],
+        [
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        [],
+        []
+      ],
+      "turn_photos": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "ud08",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5801.167874829844,
+        3051.253292011097
+      ],
+      "llm_calls": 5,
+      "input_tokens": 10587,
+      "output_tokens": 226,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "change_address"
+      ],
+      "replies": [
+        "您的机械键盘订单（O1005，459 元）目前还是“已付款、未发货”状态，还没发出。需要我帮您改地址或办理退款吗？",
+        "收货地址已改为：杭州市滨江区网商路 699 号。\n\n另外提醒一下：收件人和联系电话这边改不了，新手机号 13700002222 需要您联系人工客服或在账户里另行处理，我这边没法更新。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1005"
+            },
+            "output": "{\"order_id\": \"O1005\", \"user_id\": \"u001\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ],
+        [
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        [],
+        []
+      ],
+      "turn_photos": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "ud08",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5812.067791819572,
+        6215.778457932174
+      ],
+      "llm_calls": 7,
+      "input_tokens": 6416,
+      "output_tokens": 368,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）目前状态为已付款、尚未发货，还未发出。",
+        "订单 O1005 的收货地址已改为杭州市滨江区网商路 699 号。收件人和联系电话无法修改，如需变更请联系相应渠道处理。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1005"
+            },
+            "output": "{\"order_id\": \"O1005\", \"user_id\": \"u001\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ],
+        [
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        [],
+        []
+      ],
+      "turn_photos": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "ud08",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": true,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        5058.778790989891,
+        4846.817249897867
+      ],
+      "llm_calls": 5,
+      "input_tokens": 10585,
+      "output_tokens": 232,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "change_address"
+      ],
+      "replies": [
+        "您的机械键盘订单（O1005，459 元）目前状态是“已付款、未发货”，还没发出。需要我帮您改地址或办理退款吗？",
+        "地址已改好：订单 O1005 的收货地址现在是“杭州市滨江区网商路 699 号”。\n\n不过收件人和联系电话这边改不了，新手机号 13700002222 需要您联系人工客服或在账户设置里更新，我这边无法修改。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1005"
+            },
+            "output": "{\"order_id\": \"O1005\", \"user_id\": \"u001\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ],
+        [
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        [],
+        []
+      ],
+      "turn_photos": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "ud08",
+      "system": "multi",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": false,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        8507.722333073616,
+        4319.655583007261
+      ],
+      "llm_calls": 7,
+      "input_tokens": 6449,
+      "output_tokens": 380,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "change_address"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）目前状态为已付款、尚未发货，还没有物流轨迹。如需修改收货地址，可以告诉我新地址。",
+        "订单 O1005 的收货地址已改为杭州市滨江区网商路 699 号。收件人和联系电话无法修改，如需变更请联系其他渠道处理。"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1005"
+            },
+            "output": "{\"order_id\": \"O1005\", \"user_id\": \"u001\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ],
+        [
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        [],
+        []
+      ],
+      "turn_photos": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "ud08",
+      "system": "single",
+      "run": 2,
+      "tags": [
+        "unsupported"
+      ],
+      "domains": [],
+      "success": true,
+      "failures": [],
+      "severity": null,
+      "claimed_done": true,
+      "degraded": false,
+      "tool_faults": 0,
+      "latency_ms": [
+        6225.995125016198,
+        4143.170750001445
+      ],
+      "llm_calls": 5,
+      "input_tokens": 10587,
+      "output_tokens": 233,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "change_address"
+      ],
+      "replies": [
+        "您的机械键盘订单（O1005，459 元）目前状态是已付款、还未发货，所以还没发出。需要我帮您改地址或做其他处理吗？",
+        "地址已改好，订单 O1005 的收货地址现在是：杭州市滨江区网商路 699 号。\n\n另外提醒一下：收件人和联系电话这边改不了，新手机号 13700002222 需要您在账户里自行更新，或联系人工客服处理。还有其他需要帮忙的吗？"
+      ],
+      "turn_tools": [
+        [
+          {
+            "tool": "list_my_orders",
+            "args": "{}",
+            "output": "[{\"order_id\": \"O1005\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\"}, {\"order_id\": \"O1003\", \"item\": \"羽绒服\", \"amount\": 699.0, \"status\": \"shipped\", \"created_at\": \"2026-11-09\"}, {\"order_id\": \"O1001\", \"item\": \"蓝牙耳机\", \"amount\": 199.0, \"status\": \"delivered\", \"created_at\": \"2026-11-05\"}, {\"order_id\": \"O1002\", \"item\": \"扫地机器人\", \"amount\": 1899.0, \"status\": \"delivered\", \"created_at\": \"2026-11-03\"}, {\"order_id\": \"O1004\", \"item\": \"保温杯\", \"amount\": 89.0, \"status\": \"delivered\", \"created_at\": \"2026-10-17\"}]"
+          },
+          {
+            "tool": "get_order",
+            "args": {
+              "order_id": "O1005"
+            },
+            "output": "{\"order_id\": \"O1005\", \"user_id\": \"u001\", \"item\": \"机械键盘\", \"amount\": 459.0, \"status\": \"paid\", \"created_at\": \"2026-11-11\", \"delivered_at\": null, \"address\": \"杭州市西湖区文三路 1 号\", \"refund_amount\": null}"
+          }
+        ],
+        [
+          {
+            "tool": "change_address",
+            "args": {
+              "order_id": "O1005",
+              "new_address": "杭州市滨江区网商路 699 号"
+            },
+            "output": "已将订单 O1005 的收货地址修改为：杭州市滨江区网商路 699 号"
+          }
+        ]
+      ],
+      "turn_claims": [
+        [],
+        []
+      ],
+      "turn_photos": [
+        [],
+        []
+      ]
+    }
+  ],
+  "prompt_versions": {
+    "multi": "1bf93c51",
+    "single": "a502accc"
+  },
+  "reply_judge": {
+    "prompt_version": "c6b1caca",
+    "judges": [
+      "qwen",
+      "kimi"
+    ]
+  }
+}

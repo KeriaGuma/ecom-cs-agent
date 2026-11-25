@@ -1,0 +1,382 @@
+[
+  {
+    "mode": "keyword",
+    "n": 64,
+    "recall@1": 0.59375,
+    "recall@3": 0.75,
+    "mrr@10": 0.6728050595238095,
+    "p50_ms": 0.24452107027173042,
+    "misses": [
+      [
+        "kb-01",
+        "买了不喜欢能直接退吗，要出邮费吗",
+        [
+          "exchange_and_repair.md · 换货条件",
+          "after_sales_policy.md · 运费险",
+          "shipping_logistics.md · 催促发货"
+        ]
+      ],
+      [
+        "kb-02",
+        "东西坏了退回去，快递费谁掏",
+        [
+          "shipping_logistics.md · 拒收与改派",
+          "after_sales_policy.md · 退款到账时间",
+          "after_sales_policy.md · 修改收货地址"
+        ]
+      ],
+      [
+        "kb-06",
+        "耳机用了两个月坏了，还管修吗",
+        [
+          "membership.md · 会员等级",
+          "membership.md · 积分使用"
+        ]
+      ],
+      [
+        "kb-08",
+        "鞋子码数小了想换大一码",
+        []
+      ],
+      [
+        "kb-13",
+        "寄去修要修多久",
+        []
+      ],
+      [
+        "kb-14",
+        "手机掉水里了能免费修吗",
+        [
+          "account_security.md · 修改手机号",
+          "exchange_and_repair.md · 维修申请",
+          "exchange_and_repair.md · 维修时效"
+        ]
+      ],
+      [
+        "kb-16",
+        "付完款一般多久发出",
+        [
+          "after_sales_policy.md · 运费险",
+          "after_sales_policy.md · 发票",
+          "exchange_and_repair.md · 换货流程"
+        ]
+      ],
+      [
+        "kb-17",
+        "能寄到香港吗",
+        []
+      ],
+      [
+        "kb-19",
+        "下单三天了还没发货，能催一下吗",
+        [
+          "after_sales_policy.md · 修改收货地址",
+          "account_security.md · 账号被盗",
+          "exchange_and_repair.md · 换货运费"
+        ]
+      ],
+      [
+        "kb-22",
+        "收到的箱子都压烂了",
+        [
+          "shipping_logistics.md · 签收但没收到货",
+          "exchange_and_repair.md · 换货流程",
+          "exchange_and_repair.md · 维修时效"
+        ]
+      ],
+      [
+        "kb-27",
+        "退款后用掉的券还能还给我吗",
+        [
+          "after_sales_policy.md · 退款到账时间",
+          "exchange_and_repair.md · 换货缺货处理",
+          "membership.md · 积分获取"
+        ]
+      ],
+      [
+        "kb-32",
+        "被扣了两次钱",
+        [
+          "exchange_and_repair.md · 维修后仍有问题",
+          "membership.md · 积分获取"
+        ]
+      ],
+      [
+        "kb-45",
+        "刻了名字的杯子能退吗",
+        []
+      ],
+      [
+        "kb-46",
+        "买的水果到了有坏的",
+        [
+          "promotions_and_price.md · 赠品规则"
+        ]
+      ],
+      [
+        "kb-47",
+        "口红拆开试了色不喜欢能退吗",
+        [
+          "exchange_and_repair.md · 换货条件"
+        ]
+      ],
+      [
+        "kb-48",
+        "空调送到了谁来装",
+        []
+      ]
+    ],
+    "recall@1_by_tag": {
+      "colloquial": 0.46938775510204084,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "bm25",
+    "n": 64,
+    "recall@1": 0.5,
+    "recall@3": 0.734375,
+    "mrr@10": 0.6216145833333333,
+    "p50_ms": 0.05097896791994572,
+    "misses": [
+      [
+        "kb-02",
+        "东西坏了退回去，快递费谁掏",
+        [
+          "shipping_logistics.md · 快递丢失或破损",
+          "shipping_logistics.md · 拒收与改派",
+          "shipping_logistics.md · 物流长时间不更新"
+        ]
+      ],
+      [
+        "kb-03",
+        "钱退回来要几天",
+        [
+          "promotions_and_price.md · 退款时优惠券怎么处理",
+          "membership.md · 积分退还",
+          "promotions_and_price.md · 赠品规则"
+        ]
+      ],
+      [
+        "kb-06",
+        "耳机用了两个月坏了，还管修吗",
+        [
+          "membership.md · 积分使用",
+          "membership.md · 会员等级"
+        ]
+      ],
+      [
+        "kb-08",
+        "鞋子码数小了想换大一码",
+        [
+          "exchange_and_repair.md · 换货运费",
+          "exchange_and_repair.md · 换货缺货处理",
+          "exchange_and_repair.md · 维修后仍有问题"
+        ]
+      ],
+      [
+        "kb-09",
+        "换货的话来回邮费谁出",
+        [
+          "exchange_and_repair.md · 换货流程",
+          "after_sales_policy.md · 质量问题退换货",
+          "exchange_and_repair.md · 换货缺货处理"
+        ]
+      ],
+      [
+        "kb-13",
+        "寄去修要修多久",
+        []
+      ],
+      [
+        "kb-16",
+        "付完款一般多久发出",
+        [
+          "exchange_and_repair.md · 换货流程",
+          "after_sales_policy.md · 发票",
+          "after_sales_policy.md · 运费险"
+        ]
+      ],
+      [
+        "kb-17",
+        "能寄到香港吗",
+        []
+      ],
+      [
+        "kb-18",
+        "多少钱包邮",
+        []
+      ],
+      [
+        "kb-22",
+        "收到的箱子都压烂了",
+        [
+          "exchange_and_repair.md · 维修时效",
+          "exchange_and_repair.md · 换货流程",
+          "shipping_logistics.md · 拒收与改派"
+        ]
+      ],
+      [
+        "kb-32",
+        "被扣了两次钱",
+        [
+          "exchange_and_repair.md · 维修后仍有问题"
+        ]
+      ],
+      [
+        "kb-35",
+        "发票抬头写错了能重开吗",
+        [
+          "payment_and_invoice.md · 发票类型",
+          "payment_and_invoice.md · 发票申请时间",
+          "after_sales_policy.md · 发票"
+        ]
+      ],
+      [
+        "kb-36",
+        "怎么才能升金卡",
+        []
+      ],
+      [
+        "kb-41",
+        "我的号好像被别人登了",
+        [
+          "membership.md · 积分获取",
+          "payment_and_invoice.md · 发票换开与作废",
+          "payment_and_invoice.md · 重复扣款"
+        ]
+      ],
+      [
+        "kb-45",
+        "刻了名字的杯子能退吗",
+        [
+          "after_sales_policy.md · 质量问题退换货",
+          "after_sales_policy.md · 七天无理由退货"
+        ]
+      ],
+      [
+        "kb-46",
+        "买的水果到了有坏的",
+        [
+          "after_sales_policy.md · 退款到账时间",
+          "membership.md · 积分获取"
+        ]
+      ],
+      [
+        "kb-48",
+        "空调送到了谁来装",
+        []
+      ]
+    ],
+    "recall@1_by_tag": {
+      "colloquial": 0.3673469387755102,
+      "term": 0.9333333333333333
+    }
+  },
+  {
+    "mode": "vector",
+    "n": 64,
+    "recall@1": 0.953125,
+    "recall@3": 1.0,
+    "mrr@10": 0.9713541666666666,
+    "p50_ms": 109.60614553187042,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 0.9387755102040817,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "hybrid",
+    "n": 64,
+    "recall@1": 0.765625,
+    "recall@3": 0.953125,
+    "mrr@10": 0.8598958333333333,
+    "p50_ms": 107.22845909185708,
+    "misses": [
+      [
+        "kb-02",
+        "东西坏了退回去，快递费谁掏",
+        [
+          "shipping_logistics.md · 快递丢失或破损",
+          "promotions_and_price.md · 赠品规则",
+          "shipping_logistics.md · 拒收与改派"
+        ]
+      ],
+      [
+        "kb-06",
+        "耳机用了两个月坏了，还管修吗",
+        [
+          "membership.md · 积分使用",
+          "exchange_and_repair.md · 维修后仍有问题",
+          "membership.md · 会员等级"
+        ]
+      ],
+      [
+        "kb-16",
+        "付完款一般多久发出",
+        [
+          "after_sales_policy.md · 发票",
+          "payment_and_invoice.md · 发票申请时间",
+          "after_sales_policy.md · 运费险"
+        ]
+      ]
+    ],
+    "recall@1_by_tag": {
+      "colloquial": 0.7142857142857143,
+      "term": 0.9333333333333333
+    }
+  },
+  {
+    "mode": "vector+rr:model",
+    "n": 64,
+    "recall@1": 0.984375,
+    "recall@3": 1.0,
+    "mrr@10": 0.9921875,
+    "p50_ms": 215.4308125609532,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 0.9795918367346939,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "hybrid+rr:model",
+    "n": 64,
+    "recall@1": 0.984375,
+    "recall@3": 1.0,
+    "mrr@10": 0.9921875,
+    "p50_ms": 206.8163335788995,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 0.9795918367346939,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "vector+rr:llm",
+    "n": 64,
+    "recall@1": 1.0,
+    "recall@3": 1.0,
+    "mrr@10": 1.0,
+    "p50_ms": 1676.6469379654154,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 1.0,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "hybrid+rr:llm",
+    "n": 64,
+    "recall@1": 0.984375,
+    "recall@3": 1.0,
+    "mrr@10": 0.9921875,
+    "p50_ms": 1676.9811453996226,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 0.9795918367346939,
+      "term": 1.0
+    }
+  }
+]

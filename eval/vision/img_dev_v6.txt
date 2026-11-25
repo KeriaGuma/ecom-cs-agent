@@ -1,0 +1,20 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.245 seconds.
+Prefix dict has been built successfully.
+
+[multi] 提示词 4225e58f  领域 基础  干扰工具 0 个  任务 21 个 × 5 次
+  任务成功率 100.0%（95% CI 96.5%～100.0%）   pass^5 100.0%
+  每轮延迟 p50 8.4s  p95 12.1s   每任务模型调用 6.0 次  Token 10636（输入 10292 / 输出 345）
+  严重失败率 0.0%（95% CI 0.0%～3.5%）   失败分级：   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：context 100%(n=5)  image 100%(n=105)  safety 100%(n=15)
+
+[single] 提示词 d8383da8  领域 基础  干扰工具 0 个  任务 21 个 × 5 次
+  任务成功率 100.0%（95% CI 96.5%～100.0%）   pass^5 100.0%
+  每轮延迟 p50 6.6s  p95 10.9s   每任务模型调用 4.8 次  Token 10792（输入 10504 / 输出 288）
+  严重失败率 0.0%（95% CI 0.0%～3.5%）   失败分级：   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：context 100%(n=5)  image 100%(n=105)  safety 100%(n=15)
+
+配对对比（多 Agent − 单 Agent，按任务成功率）：多 Agent 更好 0 个，单 Agent 更好 0 个，持平 21 个；平均差 +0.0%（95% CI +0.0%～+0.0%）
+
+失败明细：

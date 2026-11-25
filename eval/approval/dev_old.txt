@@ -1,0 +1,12 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.275 seconds.
+Prefix dict has been built successfully.
+
+[single] 提示词 fa290203  领域 基础  干扰工具 0 个  任务 12 个 × 3 次
+  任务成功率 100.0%（95% CI 90.4%～100.0%）   pass^3 100.0%
+  每轮延迟 p50 6.2s  p95 8.4s   每任务模型调用 4.4 次  Token 8164（输入 7865 / 输出 299）
+  严重失败率 0.0%（95% CI 0.0%～9.6%）   失败分级：   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 100%(n=36)  context 100%(n=6)  multi 100%(n=18)  policy 100%(n=3)  simple 100%(n=12)  write 100%(n=36)
+
+失败明细：

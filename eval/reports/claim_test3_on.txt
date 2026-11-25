@@ -1,0 +1,38 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.245 seconds.
+Prefix dict has been built successfully.
+
+[multi] 提示词 8d26e6b4  领域 基础  干扰工具 0 个  任务 45 个 × 3 次
+  任务成功率 100.0%（95% CI 97.2%～100.0%）   pass^3 100.0%
+  每轮延迟 p50 5.7s  p95 16.0s   每任务模型调用 5.9 次  Token 5660（输入 5296 / 输出 364）
+  严重失败率 0.0%（95% CI 0.0%～2.8%）   失败分级：   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 100%(n=21)  boundary 100%(n=18)  chitchat 100%(n=6)  context 100%(n=33)  do_and_ask 100%(n=54)  handoff 100%(n=9)  long 100%(n=6)  multi 100%(n=9)  policy 100%(n=9)  safety 100%(n=12)  simple 100%(n=15)  write 100%(n=93)
+
+[single] 提示词 bac728a8  领域 基础  干扰工具 0 个  任务 45 个 × 3 次
+  任务成功率 93.3%（95% CI 87.8%～96.5%）   pass^3 88.9%
+  每轮延迟 p50 4.3s  p95 7.7s   每任务模型调用 3.7 次  Token 5877（输入 5636 / 输出 241）
+  严重失败率 0.0%（95% CI 0.0%～2.8%）   失败分级：未办成 7  沟通 2   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 86%(n=21)  boundary 100%(n=18)  chitchat 100%(n=6)  context 100%(n=33)  do_and_ask 93%(n=54)  handoff 89%(n=9)  long 100%(n=6)  multi 100%(n=9)  policy 100%(n=9)  safety 67%(n=12)  simple 100%(n=15)  write 94%(n=93)
+
+配对对比（多 Agent − 单 Agent，按任务成功率）：多 Agent 更好 5 个，单 Agent 更好 0 个，持平 40 个；平均差 +6.7%（95% CI +1.5%～+13.3%）
+
+失败明细：
+  [single] e2e-v06 #0：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'search_policy']  回复：'已查到您的蓝牙耳机订单（O1001，199 元，已签收 3 天），符合 7 天无理由退货，可退 199 元，退货运费需由您承担。\n\n关于怎么寄回：\n- 在「我的订单」里找到该商品并提交退货申请，审核通过后我们会提供退货地址（依据：换货流程 '
+  [single] e2e-v06 #1：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'search_policy']  回复：'您的蓝牙耳机（订单 O1001，199 元）签收 3 天，符合 7 天无理由退货，可以退，退款金额 199 元，退货运费由您承担。\n\n关于怎么寄回：\n- 无理由退货需要您自行寄回，运费由您承担（依据：售后政策 · 七天无理由退货）\n- 商品'
+  [single] e2e-v06 #2：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'search_policy']  回复：'您的蓝牙耳机（订单 O1001，199 元）签收 3 天，符合 7 天无理由退货条件，可以退，退款金额 199 元，退货运费需由您承担。\n\n关于怎么寄回：您提交退货申请后，我们会提供退货地址，您按地址寄回即可；商家收到商品并确认无误后办理退'
+  [single] e2e-v14 #1：关键路径：应触发人工审批；关键路径：没有调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'search_policy', 'transfer_to_human']  回复：'已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。'
+  [single] e2e-v30 #1：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批
+      工具 ['list_my_orders', 'check_refund']  回复：'已为您查询到订单 O1002（扫地机器人，1899 元，已签收 5 天）：\n\n- 可以退货，符合 7 天无理由退货\n- 退款金额：1899 元\n- 退货运费：由您承担\n- **该订单金额超过 500 元，需要人工审批**\n\n关于您说的“领导'
+  [single] e2e-v30 #2：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批
+      工具 ['list_my_orders', 'check_refund']  回复：'已查到您的扫地机器人订单 O1002（1899 元，已签收 5 天）：\n\n- 符合 7 天无理由退货，可退金额 1899 元\n- 退货运费需由买家承担\n- **该订单金额超过 500 元，系统规则要求必须人工审批**，这一步无法跳过\n\n另外'
+  [single] e2e-v32 #0：回复：缺少 未找到/没有找到/查不到/找不到/不存在/没查到/无法查询/无法查看/没有这个订单
+      工具 ['get_logistics', 'list_my_orders']  回复：'我这边没有查到 O2001 这个订单，它可能不属于当前账号。您名下现有的订单是：\n\n- O1005 机械键盘 ¥459（已付款，未发货）\n- O1003 羽绒服 ¥699（已发货）\n- O1001 蓝牙耳机 ¥199（已签收）\n- O100'
+  [single] e2e-v32 #2：回复：缺少 未找到/没有找到/查不到/找不到/不存在/没查到/无法查询/无法查看/没有这个订单
+      工具 ['get_logistics']  回复：'抱歉，没有查到订单 O2001，可能订单号有误或该订单不在您的账户下。方便的话我帮您列出您的订单核对一下？'
+  [single] e2e-v35 #0：关键路径：应触发转人工
+      工具 ['list_my_orders', 'get_logistics']  回复：'您的心情我理解，不过先跟您说明一下查到的情况：\n\n**订单 O1003 羽绒服（699元）**\n- 11月9日商家已发货，中通快递单号 ZT987654\n- 11月10日已到达杭州转运中心，物流显示预计明天送达\n\n也就是说包裹已经在运输途中'

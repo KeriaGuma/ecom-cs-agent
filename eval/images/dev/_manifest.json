@@ -1,0 +1,125 @@
+{
+ "d01": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "c2bc1254",
+  "seconds": 23.6,
+  "at": "2026-11-11 18:27:03"
+ },
+ "d02": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "66df39fd",
+  "seconds": 19.5,
+  "at": "2026-11-11 18:26:59"
+ },
+ "d03": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "e4eb41f1",
+  "seconds": 25.9,
+  "at": "2026-11-11 18:26:31"
+ },
+ "d04": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "2bf2cc03",
+  "blur_radius": 18.0,
+  "seconds": 22.0,
+  "at": "2026-11-11 18:35:22"
+ },
+ "d05": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "d332eaf2",
+  "seconds": 22.3,
+  "at": "2026-11-11 18:27:22"
+ },
+ "d06": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "f6a5ac11",
+  "seconds": 20.3,
+  "at": "2026-11-11 18:30:14"
+ },
+ "d07": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "ca1412b5",
+  "seconds": 31.2,
+  "at": "2026-11-11 18:27:35"
+ },
+ "d08": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "e66671b7",
+  "seconds": 21.3,
+  "at": "2026-11-11 18:27:43",
+  "note": "生成了多版，人工挑选要点最清楚的一版"
+ },
+ "d09": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "0932395c",
+  "seconds": 21.8,
+  "at": "2026-11-11 18:27:57"
+ },
+ "d10": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "e4dca315",
+  "seconds": 22.3,
+  "at": "2026-11-11 18:28:05"
+ },
+ "d11": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "744aa821",
+  "seconds": 20.8,
+  "at": "2026-11-11 18:28:17"
+ },
+ "d12": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "7685c374",
+  "seconds": 25.6,
+  "at": "2026-11-11 18:28:31"
+ },
+ "d13": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "52ef02c0",
+  "seconds": 20.1,
+  "at": "2026-11-11 18:28:37"
+ },
+ "d14": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "3c4b0b05",
+  "seconds": 19.6,
+  "at": "2026-11-11 18:28:50"
+ },
+ "d15": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "b8b07af7",
+  "seconds": 21.1,
+  "at": "2026-11-11 18:28:59"
+ },
+ "d16": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "b4497220",
+  "seconds": 19.6,
+  "at": "2026-11-11 18:29:10"
+ },
+ "d17": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "862cf0ed",
+  "seconds": 21.0,
+  "at": "2026-11-11 18:29:20"
+ },
+ "d18": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "fdc67966",
+  "seconds": 22.3,
+  "at": "2026-11-11 18:29:32"
+ },
+ "d19": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "497035e9",
+  "seconds": 20.1,
+  "at": "2026-11-11 18:29:40",
+  "note": "生成了多版，人工挑选要点最清楚的一版"
+ },
+ "d20": {
+  "model": "qwen-image-3.0",
+  "prompt_sha": "c9dd531c",
+  "seconds": 15.5,
+  "at": "2026-11-11 18:29:48"
+ }
+}

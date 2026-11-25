@@ -1,0 +1,18 @@
+{"id": "dd-points-reissue", "user_id": "u001", "turns": ["扫地机器人那单的积分好像一直没到账"], "expect": {"db": {"points": {"balance": 3159}}, "tools_called": ["reissue_points"]}, "domains": ["points"], "tags": ["domain", "write"]}
+{"id": "dd-points-check", "user_id": "u001", "turns": ["我现在有多少积分"], "expect": {"db": {}, "reply": [["1260"]]}, "domains": ["points"], "tags": ["domain", "simple"]}
+{"id": "dd-points-exchange", "user_id": "u001", "turns": ["用积分给我换一张 10 块的券"], "expect": {"db": {"points": {"balance": 260}}}, "domains": ["points"], "tags": ["domain", "write"]}
+{"id": "dd-points-insufficient", "user_id": "u001", "turns": ["积分换张 20 元的优惠券"], "expect": {"db": {}}, "domains": ["points"], "tags": ["domain", "boundary"]}
+{"id": "dd-invoice-normal", "user_id": "u001", "turns": ["耳机那单帮我开个电子普通发票，抬头写个人就行"], "expect": {"db": {"invoices": {"O1001": {"type": "normal", "title": "个人"}}}}, "domains": ["invoice"], "tags": ["domain", "write"]}
+{"id": "dd-invoice-special-missing", "user_id": "u001", "turns": ["扫地机器人那单开增值税专用发票，抬头杭州云帆科技有限公司"], "expect": {"db": {}}, "domains": ["invoice"], "tags": ["domain", "boundary"]}
+{"id": "dd-invoice-special", "user_id": "u001", "turns": ["扫地机器人那单开增值税专用发票，抬头杭州云帆科技有限公司", "税号是 91330106MA2KXXXX7Q"], "expect": {"db": {"invoices": {"O1002": {"type": "special", "title": "杭州云帆科技有限公司", "tax_id": "91330106MA2KXXXX7Q"}}}}, "domains": ["invoice"], "tags": ["domain", "write", "context"]}
+{"id": "dd-invoice-undelivered", "user_id": "u001", "turns": ["键盘那单先给我把发票开了，个人抬头"], "expect": {"db": {}}, "domains": ["invoice"], "tags": ["domain", "boundary"]}
+{"id": "dd-coupon-refund-return", "user_id": "u001", "turns": ["耳机不想要了退掉吧，下单时用的那张券也退给我"], "expect": {"db": {"O1001": {"status": "refunded", "refund_amount": 199}, "coupons": {"C01": {"status": "unused"}}, "points": {"balance": 1061}}}, "domains": ["coupon"], "tags": ["domain", "write", "cross"]}
+{"id": "dd-coupon-expired", "user_id": "u001", "turns": ["保温杯那单用的券能还我吗"], "expect": {"db": {}}, "domains": ["coupon"], "tags": ["domain", "boundary"]}
+{"id": "dd-repair-watch", "user_id": "u001", "turns": ["手表屏幕突然不亮了，帮我申请维修"], "expect": {"db": {"repairs": {"O1006": {"status": "pending", "paid": false}}}}, "domains": ["repair"], "tags": ["domain", "write"]}
+{"id": "dd-repair-human", "user_id": "u001", "turns": ["手表不小心进水了，帮我送修"], "expect": {"db": {"repairs": {"O1006": {"status": "pending", "paid": true}}}}, "domains": ["repair"], "tags": ["domain", "write"]}
+{"id": "dd-repair-within15", "user_id": "u001", "turns": ["耳机右耳没声音了，帮我申请个维修"], "expect": {"db": {"repairs": {}}}, "domains": ["repair"], "tags": ["domain", "boundary", "cross"]}
+{"id": "dd-price-earphone", "user_id": "u001", "turns": ["耳机买完就降价了，能补差价吗"], "expect": {"db": {"price_protect": {"O1001": 30}}}, "domains": ["price"], "tags": ["domain", "write"]}
+{"id": "dd-price-flash", "user_id": "u001", "turns": ["吹风机降价了，我要申请价保"], "expect": {"db": {}}, "domains": ["price"], "tags": ["domain", "boundary"]}
+{"id": "dd-price-expired", "user_id": "u001", "turns": ["手表现在便宜了一百，给我价保"], "expect": {"db": {}}, "domains": ["price"], "tags": ["domain", "boundary"]}
+{"id": "dd-cross-watch-refund", "user_id": "u001", "turns": ["手表坏了，帮我退了吧"], "expect": {"db": {}}, "domains": ["repair"], "tags": ["domain", "boundary", "cross"]}
+{"id": "dd-cross-multi", "user_id": "u001", "turns": ["耳机降价了帮我申请价保，另外扫地机器人开个普通发票，抬头个人"], "expect": {"db": {"price_protect": {"O1001": 30}, "invoices": {"O1002": {"type": "normal", "title": "个人"}}}}, "domains": ["price", "invoice"], "tags": ["domain", "write", "multi", "cross"]}

@@ -1,0 +1,22 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.241 seconds.
+Prefix dict has been built successfully.
+
+[multi] 提示词 4225e58f  领域 基础  干扰工具 0 个  任务 12 个 × 3 次
+  任务成功率 100.0%（95% CI 90.4%～100.0%）   pass^3 100.0%
+  每轮延迟 p50 6.7s  p95 13.1s   每任务模型调用 9.6 次  Token 13231（输入 12647 / 输出 584）
+  严重失败率 0.0%（95% CI 0.0%～9.6%）   失败分级：   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 100%(n=15)  context 100%(n=33)  multi 100%(n=6)  write 100%(n=33)
+
+[single] 提示词 d8383da8  领域 基础  干扰工具 0 个  任务 12 个 × 3 次
+  任务成功率 97.2%（95% CI 85.8%～99.5%）   pass^3 91.7%
+  每轮延迟 p50 4.7s  p95 7.8s   每任务模型调用 6.7 次  Token 14134（输入 13744 / 输出 390）
+  严重失败率 0.0%（95% CI 0.0%～9.6%）   失败分级：未办成 1   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 93%(n=15)  context 97%(n=33)  multi 100%(n=6)  write 97%(n=33)
+
+配对对比（多 Agent − 单 Agent，按任务成功率）：多 Agent 更好 1 个，单 Agent 更好 0 个，持平 11 个；平均差 +2.8%（95% CI +0.0%～+8.3%）
+
+失败明细：
+  [single] fd03 #1：关键路径：应触发人工审批；回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'search_policy']  回复：'退款到账时间要看审核通过后的退款方式（来源：售后政策 · 退款到账时间）：\n\n- 支付宝、微信：1–3 个工作日\n- 银行卡：3–7 个工作日\n\n另外提醒一下，这台扫地机器人（O1002，1899 元）符合 7 天无理由退货，退货运费需要您'

@@ -1,0 +1,90 @@
+{
+  "n": 55,
+  "correct": 55,
+  "accuracy": 1.0,
+  "ci95": [
+    0.9347128562105721,
+    0.9999999999999999
+  ],
+  "recall_by_label": {
+    "order_agent": {
+      "n": 11,
+      "recall": 1.0
+    },
+    "refund_agent": {
+      "n": 14,
+      "recall": 1.0
+    },
+    "kb_agent": {
+      "n": 10,
+      "recall": 1.0
+    },
+    "handoff_human": {
+      "n": 6,
+      "recall": 1.0
+    },
+    "FINISH": {
+      "n": 8,
+      "recall": 1.0
+    },
+    "clarify": {
+      "n": 6,
+      "recall": 1.0
+    }
+  },
+  "acc_by_tag": {
+    "single": {
+      "n": 40,
+      "acc": 1.0
+    },
+    "context": {
+      "n": 6,
+      "acc": 1.0
+    },
+    "hard": {
+      "n": 7,
+      "acc": 1.0
+    },
+    "multi": {
+      "n": 6,
+      "acc": 1.0
+    },
+    "partial": {
+      "n": 5,
+      "acc": 1.0
+    },
+    "colloquial": {
+      "n": 2,
+      "acc": 1.0
+    },
+    "adversarial": {
+      "n": 2,
+      "acc": 1.0
+    }
+  },
+  "p50_ms": 1446.1576659232378,
+  "p95_ms": 3152.760417200625,
+  "errors": [],
+  "confusion": {
+    "order_agent": {
+      "order_agent": 11
+    },
+    "refund_agent": {
+      "refund_agent": 14
+    },
+    "kb_agent": {
+      "kb_agent": 10
+    },
+    "handoff_human": {
+      "handoff_human": 6
+    },
+    "FINISH": {
+      "FINISH": 8
+    },
+    "clarify": {
+      "clarify": 6
+    }
+  },
+  "model": "deepseek-flash",
+  "split": "dev"
+}

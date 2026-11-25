@@ -1,0 +1,14 @@
+qwen3.7-flash          清楚与否 0.967  外观问题 0.96  完好被说成有问题 0.0(n=16)  物品 0.967  p50 1131ms  出错 0
+    t05.jpg#0 ['issue_ok']  标注={'item': '扫地机器人（底面）', 'visible_issue': '右前方边刷缺失，只剩安装轴', 'usable': True}  识别=扫地机器人/True/无/外观完好，未见明显问题
+    t05.jpg#1 ['issue_ok']  标注={'item': '扫地机器人（底面）', 'visible_issue': '右前方边刷缺失，只剩安装轴', 'usable': True}  识别=扫地机器人/True/无/外观完好，未见明显问题
+    t18.jpg#0 ['item_ok']  标注={'item': '蓝牙耳机充电仓（严重模糊）', 'visible_issue': '无', 'usable': False}  识别=白色椭圆形电子设备/False/看不清/照片严重失焦模糊，无法看清物品表面细节及具体外观特征
+    t18.jpg#1 ['item_ok']  标注={'item': '蓝牙耳机充电仓（严重模糊）', 'visible_issue': '无', 'usable': False}  识别=白色椭圆形电子设备/False/看不清/照片严重失焦模糊，无法看清物品表面细节及具体外观问题
+    t19.jpg#0 ['usable_ok']  标注={'item': '扫地机器人包装纸箱（未拆封）', 'visible_issue': '无', 'usable': False}  识别=扫地机器人包装箱/True/无/外观完好，未见明显问题
+    t19.jpg#1 ['usable_ok']  标注={'item': '扫地机器人包装纸箱（未拆封）', 'visible_issue': '无', 'usable': False}  识别=扫地机器人包装盒/True/无/外观完好，未见明显问题
+qwen3-vl-plus          清楚与否 1.0  外观问题 0.96  完好被说成有问题 0.0(n=16)  物品 0.933  p50 1899ms  出错 0
+    t05.jpg#0 ['issue_ok']  标注={'item': '扫地机器人（底面）', 'visible_issue': '右前方边刷缺失，只剩安装轴', 'usable': True}  识别=扫地机器人/True/无/外观完好，未见明显问题
+    t05.jpg#1 ['issue_ok']  标注={'item': '扫地机器人（底面）', 'visible_issue': '右前方边刷缺失，只剩安装轴', 'usable': True}  识别=扫地机器人/True/无/外观完好，未见明显问题
+    t18.jpg#0 ['item_ok']  标注={'item': '蓝牙耳机充电仓（严重模糊）', 'visible_issue': '无', 'usable': False}  识别=看不清具体物品，疑似白色椭圆形小物件/False/看不清/照片严重模糊，无法辨识物品具体类型及表面状况
+    t18.jpg#1 ['item_ok']  标注={'item': '蓝牙耳机充电仓（严重模糊）', 'visible_issue': '无', 'usable': False}  识别=看不清具体物品，疑似白色椭圆形小物件/False/看不清/照片严重模糊，无法辨识物品具体类型及表面状况
+    t19.jpg#0 ['item_ok']  标注={'item': '扫地机器人包装纸箱（未拆封）', 'visible_issue': '无', 'usable': False}  识别=纸箱包装/False/看不清/照片仅显示一个未拆封的纸箱，未展示内部物品本身
+    t19.jpg#1 ['item_ok']  标注={'item': '扫地机器人包装纸箱（未拆封）', 'visible_issue': '无', 'usable': False}  识别=纸箱包装盒/False/看不清/照片仅显示一个未拆封的纸箱，无法看到内部物品及表面细节

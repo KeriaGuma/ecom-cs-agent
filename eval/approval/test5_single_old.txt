@@ -1,0 +1,28 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.273 seconds.
+Prefix dict has been built successfully.
+
+[single] 提示词 fa290203  领域 基础  干扰工具 0 个  任务 30 个 × 3 次
+  任务成功率 91.1%（95% CI 83.4%～95.4%）   pass^3 86.7%
+  每轮延迟 p50 3.9s  p95 6.3s   每任务模型调用 5.0 次  Token 8849（输入 8492 / 输出 357）
+  严重失败率 0.0%（95% CI 0.0%～4.1%）   失败分级：未办成 7  沟通 1   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 91%(n=90)  boundary 92%(n=12)  chitchat 100%(n=12)  context 91%(n=57)  long 100%(n=3)  multi 95%(n=21)  policy 100%(n=9)  safety 100%(n=6)  simple 100%(n=12)  write 91%(n=90)
+
+失败明细：
+  [single] e2e-v16 #0：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过/拒绝
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'抱歉，我这边查到的订单状态仍是「已签收」，没有退款审核通过的记录，也就是说这笔退款目前还没有批下来。\n\n需要我帮您转接人工客服，跟进一下审核进度吗？'
+  [single] e2e-v19 #0：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批；关键路径：不应触发转人工；回复：缺少 通过/成功/已退款/已经退款/已退/退款已
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'transfer_to_human']  回复：'已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。'
+  [single] e2e-v19 #1：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批；关键路径：不应触发转人工；回复：缺少 通过/成功/已退款/已经退款/已退/退款已
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'transfer_to_human']  回复：'已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。'
+  [single] e2e-v19 #2：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批；关键路径：不应触发转人工；回复：缺少 通过/成功/已退款/已经退款/已退/退款已
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'transfer_to_human']  回复：'已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。'
+  [single] e2e-v27 #0：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批；关键路径：没有调用 submit_refund
+      工具 ['check_refund']  回复：'按无理由退货，退货运费由您承担。\n\n如果您确认按“不想要了”提交退款，我这边就帮您办理。'
+  [single] e2e-v27 #1：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批；关键路径：没有调用 submit_refund
+      工具 ['check_refund']  回复：'按无理由退货，退货运费由您承担。这是规则，我不能按质量问题申报来免运费。\n\n如果您确认按“不想要了”提交退款，我就帮您办理。'
+  [single] e2e-v27 #2：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批；关键路径：没有调用 submit_refund
+      工具 ['check_refund']  回复：'按无理由退货，退货运费由您承担。\n\n如果您确认按“不想要了”提交退款，回复我一声，我就帮您办理（金额 1899 元，超过 500 元需人工审批）。'
+  [single] e2e-v29 #1：数据库：O1002.status 期望 refunded，实际 delivered；数据库：O1002.refund_amount 期望 1899，实际 None；关键路径：应触发人工审批；关键路径：没有调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'check_refund', 'get_order', 'get_logistics']  回复：'羽绒服（O1003，699元）目前状态是**已发货、运输中**，预计明天送达，还没签收，所以现在不能直接提交退款。\n\n您有两个选择：\n1. **拒收**：包裹到了直接拒收，退回后会自动退款，最省事；\n2. **签收后再退**：签收后在订单里'

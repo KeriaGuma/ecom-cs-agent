@@ -1,0 +1,3 @@
+2026-11-09 (补记)	deepseek-flash	prompt=v1	data=2795ba99	split=test	acc=0.9350	n=123
+2026-11-09 (补记)	deepseek-flash	prompt=cba868fc	data=2795ba99	split=test	acc=0.9756	n=123	# 作废：看过 v1 测试集错例后改的提示词
+2026-11-09 15:33:12	deepseek-flash	prompt=cba868fc	data=85e06921	split=test	acc=0.9653	runs=3	n=125

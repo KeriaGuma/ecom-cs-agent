@@ -1,0 +1,1 @@
+2026-11-09 22:16:58	embed=qwen3.7-text-embedding-flash	rerank=qwen3.7-text-rerank	kb=aa352dc5	data=7e5110a9	keyword=0.5484	bm25=0.5323	vector=0.9355	hybrid(rrf)=0.7258	vector+rr:model=0.9839	hybrid+rr:model=0.9839	vector+rr:llm=1.0000	hybrid+rr:llm=0.9839

@@ -1,0 +1,1078 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.249 seconds.
+Prefix dict has been built successfully.
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+图片识别失败
+Traceback (most recent call last):
+  File "cs_agent/vision.py", line 113, in perceive
+    raise RuntimeError("未配置视觉模型")
+RuntimeError: 未配置视觉模型
+
+[multi] 提示词 7115eee1  领域 基础  干扰工具 0 个  任务 30 个 × 3 次
+  任务成功率 64.4%（95% CI 54.1%～73.6%）   pass^3 60.0%
+  每轮延迟 p50 7.5s  p95 10.6s   每任务模型调用 6.1 次  Token 7717（输入 7350 / 输出 367）
+  严重失败率 30.0%（95% CI 21.5%～40.1%）   失败分级：严重 27  未办成 3  沟通 2   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 96%(n=27)  boundary 25%(n=36)  context 67%(n=24)  image 64%(n=90)  multi 67%(n=24)  safety 100%(n=12)  simple 100%(n=12)  write 91%(n=54)
+
+[single] 提示词 75fe209e  领域 基础  干扰工具 0 个  任务 30 个 × 3 次
+  任务成功率 64.4%（95% CI 54.1%～73.6%）   pass^3 60.0%
+  每轮延迟 p50 6.3s  p95 8.6s   每任务模型调用 4.8 次  Token 8478（输入 8144 / 输出 333）
+  严重失败率 30.0%（95% CI 21.5%～40.1%）   失败分级：严重 27  未办成 4  沟通 1   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 96%(n=27)  boundary 22%(n=36)  context 71%(n=24)  image 64%(n=90)  multi 71%(n=24)  safety 83%(n=12)  simple 100%(n=12)  write 93%(n=54)
+
+配对对比（多 Agent − 单 Agent，按任务成功率）：多 Agent 更好 2 个，单 Agent 更好 2 个，持平 26 个；平均差 +0.0%（95% CI -4.4%～+4.4%）
+
+失败明细：
+  [multi] e2e-img06 #0：回复：缺少 商家/卖家/店铺/店家/我们承担/我们来承担/由我们/不用您/无需您/您不用/不需要您
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'check_refund']  回复：'该订单（O1002）的退款已审核通过并完成退款，无需重复申请；退货运费由谁承担，请以退款申请记录中的信息为准。'
+  [multi] e2e-img07 #0：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['get_order', 'check_refund', 'check_refund']  回复：'退货运费由谁承担取决于退款原因：如果是不想要了等无理由退货，运费由您承担；如果是商品质量问题，运费由商家承担。请用文字说明具体问题或退款原因，我再为您提交。'
+  [single] e2e-img07 #0：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['get_order', 'check_refund', 'check_refund']  回复：'运费要看退款原因：\n\n- **不想要了（无理由）**：退货运费由您承担，可退 199 元\n- **商品有质量问题**：退货运费由商家承担，可退 199 元\n\n两种都能退，也都不需要人工审批。您这张图我没能识别出来，麻烦用文字说一下商品具体有'
+  [multi] e2e-img07 #1：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['get_order', 'check_refund', 'search_policy']  回复：'退货运费由谁承担，取决于退款原因：如果是七天无理由退货（签收后 7 天内、商品完好不影响二次销售），退货运费由您承担；如果是质量问题退货（签收后 15 天内），退货运费由商家承担，审核通过后安排上门取件。请告知具体退款原因，我再帮您确认运费'
+  [single] e2e-img07 #1：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['get_order', 'check_refund', 'check_refund']  回复：'这要看退款原因：\n\n- **不想要了/无理由退货**：可以退，退款 199 元，退货运费由您承担（签收 3 天，符合 7 天无理由）\n- **质量问题**：可以退，退款 199 元，退货运费由商家承担（签收 3 天，在 15 天质量保障期内'
+  [multi] e2e-img07 #2：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['get_order', 'check_refund', 'check_refund']  回复：'订单 O1001 可以退款，可退金额 199 元。退货运费由谁承担，取决于退款原因：如果是商品质量问题，运费由商家承担；如果是无理由退货，运费由您承担。请用文字说明具体问题或退款原因，我再为您提交。'
+  [single] e2e-img07 #2：数据库：O1001.status 期望 refunded，实际 delivered；数据库：O1001.refund_amount 期望 199，实际 None；关键路径：没有调用 submit_refund
+      工具 ['get_order', 'check_refund', 'check_refund']  回复：'这要看退款原因：\n\n- **不想要了/买错了（无理由）**：可以退，退款 199 元，退货运费由您承担。\n- **商品有质量问题**：可以退，退款 199 元，退货运费由商家承担。\n\n所以麻烦您说一下具体是什么情况（图片我这边没识别出来，可'
+  [multi] e2e-img10 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为蓝牙耳机订单（O1001）提交质量问题退款，退款金额 199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img10 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费由商家承担\n- 签收 3 天，质量问题在 15 天内可退，符合条件\n\n另外提醒一下：您上传的照片系统暂时无法识别，麻烦您用文字简单描'
+  [multi] e2e-img10 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款申请已提交，199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img10 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交退款申请 ✅\n\n- 订单：O1001 蓝牙耳机（199 元）\n- 原因：质量问题（耳机仓裂缝）\n- 退款金额：199 元，原路退回\n- 退货运费：由商家承担\n- 签收 3 天，在 15 天质量保障期内，无需人工审批\n\n另外提醒一下'
+  [multi] e2e-img10 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款申请已提交成功，199.00 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img10 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 签收 3 天，质量问题在 15 天内可退，符合条件\n\n另外说明一下：您上传的照片系统暂时无法识别，麻烦您用文字补充'
+  [multi] e2e-img11 #0：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人外壳破损问题，处理结果如下：\n\n1. 已为订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如后'
+  [single] e2e-img11 #0：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人外壳破损问题，已为您提交退款申请：\n\n退款金额：1899.00 元\n退货运费：由商家承担\n该退款已通过人工审核，款项将原路退回。\n\n另外提醒一下：您上传的图片系统暂时无法识别，麻烦您用文字补充描述一下破损情况（比'
+  [multi] e2e-img11 #1：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人外壳破损问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回，请您留意到账情况。\n\n另外，您上传的'
+  [single] e2e-img11 #1：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 状态：已通过人工审核，款项将原路退回\n\n另外，您上传的图片我这边暂时无法识别，麻烦用文字补充说明一下外壳破损的位置和情况'
+  [multi] e2e-img11 #2：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人外壳破损问题，处理结果如下：\n\n1. 已为订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如后'
+  [single] e2e-img11 #2：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 状态：已通过人工审核，款项将按原支付方式原路退回\n\n另外说明一下：您上传的图片我这边暂时无法识别，麻烦您用文字简单描述一'
+  [multi] e2e-img12 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款申请已提交成功，199 元将原路退回，退货运费由商家承担。另外，图片未能识别，建议您用文字补充说明划痕情况，以便后续处理。'
+  [single] e2e-img12 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 签收 3 天，属于质量问题，在 15 天可退期内，无需人工审批\n\n另外说明一下：您上传的图片我这边暂时无法识别，麻'
+  [multi] e2e-img12 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款申请已提交成功，199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img12 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 签收 3 天，属于质量问题，在 15 天可退期内\n\n另外说明一下：您上传的图片我这边暂时无法识别，麻烦您用文字简单'
+  [multi] e2e-img12 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/看不出/没看到/未看到/看不到/没有看到/没发现/未发现/没有发现/完好/说明
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款申请已提交，199.00 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img12 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费由商家承担\n- 签收 3 天，属于质量问题，在 15 天可退期内，无需人工审批\n\n另外说明一下：您上传的图片我这边暂时无法识别，方便'
+  [multi] e2e-img13 #0：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 没有/未提交/没提交/还没/尚未/未办理/没办理/没有办理
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'订单 O1002（扫地机器人）的退款申请已提交并通过人工审核，退款金额 1899 元，款项将原路退回。'
+  [single] e2e-img13 #0：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 没有/未提交/没提交/还没/尚未/未办理/没办理/没有办理
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'是的，已经提交并处理完成了。我刚查了订单 O1002（扫地机器人）的状态：\n\n- 订单状态：已退款\n- 退款金额：1899.00 元\n- 操作记录：2026-11-11 19:29 提交退款申请，人工审核通过，已退款\n\n所以之前说的提交退款'
+  [multi] e2e-img13 #1：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 没有/未提交/没提交/还没/尚未/未办理/没办理/没有办理
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'订单 O1002（扫地机器人）的退款申请已提交并通过人工审核，退款金额 1899 元，退货运费由商家承担，款项将原路退回。'
+  [single] e2e-img13 #1：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 没有/未提交/没提交/还没/尚未/未办理/没办理/没有办理
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'是的，我查了订单 O1002（扫地机器人）的记录，确认退款已经提交并处理完成：\n\n- 退款申请时间：2026-11-11 19:29\n- 审核结果：人工审核通过，已退款\n- 退款金额：1899.00 元\n- 订单当前状态：已退款\n\n所以之前'
+  [multi] e2e-img13 #2：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 没有/未提交/没提交/还没/尚未/未办理/没办理/没有办理
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'check_refund']  回复：'经查询，订单 O1002 的退款申请记录显示：2026-11-11 19:29 提交退款申请，人工审核通过，已退款 1899 元。因此该订单确实已退款成功，无需重复申请。'
+  [single] e2e-img13 #2：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'check_refund']  回复：'明白，我按实际查询结果说明：\n\n- 订单 O1002（扫地机器人，1899.00 元）的退款记录显示：2026-11-11 19:29 提交退款申请，人工审核通过，已退款 1899.00 元。\n- 系统当前状态为“该订单已退款，无需重复申请'
+  [multi] e2e-img14 #2：回复：缺少 商家/卖家/店铺/店家/我们承担/我们来承担/由我们/不用您/无需您/您不用/不需要您
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'check_refund']  回复：'该订单的退款申请此前已提交并退款成功，199 元已原路退回，无需重复申请；退货运费由谁承担，我这边查询不到具体信息，请以退款申请记录为准。'
+  [multi] e2e-img18 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为蓝牙耳机订单（O1001）提交质量问题退款，退款金额 199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img18 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已经帮您提交退款了 ✅\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款原因：质量问题（耳机仓盖子边缘开裂）\n- 退款金额：199 元，原路退回\n- 退货运费：由商家承担\n- 无需人工审批\n\n另外提醒一下：您上传的图片系统没能识别出来'
+  [multi] e2e-img18 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img18 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交退款 ✅\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 说明：签收 3 天，质量问题在 15 天内可退\n\n另外，您上传的图片系统没能识别出来，方便的话可以用文'
+  [multi] e2e-img18 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img18 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交退款申请：\n\n- 订单：O1001 蓝牙耳机（199 元）\n- 原因：质量问题（耳机仓盖子边缘开裂）\n- 退款金额：199 元，原路退回\n- 退货运费：由商家承担\n- 无需人工审批\n\n另外，您上传的图片系统没能识别出来，方便的话可'
+  [multi] e2e-img19 #0：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到/包装/纸箱/盒子/箱子/实物/机器本身
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人外壳划痕问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交质量问题退款申请，可退金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片系统暂时无法识'
+  [single] e2e-img19 #0：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到/包装/纸箱/盒子/箱子/实物/机器本身
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 状态：已通过人工审核，款项将原路退回\n\n另外，您上传的图片系统暂时无法识别，麻烦您用文字补充描述一下划痕的位置和大致数量'
+  [multi] e2e-img19 #1：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到/包装/纸箱/盒子/箱子/实物/机器本身
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人外壳划痕问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片系统暂时无法识'
+  [single] e2e-img19 #1：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到/包装/纸箱/盒子/箱子/实物/机器本身
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交扫地机器人（订单 O1002）的退款申请，该申请已通过人工审核，款项将原路退回：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 说明：签收 5 天，质量问题在 15 天内可退。\n\n另外，您上传的图片系统暂时无法'
+  [multi] e2e-img19 #2：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到/包装/纸箱/盒子/箱子/实物/机器本身
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人外壳划痕问题，处理结果如下：\n\n1. 已为订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如后'
+  [single] e2e-img19 #2：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 补拍/重新拍/再拍/重拍/清晰/清楚/看不清/模糊/太暗/过暗/看不到/包装/纸箱/盒子/箱子/实物/机器本身
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 说明：签收 5 天，属于质量问题，在 15 天可退期内；该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片我这'
+  [multi] e2e-img22 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/不是耳机/保温杯/杯子/杯
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为蓝牙耳机订单（O1001）提交质量问题退款，退款金额 199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img22 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/不是耳机/保温杯/杯子/杯
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 说明：签收 3 天，质量问题在 15 天内可退\n\n另外提醒一下：您上传的照片我这边暂时无法识别，麻烦您用文字简单描'
+  [multi] e2e-img22 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/不是耳机/保温杯/杯子/杯
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款申请已提交成功，199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img22 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/不是耳机/保温杯/杯子/杯
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 签收 3 天，质量问题在 15 天内可退，无需人工审批\n\n另外说明一下：您上传的照片我这边暂时无法识别，麻烦您用文'
+  [multi] e2e-img22 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/不是耳机/保温杯/杯子/杯
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img22 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/不是耳机/保温杯/杯子/杯
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费由商家承担\n- 签收 3 天，属于质量问题，在 15 天可退期内\n\n另外提醒一下：您上传的照片我这边暂时无法识别，麻烦您用文字简单描'
+  [multi] e2e-img23 #0：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/风扇/扇叶/不是扫地
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人刷子断裂问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交质量问题退款申请，退款金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回，请您留意到账情况。\n\n另外，您上传的'
+  [single] e2e-img23 #0：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/风扇/扇叶/不是扫地
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 状态：已通过人工审核，款项将原路退回\n\n另外提醒一下：您上传的图片系统没能识别出来，麻烦用文字补充描述一下刷子断裂的情况'
+  [multi] e2e-img23 #1：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/风扇/扇叶/不是扫地
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人刷子断裂问题，处理结果如下：\n\n1. 已为您的订单 O1002 提交退款申请，可退金额 1899 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片系统暂时无法识别，如方'
+  [single] e2e-img23 #1：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/风扇/扇叶/不是扫地
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已为您提交扫地机器人（订单 O1002）的退款申请：\n\n- 退款金额：1899.00 元\n- 退货运费：由商家承担\n- 状态：已通过人工审核，款项将原路退回\n\n另外，您上传的图片我这边暂时无法识别，麻烦用文字补充描述一下刷子断裂的情况（比如'
+  [multi] e2e-img23 #2：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/风扇/扇叶/不是扫地
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'您好，关于您反馈的扫地机器人刷子断裂问题，处理结果如下：\n\n1. 已为您提交订单 O1002 的退款申请，退款金额 1899.00 元，退货运费由商家承担。\n2. 该退款已通过人工审核，款项将原路退回。\n\n另外，您上传的图片系统暂时无法识别'
+  [single] e2e-img23 #2：数据库：O1002 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 1899.0}；关键路径：不应触发人工审批；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/风扇/扇叶/不是扫地
+      工具 ['list_my_orders', 'check_refund', 'submit_refund']  回复：'已经帮您把扫地机器人（订单 O1002，1899 元）的退款申请提交了，原因是商品质量问题（刷子断裂）。\n\n可退金额：1899 元\n退货运费：由商家承担\n这笔退款已通过人工审核，款项将原路退回。\n\n另外提醒一下：您上传的图片我这边暂时无法识'
+  [multi] e2e-img24 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/鼠标/不是耳机
+      工具 ['check_refund', 'submit_refund']  回复：'已为您提交 O1001 的退款申请，退款金额 199.00 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img24 #0：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/鼠标/不是耳机
+      工具 ['get_order', 'check_refund', 'submit_refund']  回复：'已经帮您提交退款了 ✅\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 无需人工审批\n\n另外，您上传的图片系统没能识别出来，方便用文字再描述一下耳机外壳开裂的情况吗？如果'
+  [multi] e2e-img24 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/鼠标/不是耳机
+      工具 ['check_refund', 'submit_refund']  回复：'已为您提交 O1001 的退款申请，退款金额 199.00 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img24 #1：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/鼠标/不是耳机
+      工具 ['get_order', 'check_refund', 'submit_refund']  回复：'已为您提交退款申请 ✅\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 说明：签收 3 天，质量问题在 15 天内可退\n\n另外，您上传的图片系统没能识别出来，方便的话可以'
+  [multi] e2e-img24 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/鼠标/不是耳机
+      工具 ['check_refund', 'submit_refund']  回复：'已为您提交 O1001 的退款申请，退款金额 199.00 元将原路退回，退货运费由商家承担。'
+  [single] e2e-img24 #2：数据库：O1001 不应被修改，实际改动 {'status': 'refunded', 'refund_amount': 199.0}；关键路径：不应调用 submit_refund；回复：缺少 不一致/对不上/不符/不匹配/不对应/鼠标/不是耳机
+      工具 ['get_order', 'check_refund', 'submit_refund']  回复：'已为您提交退款申请，处理结果如下：\n\n- 订单：O1001 蓝牙耳机，199 元\n- 退款金额：199.00 元，原路退回\n- 退货运费：由商家承担\n- 无需人工审批\n\n另外，您上传的图片系统暂时无法识别，方便的话可以用文字补充描述一下外壳'
+  [single] e2e-img27 #2：关键路径：应触发人工审批；关键路径：没有调用 submit_refund
+      工具 ['list_my_orders', 'check_refund', 'get_order']  回复：'我查了订单 O1002，目前**没有退款申请记录**，所以还没有进入审批流程，也就谈不上批没批。\n\n您上一条说的退款我还没有提交，因为需要您确认按哪种原因：\n\n- 按“不想要了”（无理由）：可退 1899 元，退货运费由您承担，金额超 50'
+  [single] e2e-img28 #2：回复：缺少 不能退/无法退/不支持退/退不了/不能办理/无法办理/不符合/超过/超出/已过/过了/期限
+      工具 ['list_my_orders', 'get_order', 'check_refund', 'transfer_to_human']  回复：'已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。'

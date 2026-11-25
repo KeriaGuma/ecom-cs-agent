@@ -1,0 +1,36 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.292 seconds.
+Prefix dict has been built successfully.
+
+[multi] 提示词 7115eee1  领域 基础  干扰工具 0 个  任务 12 个 × 3 次
+  任务成功率 94.4%（95% CI 81.9%～98.5%）   pass^3 83.3%
+  每轮延迟 p50 5.5s  p95 11.1s   每任务模型调用 9.9 次  Token 11434（输入 10850 / 输出 584）
+  严重失败率 0.0%（95% CI 0.0%～9.6%）   失败分级：沟通 2   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 87%(n=15)  context 94%(n=33)  multi 100%(n=6)  write 94%(n=33)
+
+[single] 提示词 75fe209e  领域 基础  干扰工具 0 个  任务 12 个 × 3 次
+  任务成功率 83.3%（95% CI 68.1%～92.1%）   pass^3 83.3%
+  每轮延迟 p50 3.9s  p95 7.7s   每任务模型调用 6.8 次  Token 11699（输入 11307 / 输出 392）
+  严重失败率 0.0%（95% CI 0.0%～9.6%）   失败分级：沟通 6   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 60%(n=15)  context 82%(n=33)  multi 100%(n=6)  write 82%(n=33)
+
+配对对比（多 Agent − 单 Agent，按任务成功率）：多 Agent 更好 2 个，单 Agent 更好 0 个，持平 10 个；平均差 +11.1%（95% CI +0.0%～+27.8%）
+
+失败明细：
+  [single] fd01 #0：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'我核实了一下：订单 O1002（扫地机器人，1899 元，已签收）目前没有退款审批通过或退款完成的记录，退款金额为空，也就是说退款还没有批下来。\n\n需要我帮您转人工客服进一步核实处理吗？'
+  [multi] fd01 #1：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'check_refund', 'get_order']  回复：'经查询，订单 O1002 的退款规则为：签收 5 天，符合 7 天无理由退货，可退金额 1899 元，退货运费由您承担；因金额超过 500 元，需人工审批。当前订单状态仍为已签收，尚未查到退款审核通过的结果，因此暂时无法办理退款，请耐心等待'
+  [single] fd01 #1：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'您好，我查了一下订单 O1002（扫地机器人，1899 元），目前订单状态是已签收，系统里没有退款申请记录，也没有退款金额，说明这笔退款还没有提交成功，所以不存在“批下来”的情况。\n\n需要我现在帮您重新提交退款申请吗？'
+  [single] fd01 #2：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'我查了一下订单 O1002（扫地机器人，1899 元），目前订单状态仍是“已签收”，系统里没有退款申请记录，也没有退款金额，说明这笔退款还没有批下来。\n\n需要我帮您重新提交一次退款申请吗？'
+  [single] fd02 #0：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'list_my_orders', 'get_logistics', 'get_order']  回复：'我查了一下订单 O1002（扫地机器人，1899 元，已签收），目前系统里没有查到退款申请记录，也就是说退款还没有提交成功。\n\n需要我现在帮您重新提交一次退款申请吗？'
+  [multi] fd02 #1：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'list_my_orders', 'get_logistics', 'check_refund', 'get_order']  回复：'扫地机订单（O1002）目前状态为已签收，系统里没有查到已提交的退款申请记录，退款金额也未生成。该订单符合质量问题退款条件：可退 1899 元，退货运费由商家承担；因金额超过 500 元需人工审批。您是否现在就提交这笔退款申请？'
+  [single] fd02 #1：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'list_my_orders', 'get_logistics', 'get_order']  回复：'我查了一下订单 O1002（扫地机器人，1899 元）的详情，目前系统里没有看到退款申请记录，订单状态仍是已签收。\n\n方便确认一下您之前是通过哪个渠道提交的退款吗？或者我现在帮您重新提交一次退款申请？'
+  [single] fd02 #2：回复：缺少 未通过/没有通过/未能通过/驳回/不通过/没通过
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'list_my_orders', 'get_logistics', 'get_order']  回复：'我查了一下订单 O1002（扫地机器人）的详情，目前订单状态仍是“已签收”，系统里没有显示退款申请记录，也没有退款金额。\n\n也就是说，之前那笔退款申请可能没有成功提交。需要我现在帮您重新提交一次退款申请吗？'

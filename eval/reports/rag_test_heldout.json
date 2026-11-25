@@ -1,0 +1,434 @@
+[
+  {
+    "mode": "keyword",
+    "n": 62,
+    "recall@1": 0.5483870967741935,
+    "recall@3": 0.7419354838709677,
+    "mrr@10": 0.6461213517665131,
+    "p50_ms": 0.2602915046736598,
+    "misses": [
+      [
+        "kbx-03",
+        "刚才有人打电话说是你们客服，让我把手机上收到的那串数字报给他，这靠谱吗？",
+        [
+          "shipping_logistics.md · 签收但没收到货",
+          "account_security.md · 修改手机号",
+          "exchange_and_repair.md · 换货流程"
+        ]
+      ],
+      [
+        "kbx-06",
+        "买的外套到了不太喜欢，吊牌都没拆，能退吗？寄回去的快递费谁出",
+        [
+          "exchange_and_repair.md · 换货条件",
+          "after_sales_policy.md · 修改收货地址",
+          "exchange_and_repair.md · 换货运费"
+        ]
+      ],
+      [
+        "kbx-07",
+        "收到才十来天就发现东西有毛病，想直接退掉，退回去的邮费要我自己掏吗",
+        [
+          "exchange_and_repair.md · 换货流程",
+          "shipping_logistics.md · 拒收与改派",
+          "account_security.md · 账号被盗"
+        ]
+      ],
+      [
+        "kbx-16",
+        "鞋子码小了想换大一码，盒子标签都还在，能换吗",
+        []
+      ],
+      [
+        "kbx-22",
+        "东西坏了想寄修，我需要准备些啥信息，能上门来拿吗",
+        [
+          "after_sales_policy.md · 质量问题退换货",
+          "special_goods.md · 大家电安装",
+          "account_security.md · 修改手机号"
+        ]
+      ],
+      [
+        "kbx-25",
+        "上个月刚修好的平板，同样的毛病又犯了，气死了，这次还要收钱吗",
+        [
+          "membership.md · 会员等级",
+          "membership.md · 积分使用",
+          "special_goods.md · 个人护理用品"
+        ]
+      ],
+      [
+        "kbx-34",
+        "下了单去忙别的了，回来想付钱发现订单没了，咋回事",
+        [
+          "account_security.md · 账号被盗",
+          "account_security.md · 注销账号",
+          "after_sales_policy.md · 运费险"
+        ]
+      ],
+      [
+        "kbx-36",
+        "明明只付了一次，银行短信显示扣了我两次钱！！",
+        [
+          "account_security.md · 个人信息保护",
+          "after_sales_policy.md · 退款到账时间",
+          "exchange_and_repair.md · 换货条件"
+        ]
+      ],
+      [
+        "kbx-40",
+        "前天刚收到货今天就降了五十，能把差的钱补给我吗",
+        [
+          "shipping_logistics.md · 签收但没收到货",
+          "exchange_and_repair.md · 换货流程",
+          "exchange_and_repair.md · 维修时效"
+        ]
+      ],
+      [
+        "kbx-44",
+        "参加了满300减50，退了其中一件以后不够300了，退款金额怎么算",
+        [
+          "payment_and_invoice.md · 分期付款",
+          "membership.md · 会员等级",
+          "promotions_and_price.md · 退款时优惠券怎么处理"
+        ]
+      ],
+      [
+        "kbx-47",
+        "现货的话付完款多久能发出来",
+        [
+          "exchange_and_repair.md · 换货流程",
+          "account_security.md · 账号被盗",
+          "after_sales_policy.md · 修改收货地址"
+        ]
+      ],
+      [
+        "kbx-48",
+        "能寄到香港吗？我人在那边",
+        []
+      ],
+      [
+        "kbx-49",
+        "凑单凑到多少钱就不用付邮费了",
+        []
+      ],
+      [
+        "kbx-57",
+        "买的车厘子今天到的，打开好多都烂了",
+        [
+          "shipping_logistics.md · 签收但没收到货"
+        ]
+      ],
+      [
+        "kbx-59",
+        "买的面霜塑封都没拆，不想要了还能退不",
+        [
+          "shipping_logistics.md · 快递丢失或破损"
+        ]
+      ],
+      [
+        "kbx-60",
+        "空调送到家了，谁来给我装？装要收钱吗",
+        []
+      ]
+    ],
+    "recall@1_by_tag": {
+      "colloquial": 0.425531914893617,
+      "term": 0.9333333333333333
+    }
+  },
+  {
+    "mode": "bm25",
+    "n": 62,
+    "recall@1": 0.532258064516129,
+    "recall@3": 0.6935483870967742,
+    "mrr@10": 0.6285330261136713,
+    "p50_ms": 0.09729189332574606,
+    "misses": [
+      [
+        "kbx-02",
+        "以前绑的那个号码早就停机了，收不到验证码，想换成现在用的新号怎么弄",
+        [
+          "account_security.md · 个人信息保护",
+          "exchange_and_repair.md · 换货缺货处理",
+          "shipping_logistics.md · 签收但没收到货"
+        ]
+      ],
+      [
+        "kbx-03",
+        "刚才有人打电话说是你们客服，让我把手机上收到的那串数字报给他，这靠谱吗？",
+        [
+          "account_security.md · 修改手机号",
+          "exchange_and_repair.md · 维修时效",
+          "payment_and_invoice.md · 发票类型"
+        ]
+      ],
+      [
+        "kbx-04",
+        "不想用了，想把号彻底删掉，里面攒的积分和券还能保留吗",
+        [
+          "membership.md · 积分退还",
+          "membership.md · 积分获取",
+          "membership.md · 积分使用"
+        ]
+      ],
+      [
+        "kbx-06",
+        "买的外套到了不太喜欢，吊牌都没拆，能退吗？寄回去的快递费谁出",
+        [
+          "exchange_and_repair.md · 换货条件",
+          "after_sales_policy.md · 退款到账时间",
+          "shipping_logistics.md · 物流长时间不更新"
+        ]
+      ],
+      [
+        "kbx-07",
+        "收到才十来天就发现东西有毛病，想直接退掉，退回去的邮费要我自己掏吗",
+        [
+          "exchange_and_repair.md · 换货流程",
+          "shipping_logistics.md · 拒收与改派",
+          "shipping_logistics.md · 催促发货"
+        ]
+      ],
+      [
+        "kbx-16",
+        "鞋子码小了想换大一码，盒子标签都还在，能换吗",
+        [
+          "exchange_and_repair.md · 换货运费",
+          "exchange_and_repair.md · 换货缺货处理",
+          "exchange_and_repair.md · 维修后仍有问题"
+        ]
+      ],
+      [
+        "kbx-22",
+        "东西坏了想寄修，我需要准备些啥信息，能上门来拿吗",
+        [
+          "account_security.md · 个人信息保护",
+          "special_goods.md · 大家电安装",
+          "after_sales_policy.md · 质量问题退换货"
+        ]
+      ],
+      [
+        "kbx-23",
+        "寄回去修了，大概几天能修好给我寄回来",
+        []
+      ],
+      [
+        "kbx-25",
+        "上个月刚修好的平板，同样的毛病又犯了，气死了，这次还要收钱吗",
+        [
+          "special_goods.md · 数码产品激活"
+        ]
+      ],
+      [
+        "kbx-34",
+        "下了单去忙别的了，回来想付钱发现订单没了，咋回事",
+        [
+          "account_security.md · 账号被盗",
+          "special_goods.md · 生鲜食品",
+          "after_sales_policy.md · 发票"
+        ]
+      ],
+      [
+        "kbx-36",
+        "明明只付了一次，银行短信显示扣了我两次钱！！",
+        [
+          "exchange_and_repair.md · 维修后仍有问题",
+          "account_security.md · 个人信息保护",
+          "payment_and_invoice.md · 支持的支付方式"
+        ]
+      ],
+      [
+        "kbx-39",
+        "发票抬头填错了，还能重新开一张吗",
+        [
+          "promotions_and_price.md · 优惠券使用规则",
+          "payment_and_invoice.md · 发票类型",
+          "payment_and_invoice.md · 发票申请时间"
+        ]
+      ],
+      [
+        "kbx-40",
+        "前天刚收到货今天就降了五十，能把差的钱补给我吗",
+        [
+          "exchange_and_repair.md · 维修时效",
+          "exchange_and_repair.md · 换货流程",
+          "shipping_logistics.md · 拒收与改派"
+        ]
+      ],
+      [
+        "kbx-43",
+        "整单都退了，下单时用掉的那张券会还给我吗",
+        [
+          "after_sales_policy.md · 修改收货地址",
+          "after_sales_policy.md · 质量问题退换货",
+          "after_sales_policy.md · 七天无理由退货"
+        ]
+      ],
+      [
+        "kbx-48",
+        "能寄到香港吗？我人在那边",
+        []
+      ],
+      [
+        "kbx-49",
+        "凑单凑到多少钱就不用付邮费了",
+        [
+          "after_sales_policy.md · 退款到账时间",
+          "membership.md · 积分获取"
+        ]
+      ],
+      [
+        "kbx-57",
+        "买的车厘子今天到的，打开好多都烂了",
+        [
+          "after_sales_policy.md · 退款到账时间",
+          "membership.md · 积分获取"
+        ]
+      ],
+      [
+        "kbx-59",
+        "买的面霜塑封都没拆，不想要了还能退不",
+        [
+          "after_sales_policy.md · 七天无理由退货",
+          "exchange_and_repair.md · 不在保修范围的情况",
+          "shipping_logistics.md · 物流长时间不更新"
+        ]
+      ],
+      [
+        "kbx-60",
+        "空调送到家了，谁来给我装？装要收钱吗",
+        []
+      ]
+    ],
+    "recall@1_by_tag": {
+      "colloquial": 0.425531914893617,
+      "term": 0.8666666666666667
+    }
+  },
+  {
+    "mode": "vector",
+    "n": 62,
+    "recall@1": 0.9354838709677419,
+    "recall@3": 0.9838709677419355,
+    "mrr@10": 0.9596774193548387,
+    "p50_ms": 104.94218743406236,
+    "misses": [
+      [
+        "kbx-06",
+        "买的外套到了不太喜欢，吊牌都没拆，能退吗？寄回去的快递费谁出",
+        [
+          "shipping_logistics.md · 快递丢失或破损",
+          "exchange_and_repair.md · 换货运费",
+          "after_sales_policy.md · 质量问题退换货"
+        ]
+      ]
+    ],
+    "recall@1_by_tag": {
+      "colloquial": 0.9148936170212766,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "hybrid(rrf)",
+    "n": 62,
+    "recall@1": 0.7258064516129032,
+    "recall@3": 0.9354838709677419,
+    "mrr@10": 0.8384408602150538,
+    "p50_ms": 106.62008344661444,
+    "misses": [
+      [
+        "kbx-03",
+        "刚才有人打电话说是你们客服，让我把手机上收到的那串数字报给他，这靠谱吗？",
+        [
+          "account_security.md · 修改手机号",
+          "shipping_logistics.md · 签收但没收到货",
+          "account_security.md · 账号被盗"
+        ]
+      ],
+      [
+        "kbx-07",
+        "收到才十来天就发现东西有毛病，想直接退掉，退回去的邮费要我自己掏吗",
+        [
+          "special_goods.md · 生鲜食品",
+          "payment_and_invoice.md · 重复扣款",
+          "exchange_and_repair.md · 维修时效"
+        ]
+      ],
+      [
+        "kbx-36",
+        "明明只付了一次，银行短信显示扣了我两次钱！！",
+        [
+          "exchange_and_repair.md · 维修后仍有问题",
+          "shipping_logistics.md · 签收但没收到货",
+          "after_sales_policy.md · 退款到账时间"
+        ]
+      ],
+      [
+        "kbx-40",
+        "前天刚收到货今天就降了五十，能把差的钱补给我吗",
+        [
+          "shipping_logistics.md · 签收但没收到货",
+          "exchange_and_repair.md · 维修时效",
+          "shipping_logistics.md · 快递丢失或破损"
+        ]
+      ]
+    ],
+    "recall@1_by_tag": {
+      "colloquial": 0.6595744680851063,
+      "term": 0.9333333333333333
+    }
+  },
+  {
+    "mode": "vector+rr:model",
+    "n": 62,
+    "recall@1": 0.9838709677419355,
+    "recall@3": 1.0,
+    "mrr@10": 0.9919354838709677,
+    "p50_ms": 223.73941645491868,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 0.9787234042553191,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "hybrid+rr:model",
+    "n": 62,
+    "recall@1": 0.9838709677419355,
+    "recall@3": 1.0,
+    "mrr@10": 0.9919354838709677,
+    "p50_ms": 218.3178331470117,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 0.9787234042553191,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "vector+rr:llm",
+    "n": 62,
+    "recall@1": 1.0,
+    "recall@3": 1.0,
+    "mrr@10": 1.0,
+    "p50_ms": 1672.4206040380523,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 1.0,
+      "term": 1.0
+    }
+  },
+  {
+    "mode": "hybrid+rr:llm",
+    "n": 62,
+    "recall@1": 0.9838709677419355,
+    "recall@3": 1.0,
+    "mrr@10": 0.9919354838709677,
+    "p50_ms": 1744.8742084670812,
+    "misses": [],
+    "recall@1_by_tag": {
+      "colloquial": 0.9787234042553191,
+      "term": 1.0
+    }
+  }
+]

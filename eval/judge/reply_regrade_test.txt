@@ -1,0 +1,18 @@
+eval/approval/test5_multi.json {'multi': '0.933->0.933'} rechecked groups 6, conveyed 0
+eval/approval/test5_new.json {'multi': '0.933->0.933', 'single': '0.878->0.878'} rechecked groups 13, conveyed 0
+eval/approval/test5_single_new.json {'single': '0.878->0.878'} rechecked groups 7, conveyed 0
+eval/approval/test5_single_old.json {'single': '0.911->0.911'} rechecked groups 4, conveyed 0
+eval/approval/test6_new.json {'multi': '0.926->0.991', 'single': '0.981->0.981'} rechecked groups 10, conveyed 7
+eval/approval/test6_old.json {'multi': '0.806->0.963', 'single': '0.657->0.759'} rechecked groups 58, conveyed 28
+eval/reports/claim_test3_off.json {'multi': '0.993->0.993', 'single': '0.926->0.941'} rechecked groups 3, conveyed 2
+eval/reports/claim_test3_on.json {'multi': '1.000->1.000', 'single': '0.933->0.948'} rechecked groups 2, conveyed 2
+eval/reports/domains_test_T0.json {'multi': '0.944->1.000', 'single': '0.833->0.889'} rechecked groups 4, conveyed 4
+eval/reports/domains_test_T1.json {'multi': '0.956->0.985', 'single': '0.956->0.971'} rechecked groups 4, conveyed 3
+eval/reports/domains_test_T2.json {'multi': '0.980->1.000', 'single': '0.941->0.961'} rechecked groups 4, conveyed 4
+eval/reports/e2e_test_tools20.json {'multi': '0.943->0.955', 'single': '0.920->0.932'} rechecked groups 2, conveyed 2
+eval/reports/fault_test2_llm.json {'multi': '0.911->0.911', 'single': '0.856->0.856'} rechecked groups 6, conveyed 0
+eval/reports/fault_test2_tool.json {'multi': '0.844->0.844', 'single': '0.789->0.789'} rechecked groups 1, conveyed 0
+eval/reports/perturb_test2.json {'multi': '0.967->0.969', 'single': '0.920->0.922'} rechecked groups 2, conveyed 2
+eval/vision/test_novision.json {'multi': '0.644->0.644', 'single': '0.644->0.644'} rechecked groups 47, conveyed 6
+eval/vision/test_vision.json {'multi': '1.000->1.000', 'single': '0.967->0.967'} rechecked groups 1, conveyed 0
+{'reply-qwen': {'calls': 150, 'input': 100452, 'output': 5768}, 'reply-kimi': {'calls': 155, 'input': 96001, 'output': 6694}}

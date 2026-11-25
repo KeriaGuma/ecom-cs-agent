@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-12",
+  "purpose": "调度换现成小模型的可行性：开发集 178 条，同一份 SUPERVISOR_PROMPT v2（为 DeepSeek 调过，qwen 候选未适配），温度 0",
+  "baseline": {"model": "deepseek-flash", "accuracy": 0.989, "p50_ms": 1563, "p95_ms": 2533, "note": "现役；提示词就是在这份开发集上调出来的，对它有利好偏差"},
+  "candidates": [
+    {"model": "qwen3.8-flash", "accuracy": 0.966, "p50_ms": 1316, "p95_ms": 1846, "delta_acc": -0.023, "delta_p50": -0.16},
+    {"model": "qwen3.6-flash", "accuracy": 0.944, "p50_ms": 986, "p95_ms": 1400, "delta_acc": -0.045, "delta_p50": -0.37},
+    {"model": "qwen3.5-flash", "accuracy": 0.938, "p50_ms": 1392, "p95_ms": 1826, "delta_acc": -0.051, "delta_p50": -0.11},
+    {"model": "qwen3.7-flash", "accuracy": 0.933, "p50_ms": 1174, "p95_ms": 1880, "delta_acc": -0.056, "delta_p50": -0.25},
+    {"model": "qwen-flash", "accuracy": 0.899, "p50_ms": 680, "p95_ms": 909, "delta_acc": -0.09, "delta_p50": -0.56}
+  ],
+  "excluded": [{"model": "qwen-turbo-0919", "reason": "结构化输出请求 403 权限拒绝，全错是请求失败不是判错"}],
+  "conclusion": "没有现成小模型能同时保持准确率并明显降延迟。计划路由下每轮只调 1 次调度，端到端收益上限 = 单次延迟差（最好折中 qwen3.6-flash 每轮省约 0.6 秒，一轮中位 6.6 秒的 9%），代价是准确率实质下降。这个负结果也印证了多 Agent 架构额外的调度跳数难以靠换小模型廉价消除，将主线收敛为单 Agent 直接工具循环是更优工程解。",
+  "errors_of_best_candidate": {
+    "model": "qwen3.8-flash",
+    "note": "6 个错例分布在意图边界（羽绒服能退吗）、错别字（推款）、注入、越权（查别人订单）、混合意图（发票+投诉），没有集中在单一可修弱点",
+    "report": "router_small_model_qwen38.json"
+  },
+  "code": "llm.py 供应商按模型名推断（qwen 走 DashScope 网关 + enable_thinking:false）"
+}

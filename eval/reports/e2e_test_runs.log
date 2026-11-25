@@ -1,0 +1,51 @@
+2026-11-09 22:29:05	system=multi	prompt=8d26e6b4	data=93ff531b	extra=0	success=0.9621	pass_k=0.9545	runs=3
+2026-11-09 22:29:05	system=single	prompt=bac728a8	data=93ff531b	extra=0	success=0.9318	pass_k=0.8864	runs=3
+2026-11-09 22:32:19	system=multi	prompt=8d26e6b4	data=93ff531b	extra=10	success=0.9545	pass_k=0.9545	runs=2
+2026-11-09 22:32:19	system=single	prompt=bac728a8	data=93ff531b	extra=10	success=0.9432	pass_k=0.9318	runs=2
+2026-11-09 22:35:20	system=multi	prompt=8d26e6b4	data=93ff531b	extra=20	success=0.9432	pass_k=0.9318	runs=2
+2026-11-09 22:35:20	system=single	prompt=bac728a8	data=93ff531b	extra=20	success=0.9205	pass_k=0.8864	runs=2
+2026-11-09 22:38:36	system=multi	prompt=8d26e6b4	data=93ff531b	extra=40	success=0.9545	pass_k=0.9545	runs=2
+2026-11-09 22:38:36	system=single	prompt=bac728a8	data=93ff531b	extra=40	success=0.9432	pass_k=0.9091	runs=2
+2026-11-09 22:56:22	system=multi	prompt=8d26e6b4	data=2e04a9d6	extra=0	success=0.9556	pass_k=0.9556	runs=3
+2026-11-09 22:56:22	system=single	prompt=bac728a8	data=2e04a9d6	extra=0	success=0.9185	pass_k=0.8667	runs=3
+2026-11-09 23:09:07	system=multi	prompt=8d26e6b4	data=71533284	extra=0	domains=T0	success=0.9444	pass_k=0.9444	runs=2
+2026-11-09 23:09:07	system=single	prompt=bac728a8	data=71533284	extra=0	domains=T0	success=0.8333	pass_k=0.7778	runs=2
+2026-11-09 23:11:20	system=multi	prompt=1dd2df17	data=71533284	extra=0	domains=T1	success=0.9559	pass_k=0.9412	runs=2
+2026-11-09 23:11:20	system=single	prompt=a29c49fc	data=71533284	extra=0	domains=T1	success=0.9559	pass_k=0.9118	runs=2
+2026-11-09 23:14:41	system=multi	prompt=8952a831	data=71533284	extra=0	domains=T2	success=0.9804	pass_k=0.9804	runs=2
+2026-11-09 23:14:41	system=single	prompt=3a108e65	data=71533284	extra=0	domains=T2	success=0.9412	pass_k=0.9412	runs=2
+2026-11-10 15:36:38	system=multi	prompt=8d26e6b4	data=ec8b7243	extra=0	success=0.9592	pass_k=0.9592	runs=3
+2026-11-10 15:36:38	system=single	prompt=bac728a8	data=ec8b7243	extra=0	success=0.9320	pass_k=0.9184	runs=3
+2026-11-10 15:36:51	system=multi	prompt=8d26e6b4	data=2e04a9d6	extra=0	faults=tool0.2/llm0.0	success=0.8444	pass_k=0.7556	runs=2
+2026-11-10 15:36:51	system=single	prompt=bac728a8	data=2e04a9d6	extra=0	faults=tool0.2/llm0.0	success=0.7889	pass_k=0.6667	runs=2
+2026-11-10 15:41:42	system=multi	prompt=8d26e6b4	data=2e04a9d6	extra=0	faults=tool0.0/llm0.3	success=0.9111	pass_k=0.8667	runs=2
+2026-11-10 15:41:42	system=single	prompt=bac728a8	data=2e04a9d6	extra=0	faults=tool0.0/llm0.3	success=0.8556	pass_k=0.7778	runs=2
+2026-11-10 15:57:44	system=multi	prompt=8d26e6b4	data=6e80e6cb	extra=0	success=0.9667	pass_k=0.9644	runs=2
+2026-11-10 15:57:44	system=single	prompt=bac728a8	data=6e80e6cb	extra=0	success=0.9200	pass_k=0.8933	runs=2
+2026-11-10 16:46:37	system=multi	prompt=8d26e6b4	data=f6b863f8	extra=0	claim_check=0	success=0.9926	pass_k=0.9778	runs=3
+2026-11-10 16:46:37	system=single	prompt=bac728a8	data=f6b863f8	extra=0	claim_check=0	success=0.9259	pass_k=0.8889	runs=3
+2026-11-10 16:53:23	system=multi	prompt=8d26e6b4	data=f6b863f8	extra=0	success=1.0000	pass_k=1.0000	runs=3
+2026-11-10 16:53:23	system=single	prompt=bac728a8	data=f6b863f8	extra=0	success=0.9333	pass_k=0.8889	runs=3
+2026-11-10 22:54:24	system=multi	prompt=8d26e6b4	data=91b3c52e	extra=0	success=0.9407	pass_k=0.9333	runs=3
+2026-11-10 22:54:24	system=single	prompt=bac728a8	data=91b3c52e	extra=0	success=0.9333	pass_k=0.9111	runs=3
+2026-11-10 23:00:34	system=multi	prompt=7115eee1	data=91b3c52e	extra=0	success=1.0000	pass_k=1.0000	runs=3
+2026-11-10 23:00:34	system=single	prompt=fa290203	data=91b3c52e	extra=0	success=1.0000	pass_k=1.0000	runs=3
+2026-11-11 00:36:34	system=multi	prompt=7115eee1	data=2e04a9d6	extra=0	success=0.9556	pass_k=0.9556	runs=3
+2026-11-11 00:36:34	system=single	prompt=fa290203	data=2e04a9d6	extra=0	success=0.9481	pass_k=0.9333	runs=3
+2026-11-11 11:29:33	system=single	prompt=fa290203	data=be078a45	extra=0	success=0.9111	pass_k=0.8667	runs=3
+2026-11-11 11:32:51	system=multi	prompt=7115eee1	data=be078a45	extra=0	success=0.9333	pass_k=0.8667	runs=3
+2026-11-11 11:32:51	system=single	prompt=75fe209e	data=be078a45	extra=0	success=0.8778	pass_k=0.8333	runs=3
+2026-11-11 12:15:37	system=multi	prompt=7115eee1	data=0c0406d0	extra=0	success=0.9259	pass_k=0.8889	runs=3
+2026-11-11 12:15:37	system=single	prompt=75fe209e	data=0c0406d0	extra=0	success=0.9815	pass_k=0.9444	runs=3
+2026-11-11 12:15:45	system=multi	prompt=7115eee1	data=0c0406d0	extra=0	ops_log=0	claim_note=v1	success=0.8056	pass_k=0.6944	runs=3
+2026-11-11 12:15:45	system=single	prompt=75fe209e	data=0c0406d0	extra=0	ops_log=0	claim_note=v1	success=0.6574	pass_k=0.5556	runs=3
+2026-11-11 22:47:44	system=multi	prompt=1bf93c51	data=25e6ce77	extra=0	success=0.8556	pass_k=0.8333	runs=3
+2026-11-11 22:47:44	system=single	prompt=a502accc	data=25e6ce77	extra=0	success=0.9333	pass_k=0.8667	runs=3
+2026-11-11 22:52:12	system=multi	prompt=4225e58f	data=25e6ce77	extra=0	address_guard=0	success=0.5111	pass_k=0.5000	runs=3
+2026-11-11 22:52:12	system=single	prompt=d8383da8	data=25e6ce77	extra=0	address_guard=0	success=0.5444	pass_k=0.4333	runs=3
+2026-11-12 13:38:28	system=multi	prompt=f3433e51	data=4e6f0a92	extra=0	success=1.0000	pass_k=1.0000	runs=3
+2026-11-12 13:38:28	system=single	prompt=eb631cf2	data=4e6f0a92	extra=0	success=1.0000	pass_k=1.0000	runs=3
+2026-11-12 13:41:42	system=multi	prompt=1bf93c51	data=4e6f0a92	extra=0	unsupported_rule=0	success=0.8889	pass_k=0.8667	runs=3
+2026-11-12 13:41:42	system=single	prompt=a502accc	data=4e6f0a92	extra=0	unsupported_rule=0	success=0.9333	pass_k=0.8667	runs=3
+2026-11-23 23:27:40	system=multi	prompt=729ea6c8	data=f0b4a87d	extra=0	orchestrator=turn_runner	worker_runtime=python	success=1.0000	pass_k=1.0000	runs=1
+2026-11-23 23:28:03	system=multi	prompt=729ea6c8	data=f0b4a87d	extra=0	orchestrator=turn_runner	worker_runtime=pi	success=1.0000	pass_k=1.0000	runs=1

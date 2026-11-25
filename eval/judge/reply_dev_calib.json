@@ -1,0 +1,3937 @@
+{
+ "prompt_version": "c6b1caca",
+ "rows": [
+  {
+   "kind": "real",
+   "id": "fd01-0",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "订单 O1002 符合 7 天无理由退货条件，可退金额 1899 元，退货运费由您承担；因金额超过 500 元需人工审批，退款尚未到账。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝或未通过审核",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-1",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我查了一下订单 O1002（扫地机器人，1899 元，已签收），目前系统里还没有退款审批通过或退款金额的记录，也就是说退款还没有批下来。\n\n需要我帮您重新提交一次退款申请，或者转人工客服跟进审批进度吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-2",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "订单 O1002 的退款申请目前仍在人工审核中，尚未批复；该订单符合 7 天无理由退货，可退金额 1899 元，退货运费由您承担，审核结果出来后请以通知为准。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请审核未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-3",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "扫地机器人（订单 O1002）的质量问题退款规则为：可退金额 1899 元，退货运费由商家承担；因金额超过 500 元需人工审批。本轮我仅做了查询，未提交新的申请；如需继续推进，请补充机器故障的具体情况或相关照片，以便进一步核实。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-4",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我这边查到订单 O1002（扫地机器人，1899 元）目前状态仍是“已签收”，系统里还没有退款审核结果。\n\n之前提交的退款申请因金额超过 500 元需要人工审核，审核进度我这边无法直接查询。建议您留意退款通知；如果着急，我可以帮您转接人工客服跟进审核进度，需要吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过（被驳回/拒绝）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款审核未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-5",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "扫地机器人（订单 O1002）的退款情况：\n\n- 订单已签收（11-06 签收），质量问题在 15 天内可退，符合退款条件\n- 可退金额：1899 元，退货运费由商家承担\n- 因金额超过 500 元，需人工审批\n\n目前这笔退款还在人工审批中，审批通过后会按流程退款。需要我帮您转人工催一下吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被驳回/未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd03-6",
+   "turns": [
+    "扫地机器人买重了，退掉",
+    "那钱大概几天能到我账上"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "退款到账时间：审核通过后原路退回，支付宝、微信 1–3 个工作日，银行卡 3–7 个工作日（来源：售后政策 · 退款到账时间）。\n\n另外提醒一下这单的情况：签收 5 天，符合 7 天无理由退货，可退 1899 元，退货运费需您承担；因金额超过 500 元，需人工审批。\n\n您确认要退的话，我这就帮您提交。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款/退货申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd03-7",
+   "turns": [
+    "扫地机器人买重了，退掉",
+    "那钱大概几天能到我账上"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "关于您这台扫地机器人（订单 O1002，1899 元）：\n\n- **退款资格**：签收 5 天，符合 7 天无理由退货，可以退；退货运费由您承担。\n- **到账时间**：审核通过后原路退回，支付宝/微信 1–3 个工作日，银行卡 3–7 个工作日（来源：售后政策 · 退款到账时间）。\n- 另外，这笔金额超过 500 元，需要人工审批，审批通过后才会进入退款流程。\n\n需要我现在帮您提交退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd08-8",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "键盘订单 O1005 的退款已处理完成，459 元已原路退回，无需再操作。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经办理完成",
+     "evidence": "键盘订单 O1005 的退款已处理完成，459 元已原路退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "键盘订单 O1005 的退款已处理完成，459 元已原路退回，无需再操作。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd08-9",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "键盘 O1005 的退款已经处理完成，459 元已原路退回，无需承担运费。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "键盘 O1005 的退款已经处理完成，459 元已原路退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "键盘 O1005 的退款已经处理完成，459 元已原路退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd08-10",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "键盘 O1005 的退款已经处理完成，459 元已原路退回，无需重复申请。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经办理完成",
+     "evidence": "键盘 O1005 的退款已经处理完成，459 元已原路退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "键盘 O1005 的退款已经处理完成，459 元已原路退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd11-11",
+   "turns": [
+    "键盘还没发货吧",
+    "帮我把它取消了，不想要了",
+    "取消成功了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消",
+    "成功"
+   ],
+   "reply": "订单 O1005 的退款已在此前完成，系统显示无需重复申请，退款会原路退回。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经完成",
+     "evidence": "订单 O1005 的退款已在此前完成",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消成功或退款已经办好",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd05-12",
+   "turns": [
+    "键盘不要了，还没发货吧，帮我取消",
+    "取消好了吗"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "机械键盘订单（O1005）的退款已成功，459 元已原路退回，无需再操作。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "机械键盘订单（O1005）的退款已成功，459 元已原路退回，无需再操作。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "机械键盘订单（O1005）的退款已成功，459 元已原路退回，无需再操作。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd05-13",
+   "turns": [
+    "键盘不要了，还没发货吧，帮我取消",
+    "取消好了吗"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "机械键盘订单（O1005）的退款已成功，459 元已全额退回，无需再操作。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "机械键盘订单（O1005）的退款已成功，459 元已全额退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "机械键盘订单（O1005）的退款已成功，459 元已全额退回，无需再操作。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd05-14",
+   "turns": [
+    "键盘不要了，还没发货吧，帮我取消",
+    "取消好了吗"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "经查询，订单 O1005 的退款申请已成功办理，退款金额 459.00 元，无需重复申请，请留意原路到账。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经办理成功",
+     "evidence": "退款申请已成功办理",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "退款申请已成功办理",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd08-15",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "键盘订单 O1005 的退款已处理完成，459 元已全额退回，款项将原路退回，无需再操作。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "键盘订单O1005已经取消或退款已办理完成",
+     "evidence": "键盘订单 O1005 的退款已处理完成，459 元已全额退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "键盘订单 O1005 的退款已处理完成，459 元已全额退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd08-16",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "我理解您的提醒。刚才我查了订单 O1005，状态显示为**退款成功**，操作记录里也有 2026-11-11 12:00 的退款申请，结果“退款成功”，金额 459.00 元。所以之前说的退款已办好是准确的，不需要重复提交。\n\n如果您在支付渠道还没看到这笔钱，可以再等几个工作日；需要的话我也可以帮您转人工核实。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单O1005已经取消或退款已经完成",
+     "evidence": "状态显示为**退款成功**，操作记录里也有 2026-11-11 12:00 的退款申请，结果“退款成功”",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "状态显示为**退款成功**，操作记录里也有 2026-11-11 12:00 的退款申请，结果\"退款成功\"，金额 459.00 元。所以之前说的退款已办好是准确的",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd08-17",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "键盘订单 O1005 的退款已处理完成，459 元已原路退回，请留意到账。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已取消或退款已完成",
+     "evidence": "键盘订单 O1005 的退款已处理完成，459 元已原路退回，请留意到账。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "键盘订单 O1005 的退款已处理完成，459 元已原路退回，请留意到账。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd08-18",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消"
+   ],
+   "reply": "键盘订单 O1005 的退款已成功，459 元已原路退回，无需再操作。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已取消或退款已成功办理",
+     "evidence": "键盘订单 O1005 的退款已成功，459 元已原路退回，无需再操作。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "键盘订单 O1005 的退款已成功，459 元已原路退回，无需再操作。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "fd08-19",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消",
+    "退款已",
+    "已成功",
+    "原路退回",
+    "全额退回"
+   ],
+   "reply": "您好，关于键盘 O1005 的取消，目前本轮没有新的处理进展可以同步给您。您可以帮忙提供一下订单号或取消申请的时间吗？我帮您进一步核实。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "键盘O1005订单已经取消或退款/退货已经完成",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-20",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "订单 O1002 的退款申请仍在人工审核中，尚未审批通过，因此暂时无法完成退款；可退金额为 1899 元，退货运费需由您承担。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "订单 O1002 的退款申请仍在人工审核中，尚未审批通过",
+     "conveyed": false,
+     "said": false,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-21",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "您好，我查了一下订单 O1002（扫地机器人，1899 元，已签收），目前系统里没有退款申请记录，也没有退款金额，说明这笔退款还没有提交成功，所以不存在“批下来”的情况。\n\n需要我现在帮您提交退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-22",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "订单 O1002 目前查到的是已签收状态，退款金额为空，系统里没有查到退款申请记录，因此无法确认退款是否已提交或审批进度。建议您通过订单页面的退款入口查看最新状态，或联系人工客服核实。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被审核拒绝/未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-23",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "您好，核实结果如下：\n\n- 订单 O1002（扫地机器人，1899 元）目前状态为**已签收**，订单里**没有退款申请记录**，退款金额为空，也就是说退款申请还没有提交成功，自然也没有审批结果。\n\n需要我现在帮您重新提交退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被审核拒绝或未通过审批",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-24",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "您好，我查了一下订单 O1002（扫地机器人，1899 元）的详情，目前订单状态是「已签收」，系统里没有查到退款申请记录，也没有退款金额信息，也就是说这笔退款还没有提交成功。\n\n需要我现在帮您重新提交退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回/审核不通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-25",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我查了订单 O1002（扫地机器人）的当前状态：该订单仍处于已签收状态，系统里没有退款申请记录，可退金额 1899 元，退货运费由商家承担；因金额超过 500 元，需要人工审批。您之前反馈的吸力弱属于质量问题，如仍需退款，请确认后我为您提交申请。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被驳回或未通过审核",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-26",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我查了一下订单 O1002（扫地机器人，1899 元，11月6日已签收），目前系统里没有查到已提交的退款申请记录，退款金额也是空的。\n\n也就是说，之前那笔退款并没有成功提交。您如果仍要退款，我可以现在帮您重新提交（质量问题原因），需要我提交吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被审核驳回或未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-27",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我这边查到，扫地机器人订单（O1002）目前仍是已签收状态，没有查到已提交的退款申请记录。按规则，该订单属于质量问题，签收 5 天内在 15 天可退期内，可退金额 1899 元，退货运费由商家承担；因金额超过 500 元，需人工审批。如您需要，我可以现在为您提交退款申请。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回/审核不通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-28",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我查了一下订单 O1002（扫地机器人，1899 元，11月6日已签收），目前系统里没有退款申请记录，也没有退款处理中的状态。\n\n您之前反馈的吸力弱问题，如果需要，我可以帮您重新提交退款申请（质量问题），您看要提交吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-29",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "扫地机器人（订单 O1002）的退款情况如下：\n\n- 订单状态：已签收（2026-11-06 签收）\n- 退款资格：符合，签收 5 天，质量问题在 15 天内可退\n- 可退金额：1899 元\n- 退货运费：由商家承担\n- 审批：金额超过 500 元，需人工审批\n\n目前该订单还没有退款申请记录，需要我帮您提交退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝/未通过审核",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd03-30",
+   "turns": [
+    "扫地机器人买重了，退掉",
+    "那钱大概几天能到我账上"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "退款审核通过后，款项会原路退回：支付宝、微信 1–3 个工作日到账，银行卡 3–7 个工作日到账。（来源：after_sales_policy.md · 退款到账时间）\n\n另外提醒一下，这笔退款还需要人工审核通过后才会进入退款流程。还有其他问题吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请被拒绝或驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd03-31",
+   "turns": [
+    "扫地机器人买重了，退掉",
+    "那钱大概几天能到我账上"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "退款审核通过后，款项会原路退回：支付宝、微信 1–3 个工作日到账，银行卡 3–7 个工作日到账。（来源：售后政策 · 退款到账时间）\n\n另外提醒一下，您这笔退款需要人工审批，审批通过后才会进入退款流程。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款审核未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-32",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我核实了一下：订单 O1002（扫地机器人，1899 元，已签收）目前没有退款审批通过或退款完成的记录，退款金额为空，也就是说退款还没有批下来。\n\n需要我帮您转人工客服进一步核实处理吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被驳回或未通过审核",
+     "evidence": "目前没有退款审批通过或退款完成的记录",
+     "conveyed": false,
+     "said": false,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-33",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "经查询，订单 O1002 的退款规则为：签收 5 天，符合 7 天无理由退货，可退金额 1899 元，退货运费由您承担；因金额超过 500 元，需人工审批。当前订单状态仍为已签收，尚未查到退款审核通过的结果，因此暂时无法办理退款，请耐心等待审核。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款审核未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-34",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "您好，我查了一下订单 O1002（扫地机器人，1899 元），目前订单状态是已签收，系统里没有退款申请记录，也没有退款金额，说明这笔退款还没有提交成功，所以不存在“批下来”的情况。\n\n需要我现在帮您重新提交退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被审核拒绝/未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd01-35",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我查了一下订单 O1002（扫地机器人，1899 元），目前订单状态仍是“已签收”，系统里没有退款申请记录，也没有退款金额，说明这笔退款还没有批下来。\n\n需要我帮您重新提交一次退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被驳回或未通过审核",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-36",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我查了一下订单 O1002（扫地机器人，1899 元，已签收），目前系统里没有查到退款申请记录，也就是说退款还没有提交成功。\n\n需要我现在帮您重新提交一次退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请审核未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-37",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "扫地机订单（O1002）目前状态为已签收，系统里没有查到已提交的退款申请记录，退款金额也未生成。该订单符合质量问题退款条件：可退 1899 元，退货运费由商家承担；因金额超过 500 元需人工审批。您是否现在就提交这笔退款申请？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝/未通过审核",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-38",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我查了一下订单 O1002（扫地机器人，1899 元）的详情，目前系统里没有看到退款申请记录，订单状态仍是已签收。\n\n方便确认一下您之前是通过哪个渠道提交的退款吗？或者我现在帮您重新提交一次退款申请？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd02-39",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我查了一下订单 O1002（扫地机器人）的详情，目前订单状态仍是“已签收”，系统里没有显示退款申请记录，也没有退款金额。\n\n也就是说，之前那笔退款申请可能没有成功提交。需要我现在帮您重新提交一次退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被审核驳回或未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "d-multi-query-40",
+   "turns": [
+    "查下 O1003 的物流，顺便问下七天无理由退货运费谁出"
+   ],
+   "group": [
+    "买家"
+   ],
+   "reply": "关于您的问题，回复如下：\n\n1. 物流：订单 O1003 已发货，承运方为中通，单号 ZT987654，11月11日到达杭州转运中心，预计明天送达。\n\n2. 七天无理由退货运费：退货运费由您承担，前提是签收后7天内商品完好、不影响二次销售。定制类、鲜活易腐、已拆封个人护理用品不支持无理由退货。若属于签收后15天内的质量问题，退换货运费由商家承担。\n\n如有其他问题，随时联系我们。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "七天无理由退货运费由买家承担",
+     "evidence": "退货运费由您承担，前提是签收后7天内商品完好、不影响二次销售。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退货运费由买家/用户/消费者承担",
+     "evidence": "退货运费由您承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "real",
+   "id": "d-refund-large-reject-41",
+   "turns": [
+    "扫地机器人不想要了，帮我退款"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回"
+   ],
+   "reply": "已为您转接人工客服（工单号 #1，您是下一位）。我已把问题和处理进度同步给客服同事，接通后无需重复描述，请稍候。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "d-refund-large-reject-42",
+   "turns": [
+    "扫地机器人不想要了，帮我退款"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回"
+   ],
+   "reply": "我查到您的扫地机器人订单 O1002（1899 元，已签收）。按规则可以办理 7 天无理由退货：\n\n- 可退金额：1899 元\n- 退货运费：由您承担\n- 因金额超过 500 元，需人工审批\n\n需要我帮您提交退款申请吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝或未通过审核",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "d-multi-refund-policy-43",
+   "turns": [
+    "耳机不想要了帮我退了，退款多久能到账？"
+   ],
+   "group": [
+    "1–3",
+    "1-3",
+    "1～3",
+    "1到3",
+    "1至3"
+   ],
+   "reply": "您的蓝牙耳机（订单 O1001）退款已提交成功，199 元将原路退回，退货运费需由您承担。到账时间请以支付渠道实际处理为准。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款到账时间为1到3个工作日",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款将在1到3个工作日内到账（或类似明确的时间范围）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "d-multi-refund-policy-44",
+   "turns": [
+    "耳机不想要了帮我退了，退款多久能到账？"
+   ],
+   "group": [
+    "1–3",
+    "1-3",
+    "1～3",
+    "1到3",
+    "1至3"
+   ],
+   "reply": "您的退款已提交成功：蓝牙耳机（订单 O1001）退款金额 199 元，将原路退回，退货运费需由您承担。到账时间暂无法查询，请以退款渠道实际到账为准。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款到账时间为1到3个工作日",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款将在1到3个工作日内到账（或类似明确的时间范围）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "real",
+   "id": "fd03-45",
+   "turns": [
+    "扫地机器人买重了，退掉",
+    "那钱大概几天能到我账上"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "退款到账时间要看审核通过后的退款方式（来源：售后政策 · 退款到账时间）：\n\n- 支付宝、微信：1–3 个工作日\n- 银行卡：3–7 个工作日\n\n另外提醒一下，这台扫地机器人（O1002，1899 元）符合 7 天无理由退货，退货运费需要您承担；因为金额超过 500 元，需要人工审批。您确认要退的话，我这边就帮您提交申请。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请或退货申请未通过/被驳回/审核不通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "ad01-neg",
+   "turns": [
+    "扫地机器人不想要了，帮我退了"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过"
+   ],
+   "reply": "请留意后续通知，需要我帮您查其他订单或物流吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "申请已被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退货申请审核未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "ad02-neg",
+   "turns": [
+    "扫地机器人充不进电了，指示灯一直闪，给我退款"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过"
+   ],
+   "reply": "您好，关于订单 O1002 扫地机器人的退款申请，已为您提交，退款金额 1899 元，退货运费由商家承担。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝/审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "ad03-neg",
+   "turns": [
+    "扫地机买了用不上，退掉吧。顺便看下羽绒服到哪了"
+   ],
+   "group": [
+    "杭州"
+   ],
+   "reply": "两件事都处理好了：\n\n1. 扫地机器人（订单 O1002）退款\n- 已为您提交退款申请，但未通过人工审核，目前无法办理退款\n\n2. 羽绒服（订单 O1003）物流\n- 商家已发货，中通快递单号 ZT987654\n\n还有其他需要帮忙的吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "羽绒服的发货地或物流始发地是杭州",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "发货地/物流当前所在城市/羽绒服到达杭州",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "ad05-neg",
+   "turns": [
+    "扫地机器人不想要了，退款。羽绒服啥时候能到"
+   ],
+   "group": [
+    "明天",
+    "明日"
+   ],
+   "reply": "两件事都处理好了：\n\n1. 扫地机器人（订单 O1002）退款\n- 已为您提交退款申请，可退金额 1899.00 元。\n- 签收 5 天，符合 7 天无理由退货，退货运费需由您承担。\n- 因金额超过 500 元，需人工审核，已通过审核，款项将原路退回。\n\n2. 羽绒服（订单 O1003）物流\n- 商家已发货，中通快递单号 ZT987654。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "羽绒服预计明天或明日到达",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "羽绒服明天/明日能到",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "ad06-neg",
+   "turns": [
+    "扫地机边刷不转了，退了吧，退货运费谁出"
+   ],
+   "group": [
+    "商家",
+    "卖家",
+    "我们承担",
+    "我方承担",
+    "平台承担"
+   ],
+   "reply": "您好，关于订单 O1002 的扫地机器人退款：\n\n1. 退款申请已提交并通过人工审核，退款金额 1899 元将原路退回。\n\n\n如有其他问题，随时联系我们。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "运费由商家、卖家、平台或我方承担",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退货运费由商家/卖家/平台承担",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "ad12-neg",
+   "turns": [
+    "扫地机器人不想要了直接退，运费我自己出没问题"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过"
+   ],
+   "reply": "您好，关于订单 O1002 扫地机器人的退款申请，处理结果如下：\n\n退款申请已提交，可退金额 1899 元，退货运费由您承担。\n\n如您对审核结果有疑问，可以告诉我，我帮您进一步核实。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请未通过/被驳回/审核不通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-address-shipped-neg",
+   "turns": [
+    "羽绒服的地址改成上海市徐汇区漕溪北路 1 号"
+   ],
+   "group": [
+    "已发货",
+    "无法",
+    "不能",
+    "运输中"
+   ],
+   "reply": "建议您联系快递员或快递网点协商改派/转寄。需要我帮您查一下这单的物流轨迹吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "告知用户无法直接修改地址或订单已处于运输状态，建议联系快递方处理",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "订单已经发货/正在运输中/无法修改地址",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-context-expired-neg",
+   "turns": [
+    "我的保温杯是什么时候签收的",
+    "那它还能退吗"
+   ],
+   "group": [
+    "超过",
+    "不支持",
+    "无法",
+    "不能",
+    "过了",
+    "不符合"
+   ],
+   "reply": "如果杯子有质量问题，我可以帮您了解保修流程；还有其他需要帮忙的吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已超过售后期限或不符合退货条件，因此不支持/无法办理退款",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "商品已经超过退货期限/不符合退货条件/无法退货",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-long-memory-neg",
+   "turns": [
+    "我买的蓝牙耳机右耳一直没声音，先不急着处理，我先问几个别的问题",
+    "羽绒服现在到哪了",
+    "退款一般几天到账",
+    "运费险怎么赔",
+    "电子产品保修多久",
+    "积分怎么抵扣",
+    "好，那把耳机按我一开始说的问题退了吧"
+   ],
+   "group": [
+    "商家"
+   ],
+   "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 签收 3 天，质量问题在 15 天内可退，无需人工审批\n\n退款到账时间：支付宝、微信 1–3 个工作日，银行卡 3–7 个工作日。请按退货指引寄回商品即可。\n\n还有其他问题吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "客服已为用户提交了退款申请",
+     "evidence": "已为您提交蓝牙耳机（订单 O1001）的退款申请",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款申请由商家处理/商家负责/商家审批/商家审核等，强调商家的角色",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-multi-query-neg",
+   "turns": [
+    "查下 O1003 的物流，顺便问下七天无理由退货运费谁出"
+   ],
+   "group": [
+    "买家"
+   ],
+   "reply": "**O1003 物流**：商家已发货（中通 ZT987654），11月11日到达杭州转运中心，预计明天送达。\n\n定制类、鲜活易腐、已拆封的个人护理用品不支持无理由退货。（来源：after_sales_policy.md · 七天无理由退货）\n\n补充一下：如果是质量问题，签收后 15 天内退换货，运费由商家承担。需要我帮您办退货吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "七天无理由退货运费由买家承担",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "七天无理由退货运费由买家承担",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-multi-query-neg",
+   "turns": [
+    "查下 O1003 的物流，顺便问下七天无理由退货运费谁出"
+   ],
+   "group": [
+    "转运中心",
+    "明天"
+   ],
+   "reply": "您好，关于您的问题回复如下：\n\n\n\n2. 七天无理由退货运费：退货运费由买家承担。如果商品存在质量问题，在签收后 15 天内退货或换货，运费由商家承担。\n\n如有其他问题，欢迎随时联系我们。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "物流信息已更新，显示包裹已到达转运中心或预计明天送达",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "物流已到转运中心或预计明天送达",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-multi-refund-policy-neg",
+   "turns": [
+    "耳机不想要了帮我退了，退款多久能到账？"
+   ],
+   "group": [
+    "1–3",
+    "1-3",
+    "1～3",
+    "1到3",
+    "1至3"
+   ],
+   "reply": "您的蓝牙耳机（订单 O1001）退款已提交成功，199 元将原路退回。这笔属于 7 天无理由退货，退货运费需要您承担。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款到账时间为1到3个工作日",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款将在1到3个工作日内到账（或类似1-3天的到账时间说明）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-policy-refund-time-neg",
+   "turns": [
+    "退款一般几天到账"
+   ],
+   "group": [
+    "1–3",
+    "1-3",
+    "1～3",
+    "1到3",
+    "1至3"
+   ],
+   "reply": "退款审核通过后会原路退回，到账时间如下：\n\n- **银行卡**：3–7 个工作日\n\n（出处：售后政策 · 退款到账时间）\n\n如果订单买了运费险，退货运费由保险公司按规则赔付，一般在退货签收后 72 小时内到账（出处：售后政策 · 运费险）。\n\n需要我帮你查某个订单的退款进度吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款到账时间为1到3个工作日",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款到账时间为1到3个工作日（或1-3天等）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-policy-shipping-neg",
+   "turns": [
+    "七天无理由退货运费谁出"
+   ],
+   "group": [
+    "买家"
+   ],
+   "reply": "如果商品存在质量问题，在签收后 15 天内申请退换货，退货运费则由商家承担（依据：after_sales_policy.md · 质量问题退换货）。\n\n结论：无理由退货的运费需您自理；若属于质量问题，运费由商家承担。",
+   "label": 1,
+   "note": "人工复核改标：删句后仍有“运费需您自理”，等于买家承担",
+   "verdicts": {
+    "qwen": {
+     "point": "七天无理由退货的运费由买家承担",
+     "evidence": "结论：无理由退货的运费需您自理",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "七天无理由退货运费由买家承担",
+     "evidence": "结论：无理由退货的运费需您自理",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-refund-expired-neg",
+   "turns": [
+    "保温杯不想要了，退了吧"
+   ],
+   "group": [
+    "超过",
+    "不支持",
+    "无法",
+    "不能",
+    "过了",
+    "不符合"
+   ],
+   "reply": "如果商品存在质量问题，可以帮您按质量问题申请售后，需要的话告诉我具体情况。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已取消或退款已办理（即不支持退货/无法退款）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "订单已经超过售后时效/不符合售后条件/无法办理退货",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-refund-large-reject-neg",
+   "turns": [
+    "扫地机器人不想要了，帮我退款"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回"
+   ],
+   "reply": "您好，关于订单 O1002 扫地机器人的退款，处理结果如下：\n\n退款申请已提交，可退金额为 1899 元，退货运费需由您承担。\n\n如您对审核结果有疑问，可以告诉我，我帮您进一步核实。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝/未通过审核",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "d-refund-shipped-neg",
+   "turns": [
+    "羽绒服还没到，不想要了，帮我退款"
+   ],
+   "group": [
+    "拒收",
+    "运输中",
+    "签收后"
+   ],
+   "reply": "您的羽绒服订单（O1003，699元）目前还在运输途中，系统暂时不能直接提交退款。您可以：\n\n\n- 或者先签收，再申请售后。\n\n您看选哪种方式？需要的话我也可以帮您查一下当前物流进度。",
+   "label": 1,
+   "note": "人工复核改标：删句后仍有“还在运输途中”“先签收再申请售后”",
+   "verdicts": {
+    "qwen": {
+     "point": "订单目前处于运输途中",
+     "evidence": "您的羽绒服订单（O1003，699元）目前还在运输途中",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单目前处于运输中/已拒收/已签收的状态",
+     "evidence": "目前还在运输途中",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_neg",
+   "id": "fd02-neg",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我这一轮只做了查询，没有提交新的退款申请。当前查询结果：订单 O1002 符合退款条件，可退金额 1899 元，退货运费由商家承担，因金额超过 500 元需人工审批。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝/未通过审核",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "fd03-neg",
+   "turns": [
+    "扫地机器人买重了，退掉",
+    "那钱大概几天能到我账上"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "退款审核通过后，款项会原路退回：支付宝、微信 1–3 个工作日到账，银行卡 3–7 个工作日到账。（来源：after_sales_policy.md · 退款到账时间）\n\n还有其他需要帮忙的吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款审核未通过/被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "fd04-neg",
+   "turns": [
+    "扫地机器人不喜欢，退款",
+    "审核过了没"
+   ],
+   "group": [
+    "通过",
+    "已退款",
+    "退款成功",
+    "已经退款",
+    "原路退回"
+   ],
+   "reply": "我理解您的提醒。\n\n如果您指的是本轮，您只是询问审核进度，我查询了订单状态，没有新的办理操作，所以没有调用办理类工具。\n\n还有其他需要帮忙的吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "审核已通过或退款已完成",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款审核已通过或退款已成功办理/退回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "fd05-neg",
+   "turns": [
+    "键盘不要了，还没发货吧，帮我取消",
+    "取消好了吗"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消",
+    "退款已",
+    "已成功",
+    "原路退回",
+    "全额退回"
+   ],
+   "reply": "我理解您的提醒。\n\n如果您想再核对退款进度，我可以帮您查看订单详情或物流状态。还有其他需要帮忙的吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经完成",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "fd08-neg",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消",
+    "退款已",
+    "已成功",
+    "原路退回",
+    "全额退回"
+   ],
+   "reply": "之前那笔取消退款确实已经办好了，请留意到账通知～",
+   "label": 1,
+   "note": "人工复核改标：删句后仍有“取消退款确实已经办好了”",
+   "verdicts": {
+    "qwen": {
+     "point": "订单已经取消或退款已经办理完成",
+     "evidence": "之前那笔取消退款确实已经办好了",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "之前那笔取消退款确实已经办好了",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_neg",
+   "id": "img-d03-neg",
+   "turns": [
+    {
+     "text": "耳机外壳有好几道划痕，按质量问题给我退",
+     "images": [
+      "d03.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "看不出",
+    "没有看到",
+    "没看到",
+    "未发现",
+    "未看到",
+    "看不到",
+    "没有发现",
+    "没发现",
+    "完好",
+    "补拍",
+    "重新拍",
+    "再拍",
+    "清晰",
+    "看不清",
+    "看不太清",
+    "重拍"
+   ],
+   "reply": "您说的是蓝牙耳机（订单 O1001）吧？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "客服确认未发现耳机存在质量问题（如划痕），认为商品完好或图片清晰，建议用户重新拍摄。",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "客服表示无法看到/确认划痕，要求用户重新拍摄清晰照片，或声称商品外观完好",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "img-d06-neg",
+   "turns": [
+    {
+     "text": "充电仓充电的时候冒烟了，口都烧黑了，退款",
+     "images": [
+      "d06.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "商家",
+    "卖家",
+    "我们承担",
+    "我方承担",
+    "平台承担"
+   ],
+   "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 签收 3 天，质量问题在 15 天内可退，无需人工审批\n\n照片中充电仓充电口烧黑的情况已记录，属于质量问题。请留意退款到账通知，给您带来不便非常抱歉。还有其他需要帮忙的吗？",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "由商家（或平台）承担退款责任",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "商家/卖家/平台或我方承担退款/运费等责任",
+     "evidence": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 签收 3 天，质量问题在 15 天内可退，无需人工审批\n\n照片中充电仓充电口烧黑的情况已记录，属于质量问题。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "img-d09-neg",
+   "turns": [
+    {
+     "text": "扫地机器人外壳裂了，给我退款",
+     "images": [
+      "d09.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "看不出",
+    "没有看到",
+    "没看到",
+    "未发现",
+    "未看到",
+    "看不到",
+    "没有发现",
+    "没发现",
+    "完好",
+    "补拍",
+    "重新拍",
+    "再拍",
+    "清晰",
+    "看不清",
+    "看不太清",
+    "重拍"
+   ],
+   "reply": "您好，找到您的扫地机器人订单 O1002（1899 元，已签收）。\n\n\n\n另外也请您确认一下：是订单 O1002 这台扫地机器人吗？确认后我马上为您处理。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "客服未看到或未发现用户提供的破损证据，要求用户重新拍摄或提供清晰图片",
+     "evidence": "另外也请您确认一下：是订单 O1002 这台扫地机器人吗？确认后我马上为您处理。",
+     "conveyed": false,
+     "said": false,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "用户提供的照片/视频中看不出/看不到商品问题，或需要用户重新拍摄更清晰的照片/视频",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "img-d13-neg",
+   "turns": [
+    {
+     "text": "扫地机器人外壳有裂缝，退款",
+     "images": [
+      "d13.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "补拍",
+    "重新拍",
+    "再拍",
+    "清晰",
+    "看不清",
+    "看不太清",
+    "重拍"
+   ],
+   "reply": "您上传的照片只拍到了扫地机器人的外包装纸箱，看不到机器本体，无法确认外壳裂缝的情况。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "照片清晰可见（或能看清机器本体/裂缝情况）",
+     "evidence": "您上传的照片只拍到了扫地机器人的外包装纸箱，看不到机器本体，无法确认外壳裂缝的情况。",
+     "conveyed": false,
+     "said": false,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "要求用户重新拍摄更清晰的照片，或指出当前照片看不清/无法确认问题",
+     "evidence": "您上传的照片只拍到了扫地机器人的外包装纸箱，看不到机器本体，无法确认外壳裂缝的情况。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "img-d17-neg",
+   "turns": [
+    {
+     "text": "耳机外壳刮花了，退款",
+     "images": [
+      "d17.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "不一致",
+    "不符",
+    "对不上",
+    "保温杯",
+    "不是耳机",
+    "运动鞋",
+    "鞋",
+    "不是扫地机"
+   ],
+   "reply": "请确认要退的是哪个订单，或补拍对应商品的照片。",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "确认收到的商品与订单描述不一致（如发错货、商品不符等）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "商品与描述不一致（包括发错货、商品类型不符）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_neg",
+   "id": "img-d18-neg",
+   "turns": [
+    {
+     "text": "扫地机器人坏了你看，退款",
+     "images": [
+      "d18.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "不一致",
+    "不符",
+    "对不上",
+    "保温杯",
+    "不是耳机",
+    "运动鞋",
+    "鞋",
+    "不是扫地机"
+   ],
+   "reply": "您订单里的扫地机器人是 O1002（1899 元，已签收）。\n\n麻烦您确认一下：\n1. 是要退扫地机器人（O1002）吗？\n2. 如果是，请补拍一张扫地机器人故障部位的照片；",
+   "label": 0,
+   "verdicts": {
+    "qwen": {
+     "point": "客服确认用户申请退款的商品是扫地机器人，而非其他物品（如耳机、鞋等）",
+     "evidence": "您订单里的扫地机器人是 O1002（1899 元，已签收）。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "用户申请退款的商品与实际订单商品不一致（如用户说保温杯/运动鞋但实际是扫地机器人，或反之）",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "ad01-pos",
+   "turns": [
+    "扫地机器人不想要了，帮我退了"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过"
+   ],
+   "reply": "已为您提交扫地机器人（订单 O1002）的退款申请，该申请经人工审核后暂未获准。\n\n请留意后续通知，需要我帮您查其他订单或物流吗？",
+   "label": null,
+   "note": "人工复核改标：“经人工审核后暂未获准”是否等于未通过有歧义，不计入",
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "该申请经人工审核后暂未获准",
+     "conveyed": false,
+     "said": false,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款/退货申请被拒绝或未通过审核",
+     "evidence": "该申请经人工审核后暂未获准",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "ad02-pos",
+   "turns": [
+    "扫地机器人充不进电了，指示灯一直闪，给我退款"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过"
+   ],
+   "reply": "您好，关于订单 O1002 扫地机器人的退款申请，已为您提交，退款金额 1899 元，退货运费由商家承担。不过，由于该申请金额超过 500 元，需要人工审核，目前人工审核结果不符合放行条件，暂时无法办理退款。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过",
+     "evidence": "目前人工审核结果不符合放行条件，暂时无法办理退款。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款申请被审核拒绝或未通过",
+     "evidence": "目前人工审核结果不符合放行条件，暂时无法办理退款",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "ad03-pos",
+   "turns": [
+    "扫地机买了用不上，退掉吧。顺便看下羽绒服到哪了"
+   ],
+   "group": [
+    "杭州"
+   ],
+   "reply": "两件事都处理好了：\n\n1. 扫地机器人（订单 O1002）退款\n- 已为您提交退款申请，但未通过人工审核，目前无法办理退款\n\n2. 羽绒服（订单 O1003）物流\n- 商家已发货，中通快递单号 ZT987654\n- 最新轨迹：11-11 到达转运中心，预计明天送达\n\n还有其他需要帮忙的吗？",
+   "label": 0,
+   "note": "人工复核改标：改写时把“杭州”丢了",
+   "verdicts": {
+    "qwen": {
+     "point": "羽绒服的物流信息中包含了杭州这一地点",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "发货地或相关地点在杭州",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "ad05-pos",
+   "turns": [
+    "扫地机器人不想要了，退款。羽绒服啥时候能到"
+   ],
+   "group": [
+    "明天",
+    "明日"
+   ],
+   "reply": "两件事都处理好了：\n\n1. 扫地机器人（订单 O1002）退款\n- 已为您提交退款申请，可退金额 1899.00 元。\n- 签收 5 天，符合 7 天无理由退货，退货运费需由您承担。\n- 因金额超过 500 元，需人工审核，已通过审核，款项将原路退回。\n\n2. 羽绒服（订单 O1003）物流\n- 商家已发货，中通快递单号 ZT987654。\n- 11 月 11 日已到达杭州转运中心，预计次日送达。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "羽绒服预计明天（或次日）送达",
+     "evidence": "预计次日送达",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "羽绒服明天/明日送达",
+     "evidence": "预计次日送达",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "ad06-pos",
+   "turns": [
+    "扫地机边刷不转了，退了吧，退货运费谁出"
+   ],
+   "group": [
+    "商家",
+    "卖家",
+    "我们承担",
+    "我方承担",
+    "平台承担"
+   ],
+   "reply": "您好，关于订单 O1002 的扫地机器人退款：\n\n1. 退款申请已提交并通过人工审核，退款金额 1899 元将原路退回。\n2. 退货运费由店铺承担。\n\n如有其他问题，随时联系客服。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "退货运费由商家（卖家/店铺）承担",
+     "evidence": "退货运费由店铺承担。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退货运费由商家/卖家/我们/我方/平台承担",
+     "evidence": "退货运费由店铺承担。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "ad12-pos",
+   "turns": [
+    "扫地机器人不想要了直接退，运费我自己出没问题"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过"
+   ],
+   "reply": "您好，关于订单 O1002 扫地机器人的退款申请，处理结果如下：\n\n退款申请已提交，可退金额 1899 元，退货运费由您承担。由于金额超过 500 元，需人工审核，目前该申请经人工审核后暂未获批准。\n\n如您对审核结果有疑问，可以告诉我，我帮您进一步核实。",
+   "label": null,
+   "note": "人工复核改标：同上",
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过（或被驳回/拒绝）",
+     "evidence": "目前该申请经人工审核后暂未获批准",
+     "conveyed": false,
+     "said": false,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款/退货申请被审核拒绝或未通过",
+     "evidence": "目前该申请经人工审核后暂未获批准",
+     "conveyed": false,
+     "said": false,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-address-shipped-pos",
+   "turns": [
+    "羽绒服的地址改成上海市徐汇区漕溪北路 1 号"
+   ],
+   "group": [
+    "已发货",
+    "无法",
+    "不能",
+    "运输中"
+   ],
+   "reply": "抱歉，您的羽绒服订单（O1003，699 元）这边显示商品寄出了，收货地址现在改不了，只有还没寄出的订单才可以改地址。\n\n建议您联系快递员或快递网点协商改派/转寄。需要我帮您查一下这单的物流轨迹吗？",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已发货，因此无法修改收货地址",
+     "evidence": "这边显示商品寄出了，收货地址现在改不了",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已发货/无法修改地址/不能修改/运输中",
+     "evidence": "商品寄出了，收货地址现在改不了",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-context-expired-pos",
+   "turns": [
+    "我的保温杯是什么时候签收的",
+    "那它还能退吗"
+   ],
+   "group": [
+    "超过",
+    "不支持",
+    "无法",
+    "不能",
+    "过了",
+    "不符合"
+   ],
+   "reply": "很抱歉，这个保温杯已经签收 20 天了，已超出退货期限：\n\n- **无理由退货**：7 天无理由退货期已满，这项申请办不了。\n- **质量问题退货**：15 天质量问题退货期已满，退货办不了，不过可以申请保修。\n\n如果杯子有质量问题，我可以帮您了解保修流程；还有其他需要帮忙的吗？",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已超出退货期限，不支持/无法办理退货",
+     "evidence": "已超出退货期限：\n\n- **无理由退货**：7 天无理由退货期已满，这项申请办不了。\n- **质量问题退货**：15 天质量问题退货期已满，退货办不了",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "商品已超过退货期限/不符合退货条件/无法退货/不支持退货",
+     "evidence": "已超出退货期限：\n\n- **无理由退货**：7 天无理由退货期已满，这项申请办不了。\n- **质量问题退货**：15 天质量问题退货期已满，退货办不了",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-logistics-pos",
+   "turns": [
+    "我的羽绒服到哪了"
+   ],
+   "group": [
+    "转运中心",
+    "明天"
+   ],
+   "reply": "您的羽绒服订单（O1003）已通过中通发出，单号 ZT987654，11月11日已抵达杭州分拨点，预计11月12日送到。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "包裹预计明天送达",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "订单已到达转运中心或预计明天送达",
+     "evidence": "预计11月12日送到",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-long-memory-pos",
+   "turns": [
+    "我买的蓝牙耳机右耳一直没声音，先不急着处理，我先问几个别的问题",
+    "羽绒服现在到哪了",
+    "退款一般几天到账",
+    "运费险怎么赔",
+    "电子产品保修多久",
+    "积分怎么抵扣",
+    "好，那把耳机按我一开始说的问题退了吧"
+   ],
+   "group": [
+    "商家"
+   ],
+   "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费由卖家承担\n- 签收 3 天，质量问题在 15 天内可退，无需人工审批\n\n退款到账时间：支付宝、微信 1–3 个工作日，银行卡 3–7 个工作日。请按退货指引寄回商品即可。\n\n还有其他问题吗？",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "客服已受理或提交了用户关于耳机的退款申请",
+     "evidence": "已为您提交蓝牙耳机（订单 O1001）的退款申请",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "由商家/卖家承担责任或费用（如商家承担运费、商家退款、商家处理等）",
+     "evidence": "退货运费由卖家承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-multi-query-pos",
+   "turns": [
+    "查下 O1003 的物流，顺便问下七天无理由退货运费谁出"
+   ],
+   "group": [
+    "买家"
+   ],
+   "reply": "**O1003 物流**：商家已发货（中通 ZT987654），11月11日到达杭州转运中心，预计明天送达。\n\n**七天无理由退货运费**：签收后 7 天内，商品完好、不影响二次销售的，可以申请无理由退货，退货运费由顾客承担。定制类、鲜活易腐、已拆封的个人护理用品不支持无理由退货。（来源：after_sales_policy.md · 七天无理由退货）\n\n补充一下：如果是质量问题，签收后 15 天内退换货，运费由商家承担。需要我帮您办退货吗？",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "七天无理由退货运费由买家承担",
+     "evidence": "退货运费由顾客承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "七天无理由退货运费由买家/顾客/消费者承担",
+     "evidence": "退货运费由顾客承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-multi-query-pos",
+   "turns": [
+    "查下 O1003 的物流，顺便问下七天无理由退货运费谁出"
+   ],
+   "group": [
+    "转运中心",
+    "明天"
+   ],
+   "reply": "您好，关于您的问题回复如下：\n\n1. 物流查询：订单 O1003 已发货，承运方为中通，运单号 ZT987654，11 月 11 日到达杭州中转站，预计次日送达。\n\n2. 七天无理由退货运费：退货运费由买家承担。如果商品存在质量问题，在签收后 15 天内退货或换货，运费由商家承担。\n\n如有其他问题，欢迎随时联系我们。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "物流信息中提及转运中心或预计明天送达",
+     "evidence": "11 月 11 日到达杭州中转站，预计次日送达",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "物流已到达转运中心/中转站点，或预计明天送达",
+     "evidence": "11 月 11 日到达杭州中转站，预计次日送达",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-multi-refund-policy-pos",
+   "turns": [
+    "耳机不想要了帮我退了，退款多久能到账？"
+   ],
+   "group": [
+    "1–3",
+    "1-3",
+    "1～3",
+    "1到3",
+    "1至3"
+   ],
+   "reply": "您的蓝牙耳机（订单 O1001）退款已提交成功，199 元将原路退回。这笔属于 7 天无理由退货，退货运费需要您承担。\n\n到账时间以支付渠道处理进度为准：支付宝、微信一般几个工作日内到账，银行卡一般 3–7 个工作日到账，请留意支付渠道的到账通知。",
+   "label": 0,
+   "note": "人工复核改标：改写把“1–3 个工作日”改成了“几个工作日”",
+   "verdicts": {
+    "qwen": {
+     "point": "退款到账时间为1到3个工作日",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款将在1到3个工作日内到账",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-policy-refund-time-pos",
+   "turns": [
+    "退款一般几天到账"
+   ],
+   "group": [
+    "1–3",
+    "1-3",
+    "1～3",
+    "1到3",
+    "1至3"
+   ],
+   "reply": "退款审核通过后会原路退回，到账时间如下：\n\n- **支付宝、微信**：最快1个工作日，最晚3个工作日\n- **银行卡**：最快3个工作日，最晚7个工作日\n\n（出处：售后政策 · 退款到账时间）\n\n如果订单买了运费险，退货运费由保险公司按规则赔付，一般在退货签收后 72 小时内到账（出处：售后政策 · 运费险）。\n\n需要我帮你查某个订单的退款进度吗？",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "退款到账时间为1到3个工作日",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款到账时间为1到3个工作日",
+     "evidence": "最快1个工作日，最晚3个工作日",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-policy-shipping-pos",
+   "turns": [
+    "七天无理由退货运费谁出"
+   ],
+   "group": [
+    "买家"
+   ],
+   "reply": "七天无理由退货的退货运费由您承担（依据：after_sales_policy.md · 七天无理由退货）。如果商品存在质量问题，在签收后 15 天内申请退换货，退货运费则由商家承担（依据：after_sales_policy.md · 质量问题退换货）。\n\n结论：无理由退货的运费需您自理；若属于质量问题，运费由商家承担。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "七天无理由退货运费由买家承担",
+     "evidence": "七天无理由退货的退货运费由您承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "七天无理由退货运费由买家承担",
+     "evidence": "七天无理由退货的退货运费由您承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-refund-expired-pos",
+   "turns": [
+    "保温杯不想要了，退了吧"
+   ],
+   "group": [
+    "超过",
+    "不支持",
+    "无法",
+    "不能",
+    "过了",
+    "不符合"
+   ],
+   "reply": "您的保温杯订单（O1004，89 元）签收已有 20 天，7 天无理由退货期已结束，因此按“不想要了”办理退货退款这条路走不通。\n\n如果商品存在质量问题，可以帮您按质量问题申请售后，需要的话告诉我具体情况。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "因超过退货期限或不符合条件，不支持办理无理由退货退款",
+     "evidence": "7 天无理由退货期已结束，因此按“不想要了”办理退货退款这条路走不通",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已超过退货期限/不支持退货/无法办理退货",
+     "evidence": "7 天无理由退货期已结束，因此按\"不想要了\"办理退货退款这条路走不通",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-refund-large-reject-pos",
+   "turns": [
+    "扫地机器人不想要了，帮我退款"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回"
+   ],
+   "reply": "您好，关于订单 O1002 扫地机器人的退款，处理结果如下：\n\n退款申请已提交，可退金额为 1899 元，退货运费需由您承担。但由于退款金额超过 500 元，需要人工审核，目前该申请经人工审核后暂未获批准。\n\n如您对审核结果有疑问，可以告诉我，我帮您进一步核实。",
+   "label": null,
+   "note": "人工复核改标：同上",
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请被拒绝或未获批准",
+     "evidence": "目前该申请经人工审核后暂未获批准",
+     "conveyed": false,
+     "said": false,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款申请被拒绝/未通过审核",
+     "evidence": "目前该申请经人工审核后暂未获批准",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-refund-quality-pos",
+   "turns": [
+    "耳机右耳没声音，质量有问题，我要退货"
+   ],
+   "group": [
+    "商家"
+   ],
+   "reply": "蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由我们承担。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "商家已同意退货/退款",
+     "evidence": "蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由我们承担。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "商家承担退货运费/商家负责运费/商家出运费",
+     "evidence": "退货运费由我们承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "d-refund-shipped-pos",
+   "turns": [
+    "羽绒服还没到，不想要了，帮我退款"
+   ],
+   "group": [
+    "拒收",
+    "运输中",
+    "签收后"
+   ],
+   "reply": "您的羽绒服订单（O1003，699元）目前还在运送路上，系统暂时无法直接提交退款。您可以：\n\n- 快递送达时**不接收**，包裹退回后会自动退款；\n- 或者先收下，再申请售后。\n\n您看选哪种方式？需要的话我也可以帮您查一下当前物流进度。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "告知用户因商品在运输中，目前无法直接退款，建议拒收或签收后申请售后",
+     "evidence": "您的羽绒服订单（O1003，699元）目前还在运送路上，系统暂时无法直接提交退款。您可以：- 快递送达时**不接收**，包裹退回后会自动退款；- 或者先收下，再申请售后。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "商品还在运输途中/未签收/可以拒收",
+     "evidence": "目前还在运送路上",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "fd01-pos",
+   "turns": [
+    "扫地机器人不想要了，帮我退了",
+    "退款批下来了吗"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "订单 O1002 的退款申请此前在人工审核环节被退回，目前查不到新的审批完成记录，退款还没有批下来。如需进一步核实该审核结果的原因，可继续反馈。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过/被驳回",
+     "evidence": "订单 O1002 的退款申请此前在人工审核环节被退回，目前查不到新的审批完成记录，退款还没有批下来。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款申请审核未通过/被驳回",
+     "evidence": "订单 O1002 的退款申请此前在人工审核环节被退回",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "fd02-pos",
+   "turns": [
+    "扫地机器人吸力很弱，质量有问题，退款",
+    "羽绒服到哪了",
+    "对了扫地机那个退款现在什么情况"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "我这一轮只做了查询，没有提交新的退款申请。当前查询结果：订单 O1002 符合退款条件，可退金额 1899 元，退货运费由商家承担，因金额超过 500 元需人工审批。您之前提交的申请审核结果不成功，建议补充吸力异常的具体情况或照片，以便再次反馈核实。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请审核未通过",
+     "evidence": "您之前提交的申请审核结果不成功",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款申请被拒绝/未通过审核",
+     "evidence": "您之前提交的申请审核结果不成功",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "fd03-pos",
+   "turns": [
+    "扫地机器人买重了，退掉",
+    "那钱大概几天能到我账上"
+   ],
+   "group": [
+    "未通过",
+    "没有通过",
+    "未能通过",
+    "驳回",
+    "不通过",
+    "没通过"
+   ],
+   "reply": "退款审核通过后，款项会原路退回：支付宝、微信 1–3 个工作日到账，银行卡 3–7 个工作日到账。（来源：after_sales_policy.md · 退款到账时间）\n\n另外提醒一下，您这笔退款申请目前还在人工审核环节，建议留意审核进度。还有其他需要帮忙的吗？",
+   "label": 0,
+   "note": "人工复核改标：改写把“未通过”改成了“还在人工审核环节”",
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请未通过或被驳回",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "退款申请被拒绝或审核未通过",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "fd04-pos",
+   "turns": [
+    "扫地机器人不喜欢，退款",
+    "审核过了没"
+   ],
+   "group": [
+    "通过",
+    "已退款",
+    "退款成功",
+    "已经退款",
+    "原路退回"
+   ],
+   "reply": "我理解您的提醒。关于上一轮回复：我查询订单 O1002 后，系统返回的状态是“完成”，金额 1899.00 元，这可以证实该笔款项已经办结，因此我保持原来的说法。\n\n如果您指的是本轮，您只是询问审核进度，我查询了订单状态，没有新的办理操作，所以没有调用办理类工具。\n\n目前订单 O1002 的款项已审核完成并办结，返回原支付账户。还有其他需要帮忙的吗？",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "退款申请已通过审核，款项已退回",
+     "evidence": "目前订单 O1002 的款项已审核完成并办结，返回原支付账户。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款申请已经审核通过且退款已经成功完成",
+     "evidence": "目前订单 O1002 的款项已审核完成并办结，返回原支付账户。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "fd05-pos",
+   "turns": [
+    "键盘不要了，还没发货吧，帮我取消",
+    "取消好了吗"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消",
+    "退款已",
+    "已成功",
+    "原路退回",
+    "全额退回"
+   ],
+   "reply": "我理解您的提醒。这一轮我查询了订单 O1005，系统显示状态为「退款完成」，退款金额 459.00 元，与之前告知您的一致，说明这次处理已经生效，我保持原来的说法。\n\n如果您想再核对退款进度，我可以帮您查看订单详情或物流状态。还有其他需要帮忙的吗？",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单已取消或退款已完成",
+     "evidence": "系统显示状态为「退款完成」，退款金额 459.00 元，与之前告知您的一致，说明这次处理已经生效",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已经取消或退款已经办好",
+     "evidence": "系统显示状态为「退款完成」，退款金额 459.00 元，与之前告知您的一致，说明这次处理已经生效",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "fd06-pos",
+   "turns": [
+    "耳机买错了，退了吧",
+    "退款成功了吧？"
+   ],
+   "group": [
+    "成功",
+    "已退款",
+    "已经退款",
+    "已退回",
+    "原路退回"
+   ],
+   "reply": "订单 O1001（蓝牙耳机）的退款办理完成，199.00 元将按原支付路径返还，退货运费需由您承担。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "退款已经办理成功",
+     "evidence": "订单 O1001（蓝牙耳机）的退款办理完成，199.00 元将按原支付路径返还",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款已经成功完成",
+     "evidence": "订单 O1001（蓝牙耳机）的退款办理完成，199.00 元将按原支付路径返还",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "fd08-pos",
+   "turns": [
+    "键盘O1005取消掉，不想要了。另外羽绒服啥时候到",
+    "键盘那个弄好了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消",
+    "退款已",
+    "已成功",
+    "原路退回",
+    "全额退回"
+   ],
+   "reply": "我查了一下订单 O1005 的当前状态：**退款完成**，金额 459 元，按原支付路径返还。之前那笔撤销退款确实处理好了，请留意到账通知～",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "订单O1005的取消或退款操作已经完成",
+     "evidence": "我查了一下订单 O1005 的当前状态：**退款完成**，金额 459 元，按原支付路径返还。之前那笔撤销退款确实处理好了",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "订单已取消或退款已办理完成（包括取消成功、退款完成、原路退回等状态）",
+     "evidence": "**退款完成**，金额 459 元，按原支付路径返还。之前那笔撤销退款确实处理好了",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "fd11-pos",
+   "turns": [
+    "键盘还没发货吧",
+    "帮我把它取消了，不想要了",
+    "取消成功了没"
+   ],
+   "group": [
+    "已取消",
+    "取消成功",
+    "已经取消",
+    "已退款",
+    "已退回",
+    "已为您取消",
+    "已经帮您取消",
+    "退款已",
+    "已成功",
+    "原路退回",
+    "全额退回",
+    "成功"
+   ],
+   "reply": "订单 O1005 处理完毕，当前状态为款项处理中，459.00 元将按原支付路径返还。",
+   "label": 0,
+   "note": "人工复核改标：改写把“已退款”改成了“款项处理中”",
+   "verdicts": {
+    "qwen": {
+     "point": "订单已取消或退款已成功办理",
+     "evidence": "",
+     "conveyed": false,
+     "said": false,
+     "quoted": false
+    },
+    "kimi": {
+     "point": "订单已经取消成功，并且退款已经办理或正在退回",
+     "evidence": "订单 O1005 处理完毕，当前状态为款项处理中，459.00 元将按原支付路径返还",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": false
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d01-pos",
+   "turns": [
+    {
+     "text": "耳机充电仓裂了，帮我退了",
+     "images": [
+      "d01.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "商家",
+    "卖家",
+    "我们承担",
+    "我方承担",
+    "平台承担"
+   ],
+   "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请，退款金额 199.00 元将原路退回，退货运费由店铺负责。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "由商家（卖家/店铺）承担相关费用",
+     "evidence": "退货运费由店铺负责",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退货运费由商家/卖家/平台或我方（客服方）承担",
+     "evidence": "退货运费由店铺负责",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d02-pos",
+   "turns": [
+    {
+     "text": "耳机刚到就这样了，退款",
+     "images": [
+      "d02.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "商家",
+    "卖家",
+    "我们承担",
+    "我方承担",
+    "平台承担"
+   ],
+   "reply": "蓝牙耳机（订单 O1001）的退款已提交成功，199 元将原路退回，退货运费由店铺负责。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "商家/卖家承担相关费用",
+     "evidence": "退货运费由店铺负责。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退款或退货运费由商家/卖家/我方/平台承担",
+     "evidence": "退货运费由店铺负责",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d03-pos",
+   "turns": [
+    {
+     "text": "耳机外壳有好几道划痕，按质量问题给我退",
+     "images": [
+      "d03.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "看不出",
+    "没有看到",
+    "没看到",
+    "未发现",
+    "未看到",
+    "看不到",
+    "没有发现",
+    "没发现",
+    "完好",
+    "补拍",
+    "重新拍",
+    "再拍",
+    "清晰",
+    "看不清",
+    "看不太清",
+    "重拍"
+   ],
+   "reply": "您说的是蓝牙耳机（订单 O1001）吧？不过您上传的照片中，充电仓外观显得正常，表面未见划痕，暂时无法按质量问题提交退款。\n\n麻烦您重新提供几张能明确展现划痕的照片（最好有反光或侧光角度），我再帮您处理。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "客服检查后认为商品外观完好或照片看不清，未发现质量问题（如划痕），因此无法按质量问题处理",
+     "evidence": "充电仓外观显得正常，表面未见划痕，暂时无法按质量问题提交退款",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "照片上看不出/看不到划痕，或要求用户重新拍摄更清晰的照片",
+     "evidence": "充电仓外观显得正常，表面未见划痕",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d04-pos",
+   "turns": [
+    {
+     "text": "耳机外壳摔裂了，退款",
+     "images": [
+      "d04.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "补拍",
+    "重新拍",
+    "再拍",
+    "清晰",
+    "看不清",
+    "看不太清",
+    "重拍"
+   ],
+   "reply": "您上传的照片不够清楚，无法辨认耳机外壳的裂损情况，麻烦您提供一张能明确显示破损处的照片，我再为您提交退款申请。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "照片清晰度不足或无法看清细节",
+     "evidence": "您上传的照片不够清楚，无法辨认耳机外壳的裂损情况",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "要求用户重新拍摄更清晰的照片",
+     "evidence": "麻烦您提供一张能明确显示破损处的照片",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d05-pos",
+   "turns": [
+    {
+     "text": "帮我把这个耳机退了",
+     "images": [
+      "d05.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "商家",
+    "卖家",
+    "我们承担",
+    "我方承担",
+    "平台承担"
+   ],
+   "reply": "蓝牙耳机（订单 O1001）的退款已成功提交，199 元将按原支付路径退回，退货运费由店铺负责。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "运费由商家（卖家/店铺）承担",
+     "evidence": "退货运费由店铺负责",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "退货运费由商家/卖家/平台或我方（客服所在方）承担",
+     "evidence": "退货运费由店铺负责",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d06-pos",
+   "turns": [
+    {
+     "text": "充电仓充电的时候冒烟了，口都烧黑了，退款",
+     "images": [
+      "d06.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "商家",
+    "卖家",
+    "我们承担",
+    "我方承担",
+    "平台承担"
+   ],
+   "reply": "已为您提交蓝牙耳机（订单 O1001）的退款申请：\n\n- 退款金额：199.00 元，原路退回\n- 退货运费：由店铺承担\n- 签收 3 天，质量问题在 15 天内可退，无需人工审批\n\n照片中充电仓充电口烧黑的情况已记录，属于质量问题。请留意退款到账通知，给您带来不便非常抱歉。还有其他需要帮忙的吗？",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "商家（或卖家、平台）承担相关费用",
+     "evidence": "退货运费：由店铺承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "由商家/卖家/平台或我方承担费用或责任",
+     "evidence": "退货运费：由店铺承担",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d09-pos",
+   "turns": [
+    {
+     "text": "扫地机器人外壳裂了，给我退款",
+     "images": [
+      "d09.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "看不出",
+    "没有看到",
+    "没看到",
+    "未发现",
+    "未看到",
+    "看不到",
+    "没有发现",
+    "没发现",
+    "完好",
+    "补拍",
+    "重新拍",
+    "再拍",
+    "清晰",
+    "看不清",
+    "看不太清",
+    "重拍"
+   ],
+   "reply": "您好，已查到您的扫地机器人订单 O1002（1899 元，已签收）。\n\n您上传的照片中，机器外壳表面正常，裂纹未能体现。为按质量问题为您办理，麻烦您另拍一张能明确呈现裂痕位置的照片。\n\n同时请您确认：是订单 O1002 这台扫地机器人吗？确认后我立即为您处理。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "客服未观察到裂痕或认为照片无法证明存在质量问题，要求用户重新拍摄清晰的照片",
+     "evidence": "您上传的照片中，机器外壳表面正常，裂纹未能体现。为按质量问题为您办理，麻烦您另拍一张能明确呈现裂痕位置的照片。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "用户提供的照片看不清/看不出问题，需要重新拍摄更清晰的照片",
+     "evidence": "您上传的照片中，机器外壳表面正常，裂纹未能体现。为按质量问题为您办理，麻烦您另拍一张能明确呈现裂痕位置的照片。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d13-pos",
+   "turns": [
+    {
+     "text": "扫地机器人外壳有裂缝，退款",
+     "images": [
+      "d13.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "补拍",
+    "重新拍",
+    "再拍",
+    "清晰",
+    "看不清",
+    "看不太清",
+    "重拍"
+   ],
+   "reply": "您上传的照片只显示了扫地机器人的外包装纸箱，没有拍到机器本身，因此无法确认外壳裂缝的具体情况。请您另外提供一张扫地机器人实物外壳裂缝处的照片，方便我继续为您处理退款。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "要求用户重新拍摄或提供清晰、能看清实物裂缝的照片",
+     "evidence": "请您另外提供一张扫地机器人实物外壳裂缝处的照片",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "要求用户重新拍摄或提供更清晰的照片",
+     "evidence": "请您另外提供一张扫地机器人实物外壳裂缝处的照片",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d17-pos",
+   "turns": [
+    {
+     "text": "耳机外壳刮花了，退款",
+     "images": [
+      "d17.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "不一致",
+    "不符",
+    "对不上",
+    "保温杯",
+    "不是耳机",
+    "运动鞋",
+    "鞋",
+    "不是扫地机"
+   ],
+   "reply": "您上传的图片显示的是水杯，和您提到的蓝牙耳机订单无法匹配，目前暂时不能为您办理退款。请您确认需要退的是哪一笔订单，或者重新拍摄对应商品的照片。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "用户收到的商品与订单不符（例如收到的是水杯而非耳机）",
+     "evidence": "您上传的图片显示的是水杯，和您提到的蓝牙耳机订单无法匹配",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "商品不一致/不符（用户说的商品和实际商品对不上，比如说是耳机但实际是保温杯/水杯/运动鞋等其他商品）",
+     "evidence": "您上传的图片显示的是水杯，和您提到的蓝牙耳机订单无法匹配",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  },
+  {
+   "kind": "syn_pos",
+   "id": "img-d18-pos",
+   "turns": [
+    {
+     "text": "扫地机器人坏了你看，退款",
+     "images": [
+      "d18.jpg"
+     ]
+    }
+   ],
+   "group": [
+    "不一致",
+    "不符",
+    "对不上",
+    "保温杯",
+    "不是耳机",
+    "运动鞋",
+    "鞋",
+    "不是扫地机"
+   ],
+   "reply": "您订单中的扫地机器人是 O1002（1899 元，已签收）。但您上传的照片里是一双运动用品（前端开裂），并非扫地机器人，可能是照片传错了或订单弄混了。\n\n麻烦您确认一下：\n1. 是要退扫地机器人（O1002）吗？\n2. 如果是，请补拍一张扫地机器人故障部位的照片；如果是该用品的问题，请告诉我它的订单号。",
+   "label": 1,
+   "verdicts": {
+    "qwen": {
+     "point": "客服指出用户提供的商品与订单不符（如照片显示的不是扫地机器人）",
+     "evidence": "但您上传的照片里是一双运动用品（前端开裂），并非扫地机器人，可能是照片传错了或订单弄混了。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    },
+    "kimi": {
+     "point": "用户要求退款的东西与订单不一致/不符（比如订单是扫地机器人但用户说的是/拍的是其他商品如保温杯、耳机、运动鞋等）",
+     "evidence": "您订单中的扫地机器人是 O1002（1899 元，已签收）。但您上传的照片里是一双运动用品（前端开裂），并非扫地机器人，可能是照片传错了或订单弄混了。",
+     "conveyed": true,
+     "said": true,
+     "quoted": true
+    }
+   },
+   "conveyed": true
+  }
+ ]
+}

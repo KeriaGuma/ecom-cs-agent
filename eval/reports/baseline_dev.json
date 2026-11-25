@@ -1,0 +1,98 @@
+{
+  "n": 55,
+  "correct": 54,
+  "accuracy": 0.9818181818181818,
+  "ci95": [
+    0.9039399953951678,
+    0.9967833024077472
+  ],
+  "recall_by_label": {
+    "order_agent": {
+      "n": 11,
+      "recall": 1.0
+    },
+    "refund_agent": {
+      "n": 14,
+      "recall": 0.9285714285714286
+    },
+    "kb_agent": {
+      "n": 10,
+      "recall": 1.0
+    },
+    "handoff_human": {
+      "n": 6,
+      "recall": 1.0
+    },
+    "FINISH": {
+      "n": 8,
+      "recall": 1.0
+    },
+    "clarify": {
+      "n": 6,
+      "recall": 1.0
+    }
+  },
+  "acc_by_tag": {
+    "single": {
+      "n": 40,
+      "acc": 0.975
+    },
+    "context": {
+      "n": 6,
+      "acc": 1.0
+    },
+    "hard": {
+      "n": 7,
+      "acc": 0.8571428571428571
+    },
+    "multi": {
+      "n": 6,
+      "acc": 1.0
+    },
+    "partial": {
+      "n": 5,
+      "acc": 1.0
+    },
+    "colloquial": {
+      "n": 2,
+      "acc": 1.0
+    },
+    "adversarial": {
+      "n": 2,
+      "acc": 1.0
+    }
+  },
+  "p50_ms": 1530.6163339409977,
+  "p95_ms": 3606.5187079366297,
+  "errors": [
+    {
+      "id": "dev-refund-02",
+      "expected": "refund_agent",
+      "pred": "kb_agent",
+      "text": "O1001 退货的话运费谁出"
+    }
+  ],
+  "confusion": {
+    "order_agent": {
+      "order_agent": 11
+    },
+    "refund_agent": {
+      "refund_agent": 13,
+      "kb_agent": 1
+    },
+    "kb_agent": {
+      "kb_agent": 10
+    },
+    "handoff_human": {
+      "handoff_human": 6
+    },
+    "FINISH": {
+      "FINISH": 8
+    },
+    "clarify": {
+      "clarify": 6
+    }
+  },
+  "model": "deepseek-flash",
+  "split": "dev"
+}

@@ -1,0 +1,2174 @@
+{
+  "summaries": {
+    "multi": {
+      "tasks": 18,
+      "runs": 36,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.9035781695514236,
+        1.0
+      ],
+      "pass_k": 1.0,
+      "by_tag": {
+        "domain": {
+          "n": 36,
+          "success": 1.0
+        },
+        "write": {
+          "n": 18,
+          "success": 1.0
+        },
+        "simple": {
+          "n": 2,
+          "success": 1.0
+        },
+        "boundary": {
+          "n": 16,
+          "success": 1.0
+        },
+        "context": {
+          "n": 2,
+          "success": 1.0
+        },
+        "cross": {
+          "n": 8,
+          "success": 1.0
+        },
+        "multi": {
+          "n": 2,
+          "success": 1.0
+        }
+      },
+      "turn_p50_ms": 6690.426583169028,
+      "turn_p95_ms": 15394.749249797314,
+      "llm_calls_per_task": 4.972222222222222,
+      "tokens_per_task": 5292.555555555556,
+      "input_tokens_per_task": 5046.027777777777,
+      "output_tokens_per_task": 246.52777777777777,
+      "task_success": {
+        "dd-points-reissue": 1.0,
+        "dd-points-check": 1.0,
+        "dd-points-exchange": 1.0,
+        "dd-points-insufficient": 1.0,
+        "dd-invoice-normal": 1.0,
+        "dd-invoice-special-missing": 1.0,
+        "dd-invoice-special": 1.0,
+        "dd-invoice-undelivered": 1.0,
+        "dd-coupon-refund-return": 1.0,
+        "dd-coupon-expired": 1.0,
+        "dd-repair-watch": 1.0,
+        "dd-repair-human": 1.0,
+        "dd-repair-within15": 1.0,
+        "dd-price-earphone": 1.0,
+        "dd-price-flash": 1.0,
+        "dd-price-expired": 1.0,
+        "dd-cross-watch-refund": 1.0,
+        "dd-cross-multi": 1.0
+      },
+      "extra_tools": 0,
+      "domains": "T2",
+      "prompt": "8952a831",
+      "success_old_domains": null,
+      "success_new_domains": 1.0
+    },
+    "single": {
+      "tasks": 18,
+      "runs": 36,
+      "success_rate": 1.0,
+      "success_ci95": [
+        0.9035781695514236,
+        1.0
+      ],
+      "pass_k": 1.0,
+      "by_tag": {
+        "domain": {
+          "n": 36,
+          "success": 1.0
+        },
+        "write": {
+          "n": 18,
+          "success": 1.0
+        },
+        "simple": {
+          "n": 2,
+          "success": 1.0
+        },
+        "boundary": {
+          "n": 16,
+          "success": 1.0
+        },
+        "context": {
+          "n": 2,
+          "success": 1.0
+        },
+        "cross": {
+          "n": 8,
+          "success": 1.0
+        },
+        "multi": {
+          "n": 2,
+          "success": 1.0
+        }
+      },
+      "turn_p50_ms": 4428.247208008543,
+      "turn_p95_ms": 8526.791624957696,
+      "llm_calls_per_task": 3.0277777777777777,
+      "tokens_per_task": 8161.888888888889,
+      "input_tokens_per_task": 8001.944444444444,
+      "output_tokens_per_task": 159.94444444444446,
+      "task_success": {
+        "dd-points-reissue": 1.0,
+        "dd-points-check": 1.0,
+        "dd-points-exchange": 1.0,
+        "dd-points-insufficient": 1.0,
+        "dd-invoice-normal": 1.0,
+        "dd-invoice-special-missing": 1.0,
+        "dd-invoice-special": 1.0,
+        "dd-invoice-undelivered": 1.0,
+        "dd-coupon-refund-return": 1.0,
+        "dd-coupon-expired": 1.0,
+        "dd-repair-watch": 1.0,
+        "dd-repair-human": 1.0,
+        "dd-repair-within15": 1.0,
+        "dd-price-earphone": 1.0,
+        "dd-price-flash": 1.0,
+        "dd-price-expired": 1.0,
+        "dd-cross-watch-refund": 1.0,
+        "dd-cross-multi": 1.0
+      },
+      "extra_tools": 0,
+      "domains": "T2",
+      "prompt": "3a108e65",
+      "success_old_domains": null,
+      "success_new_domains": 1.0
+    },
+    "paired": {
+      "a_better": 0,
+      "b_better": 0,
+      "tie": 18,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "diff_by_task": {}
+    }
+  },
+  "results": [
+    {
+      "id": "dd-points-reissue",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        12393.449208000675
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5428,
+      "output_tokens": 232,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "reissue_points"
+      ],
+      "replies": [
+        "扫地机器人订单（O1002）已签收且未退款，已为您补发 1899 积分，当前积分余额 3159。"
+      ]
+    },
+    {
+      "id": "dd-points-reissue",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5286.7125000339
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7985,
+      "output_tokens": 167,
+      "tools": [
+        "list_my_orders",
+        "get_points",
+        "reissue_points"
+      ],
+      "replies": [
+        "已经帮您补发好了 ✅\n\n- 订单：O1002 扫地机器人（1899 元）\n- 补发积分：1899 分（每元 1 分）\n- 当前积分余额：3159 分\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-points-reissue",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8731.050957925618
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5413,
+      "output_tokens": 231,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "reissue_points"
+      ],
+      "replies": [
+        "扫地机器人订单（O1002）已签收且未退款，漏发的 1899 积分已补发到账，当前积分余额为 3159。"
+      ]
+    },
+    {
+      "id": "dd-points-reissue",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        7963.022874901071
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7985,
+      "output_tokens": 159,
+      "tools": [
+        "list_my_orders",
+        "get_points",
+        "reissue_points"
+      ],
+      "replies": [
+        "已为您补发成功 ✅\n\n- 订单：O1002 扫地机器人（1899 元）\n- 补发积分：1899 分\n- 当前积分余额：3159 分\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-points-check",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "simple"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6624.790417030454
+      ],
+      "llm_calls": 3,
+      "input_tokens": 2615,
+      "output_tokens": 110,
+      "tools": [
+        "get_points"
+      ],
+      "replies": [
+        "您当前积分余额为 1260 分。"
+      ]
+    },
+    {
+      "id": "dd-points-check",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "simple"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5396.865375107154
+      ],
+      "llm_calls": 2,
+      "input_tokens": 4785,
+      "output_tokens": 71,
+      "tools": [
+        "get_points"
+      ],
+      "replies": [
+        "您当前积分余额是 **1260 分**。\n\n可以兑换：5 元券（500 分）、10 元券（1000 分）、20 元券（2000 分）。需要帮您兑换吗？"
+      ]
+    },
+    {
+      "id": "dd-points-check",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "simple"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6064.900791971013
+      ],
+      "llm_calls": 3,
+      "input_tokens": 2615,
+      "output_tokens": 110,
+      "tools": [
+        "get_points"
+      ],
+      "replies": [
+        "您当前积分余额为 1260 分。"
+      ]
+    },
+    {
+      "id": "dd-points-check",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "simple"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8884.91224986501
+      ],
+      "llm_calls": 2,
+      "input_tokens": 4785,
+      "output_tokens": 72,
+      "tools": [
+        "get_points"
+      ],
+      "replies": [
+        "您当前积分余额是 **1260 分**。\n\n需要的话可以帮您兑换无门槛券：500 分换 5 元、1000 分换 10 元、2000 分换 20 元。"
+      ]
+    },
+    {
+      "id": "dd-points-exchange",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4329.361791023985
+      ],
+      "llm_calls": 3,
+      "input_tokens": 2669,
+      "output_tokens": 149,
+      "tools": [
+        "exchange_points"
+      ],
+      "replies": [
+        "已用 1000 积分兑换成功，获得一张 10 元无门槛券，当前积分余额 260。"
+      ]
+    },
+    {
+      "id": "dd-points-exchange",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        2876.659666886553
+      ],
+      "llm_calls": 2,
+      "input_tokens": 4832,
+      "output_tokens": 67,
+      "tools": [
+        "exchange_points"
+      ],
+      "replies": [
+        "兑换成功啦～已用 1000 积分换到一张 10 元无门槛券，当前积分余额 260 分。"
+      ]
+    },
+    {
+      "id": "dd-points-exchange",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5188.033040845767
+      ],
+      "llm_calls": 3,
+      "input_tokens": 2669,
+      "output_tokens": 150,
+      "tools": [
+        "exchange_points"
+      ],
+      "replies": [
+        "已为你兑换成功：10 元无门槛券已到账，消耗 1000 积分，当前积分余额 260。"
+      ]
+    },
+    {
+      "id": "dd-points-exchange",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        3886.3412078935653
+      ],
+      "llm_calls": 2,
+      "input_tokens": 4832,
+      "output_tokens": 67,
+      "tools": [
+        "exchange_points"
+      ],
+      "replies": [
+        "兑换成功啦～已用 1000 积分换得一张 10 元无门槛券，当前积分余额 260 分。"
+      ]
+    },
+    {
+      "id": "dd-points-insufficient",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4732.025207951665
+      ],
+      "llm_calls": 3,
+      "input_tokens": 2664,
+      "output_tokens": 149,
+      "tools": [
+        "exchange_points"
+      ],
+      "replies": [
+        "兑换 20 元券需要 2000 积分，您当前积分余额为 1260，暂时无法兑换。"
+      ]
+    },
+    {
+      "id": "dd-points-insufficient",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        3559.6597499679774
+      ],
+      "llm_calls": 2,
+      "input_tokens": 4828,
+      "output_tokens": 97,
+      "tools": [
+        "exchange_points"
+      ],
+      "replies": [
+        "您的积分余额是 1260 分，不够兑换 20 元券（需要 2000 分）。\n\n目前可以兑换：\n- 5 元券：500 积分\n- 10 元券：1000 积分\n\n需要帮您兑换其中一张吗？"
+      ]
+    },
+    {
+      "id": "dd-points-insufficient",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4818.327291868627
+      ],
+      "llm_calls": 3,
+      "input_tokens": 2664,
+      "output_tokens": 151,
+      "tools": [
+        "exchange_points"
+      ],
+      "replies": [
+        "兑换 20 元券需要 2000 积分，您当前积分余额为 1260，暂时不足，无法兑换。"
+      ]
+    },
+    {
+      "id": "dd-points-insufficient",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "points"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        2544.7886660695076
+      ],
+      "llm_calls": 2,
+      "input_tokens": 4828,
+      "output_tokens": 105,
+      "tools": [
+        "exchange_points"
+      ],
+      "replies": [
+        "您当前积分余额是 1260 分，兑换 20 元券需要 2000 积分，暂时不够哦。\n\n可以考虑：\n- 5 元券：500 积分（可兑）\n- 10 元券：1000 积分（可兑）\n\n需要我帮您兑换其中一张吗？"
+      ]
+    },
+    {
+      "id": "dd-invoice-normal",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        9843.056832905859
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5650,
+      "output_tokens": 251,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "issue_invoice"
+      ],
+      "replies": [
+        "已为蓝牙耳机订单（O1001）开具电子普通发票，抬头为“个人”，请查收。"
+      ]
+    },
+    {
+      "id": "dd-invoice-normal",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4178.694667061791
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7939,
+      "output_tokens": 156,
+      "tools": [
+        "list_my_orders",
+        "issue_invoice"
+      ],
+      "replies": [
+        "已为您开好发票：\n\n- 订单：O1001 蓝牙耳机（199 元）\n- 发票类型：电子普通发票\n- 抬头：个人\n\n电子发票会发送到您的账户，请注意查收。还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-invoice-normal",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        7719.886124832556
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5650,
+      "output_tokens": 251,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "issue_invoice"
+      ],
+      "replies": [
+        "已为蓝牙耳机订单（O1001）开具电子普通发票，抬头为“个人”，请查收。"
+      ]
+    },
+    {
+      "id": "dd-invoice-normal",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4324.3183749727905
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7939,
+      "output_tokens": 156,
+      "tools": [
+        "list_my_orders",
+        "issue_invoice"
+      ],
+      "replies": [
+        "已为您开好发票 ✅\n\n- 订单：O1001 蓝牙耳机（199 元）\n- 发票类型：电子普通发票\n- 抬头：个人\n\n发票会发送到您的账户，请注意查收。还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-invoice-special-missing",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6540.828499943018
+      ],
+      "llm_calls": 4,
+      "input_tokens": 4298,
+      "output_tokens": 199,
+      "tools": [
+        "list_my_orders",
+        "get_order"
+      ],
+      "replies": [
+        "扫地机器人订单（O1002）已签收，可以开增值税专用发票，但专用发票必须提供公司税号，请补充杭州云帆科技有限公司的纳税人识别号，我再为您开具。"
+      ]
+    },
+    {
+      "id": "dd-invoice-special-missing",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        3088.2145420182496
+      ],
+      "llm_calls": 2,
+      "input_tokens": 5116,
+      "output_tokens": 70,
+      "tools": [
+        "list_my_orders"
+      ],
+      "replies": [
+        "找到扫地机器人订单 O1002。开增值税专用发票需要公司抬头和税号，抬头您已提供，还需要提供**税号**，麻烦您补充一下。"
+      ]
+    },
+    {
+      "id": "dd-invoice-special-missing",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5722.656416008249
+      ],
+      "llm_calls": 4,
+      "input_tokens": 4298,
+      "output_tokens": 188,
+      "tools": [
+        "list_my_orders",
+        "get_order"
+      ],
+      "replies": [
+        "开增值税专用发票需要公司抬头和税号，您只提供了抬头“杭州云帆科技有限公司”，请补充公司税号，我再为您开具。"
+      ]
+    },
+    {
+      "id": "dd-invoice-special-missing",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        3597.573082894087
+      ],
+      "llm_calls": 2,
+      "input_tokens": 5116,
+      "output_tokens": 66,
+      "tools": [
+        "list_my_orders"
+      ],
+      "replies": [
+        "找到扫地机器人订单 O1002。开增值税专用发票需要公司抬头和税号，抬头您已提供，还需要税号，请提供一下。"
+      ]
+    },
+    {
+      "id": "dd-invoice-special",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write",
+        "context"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5682.220208924264,
+        6218.415208160877
+      ],
+      "llm_calls": 7,
+      "input_tokens": 7339,
+      "output_tokens": 412,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "issue_invoice"
+      ],
+      "replies": [
+        "开增值税专用发票需要公司抬头和税号，目前只提供了抬头“杭州云帆科技有限公司”，请补充公司税号，我收到后即为您开具。",
+        "已为订单 O1002 开具增值税专用发票，抬头：杭州云帆科技有限公司，税号：91330106MA2KXXXX7Q。"
+      ]
+    },
+    {
+      "id": "dd-invoice-special",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write",
+        "context"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        3208.407625090331,
+        4098.2401659712195
+      ],
+      "llm_calls": 4,
+      "input_tokens": 10134,
+      "output_tokens": 216,
+      "tools": [
+        "list_my_orders",
+        "issue_invoice"
+      ],
+      "replies": [
+        "找到扫地机器人订单 O1002。开增值税专用发票需要公司抬头和税号，抬头您已提供，还需要提供**税号**，方便告诉我吗？",
+        "已为订单 O1002（扫地机器人）开具增值税专用发票：\n\n- 抬头：杭州云帆科技有限公司\n- 税号：91330106MA2KXXXX7Q\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-invoice-special",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write",
+        "context"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6343.087583081797,
+        5615.013292059302
+      ],
+      "llm_calls": 7,
+      "input_tokens": 7330,
+      "output_tokens": 412,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "issue_invoice"
+      ],
+      "replies": [
+        "开增值税专用发票需要公司抬头和税号，您只提供了抬头“杭州云帆科技有限公司”，请补充公司税号，我再为您开具。",
+        "已为订单 O1002 开具增值税专用发票，抬头：杭州云帆科技有限公司，税号：91330106MA2KXXXX7Q。"
+      ]
+    },
+    {
+      "id": "dd-invoice-special",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write",
+        "context"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4381.918583065271,
+        3272.1695418003947
+      ],
+      "llm_calls": 4,
+      "input_tokens": 10143,
+      "output_tokens": 229,
+      "tools": [
+        "list_my_orders",
+        "issue_invoice"
+      ],
+      "replies": [
+        "找到扫地机器人订单 O1002（已签收）。开专票需要公司抬头和税号，抬头您已提供，还需要提供**税号**才能开具，麻烦补充一下。",
+        "已为订单 O1002 开具增值税专用发票：\n\n- 抬头：杭州云帆科技有限公司\n- 税号：91330106MA2KXXXX7Q\n\n发票开具后会发送到您的账户，请注意查收。还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-invoice-undelivered",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5521.093083079904
+      ],
+      "llm_calls": 4,
+      "input_tokens": 4278,
+      "output_tokens": 186,
+      "tools": [
+        "list_my_orders",
+        "get_order"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）目前状态为已付款、尚未签收，暂时无法开票；待签收后我再为您开具个人抬头的电子普通发票。"
+      ]
+    },
+    {
+      "id": "dd-invoice-undelivered",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4671.457458054647
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7932,
+      "output_tokens": 182,
+      "tools": [
+        "list_my_orders",
+        "issue_invoice"
+      ],
+      "replies": [
+        "抱歉，键盘这单（O1005，机械键盘 ¥459）目前状态是**已付款、尚未发货**，按规则只有已签收且未退款的订单才能开票，所以现在开不了。\n\n等您签收后随时找我，我马上帮您开个人抬头的电子普通发票。需要我顺便帮您查一下这单的物流吗？"
+      ]
+    },
+    {
+      "id": "dd-invoice-undelivered",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5869.6299160365015
+      ],
+      "llm_calls": 4,
+      "input_tokens": 4278,
+      "output_tokens": 179,
+      "tools": [
+        "list_my_orders",
+        "get_order"
+      ],
+      "replies": [
+        "机械键盘订单（O1005）目前状态为已付款、尚未签收，暂时无法开票，请签收后再来申请。"
+      ]
+    },
+    {
+      "id": "dd-invoice-undelivered",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        3039.199624909088
+      ],
+      "llm_calls": 2,
+      "input_tokens": 5105,
+      "output_tokens": 110,
+      "tools": [
+        "list_my_orders"
+      ],
+      "replies": [
+        "键盘这单（O1005，机械键盘，459 元）目前状态是**已付款、尚未发货**，还没有签收，暂时开不了发票——开票需要订单已签收且未退款。\n\n等您收到货后随时找我，我帮您开个人抬头的电子普通发票。另外这单还没发货，如果您需要改收货地址，现在也可以改。"
+      ]
+    },
+    {
+      "id": "dd-coupon-refund-return",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write",
+        "cross"
+      ],
+      "domains": [
+        "coupon"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        15394.749249797314
+      ],
+      "llm_calls": 8,
+      "input_tokens": 7546,
+      "output_tokens": 443,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund",
+        "return_coupon"
+      ],
+      "replies": [
+        "您好，关于订单 O1001 的处理结果如下：\n\n1. 蓝牙耳机的退款已提交成功，199 元将原路退回。由于属于 7 天无理由退货，退货运费需要由您承担。\n2. 下单时使用的优惠券已退还：满 199 减 20，有效期至 2026-12-09，您可以继续使用。\n\n还有其他问题随时联系我们。"
+      ]
+    },
+    {
+      "id": "dd-coupon-refund-return",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write",
+        "cross"
+      ],
+      "domains": [
+        "coupon"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8526.791624957696
+      ],
+      "llm_calls": 5,
+      "input_tokens": 13999,
+      "output_tokens": 284,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund",
+        "return_coupon"
+      ],
+      "replies": [
+        "已为您办好：\n\n1. **退款**：蓝牙耳机（订单 O1001）退款 199.00 元，将原路退回。签收 3 天，符合 7 天无理由退货，退货运费需由您承担。\n2. **退券**：下单时使用的优惠券已退还——满 199 减 20，有效期至 2026-12-09。\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-coupon-refund-return",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write",
+        "cross"
+      ],
+      "domains": [
+        "coupon"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        16002.942375140265
+      ],
+      "llm_calls": 9,
+      "input_tokens": 8909,
+      "output_tokens": 526,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund",
+        "get_order",
+        "list_my_coupons",
+        "return_coupon"
+      ],
+      "replies": [
+        "您好，关于订单 O1001 的处理结果如下：\n\n1. 蓝牙耳机退款已提交成功，199 元将原路退回。因属于 7 天无理由退货，退货运费需由您承担。\n2. 下单使用的“满 199 减 20”优惠券已退还到您的账户，有效期至 2026-12-09，可继续使用。\n\n如有其他问题，随时联系我们。"
+      ]
+    },
+    {
+      "id": "dd-coupon-refund-return",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write",
+        "cross"
+      ],
+      "domains": [
+        "coupon"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8242.400167044252
+      ],
+      "llm_calls": 5,
+      "input_tokens": 14107,
+      "output_tokens": 345,
+      "tools": [
+        "list_my_orders",
+        "check_refund",
+        "submit_refund",
+        "return_coupon"
+      ],
+      "replies": [
+        "都办好了：\n\n1. **退款**：蓝牙耳机（订单 O1001）199 元已提交退款，将原路退回。签收 3 天，符合 7 天无理由退货，**退货运费需由您承担**。\n2. **优惠券**：下单用的「满 199 减 20」券（C01）已退还，有效期至 2026-12-09，可继续使用。\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-coupon-expired",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "coupon"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6605.824499856681
+      ],
+      "llm_calls": 4,
+      "input_tokens": 4008,
+      "output_tokens": 212,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "list_my_coupons"
+      ],
+      "replies": [
+        "保温杯订单（O1004）目前没有退款记录，且该单使用的“满 89 减 10”券已于 2026-11-04 过期，因此无法退还。"
+      ]
+    },
+    {
+      "id": "dd-coupon-expired",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "coupon"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        3917.6604580134153
+      ],
+      "llm_calls": 2,
+      "input_tokens": 5271,
+      "output_tokens": 124,
+      "tools": [
+        "list_my_orders",
+        "list_my_coupons"
+      ],
+      "replies": [
+        "保温杯订单（O1004）用的券是「满 89 减 10」（券号 C02），但这张券的有效期是 2026-11-04，已经过期了。\n\n另外，退券的前提是订单已经全额退款。请问这单您是要办理退款吗？如果需要退款，我可以先帮您查一下能否退。"
+      ]
+    },
+    {
+      "id": "dd-coupon-expired",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "coupon"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8551.851874915883
+      ],
+      "llm_calls": 4,
+      "input_tokens": 4008,
+      "output_tokens": 207,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "list_my_coupons"
+      ],
+      "replies": [
+        "保温杯订单（O1004）目前没有退款记录，且该单使用的“满89减10”券已于2026-11-04过期，因此无法退还。"
+      ]
+    },
+    {
+      "id": "dd-coupon-expired",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "coupon"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        3633.572000078857
+      ],
+      "llm_calls": 2,
+      "input_tokens": 5271,
+      "output_tokens": 135,
+      "tools": [
+        "list_my_orders",
+        "list_my_coupons"
+      ],
+      "replies": [
+        "保温杯是订单 O1004，用的券是「满 89 减 10」（券号 C02），但这张券的有效期到 2026-11-04，已经过期了。\n\n另外，退券的前提是订单已经全额退款——O1004 目前是已签收状态，还没有退款。所以这张券现在无法退还。\n\n需要我帮您看看这单能不能退款吗？"
+      ]
+    },
+    {
+      "id": "dd-repair-watch",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        7919.433583971113
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5439,
+      "output_tokens": 261,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "已为您的智能手表（订单 O1006）提交维修申请，维修单 #1 已创建，保修期内免费维修，请留意后续进度。"
+      ]
+    },
+    {
+      "id": "dd-repair-watch",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8511.641249991953
+      ],
+      "llm_calls": 4,
+      "input_tokens": 10930,
+      "output_tokens": 215,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "已为您提交维修申请 ✅\n\n- 订单：O1006 智能手表（599 元，2026-09-30 签收）\n- 问题：屏幕突然不亮\n- 维修单号：#1，保修期内免费维修\n\n后续进度您可以随时找我查询。请问还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-repair-watch",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8453.161250101402
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5439,
+      "output_tokens": 261,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "已为您的智能手表（订单 O1006）提交维修申请，维修单 #1 已创建，保修期内免费维修，请留意后续进度。"
+      ]
+    },
+    {
+      "id": "dd-repair-watch",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6029.249332845211
+      ],
+      "llm_calls": 4,
+      "input_tokens": 10929,
+      "output_tokens": 214,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "已为您提交维修申请：\n\n- 订单：O1006 智能手表（599 元，2026-09-30 签收）\n- 问题：屏幕突然不亮\n- 维修单号：#1，保修期内免费维修\n\n后续进度您可以随时问我，我帮您查询维修单状态。"
+      ]
+    },
+    {
+      "id": "dd-repair-human",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        7349.801874952391
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5440,
+      "output_tokens": 263,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "已为您的智能手表（订单 O1006）提交维修申请，进水属人为损坏，需付费维修，维修单已创建，请留意后续处理通知。"
+      ]
+    },
+    {
+      "id": "dd-repair-human",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6735.470000188798
+      ],
+      "llm_calls": 4,
+      "input_tokens": 11038,
+      "output_tokens": 276,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "已为您提交维修申请 ✅\n\n- 订单：O1006 智能手表\n- 维修单号：#1\n- 类型：人为损坏（进水），不在免费保修范围内，按付费维修处理\n\n后续维修进度您可以随时问我查询。请问还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-repair-human",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6784.996166126803
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5440,
+      "output_tokens": 255,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "已为您的智能手表（订单 O1006）提交维修申请，进水属人为损坏，需付费维修，维修单已创建。"
+      ]
+    },
+    {
+      "id": "dd-repair-human",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5942.290457896888
+      ],
+      "llm_calls": 4,
+      "input_tokens": 10931,
+      "output_tokens": 229,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "已为您提交维修申请：\n\n- 订单：O1006 智能手表（599 元，2026-09-30 签收）\n- 维修单号：#1\n- 故障：进水\n- 类型：人为损坏，不在免费保修范围内，需按付费维修处理\n\n后续维修中心会联系您确认检测结果和费用。需要我帮您查维修进度吗？"
+      ]
+    },
+    {
+      "id": "dd-repair-within15",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary",
+        "cross"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8075.732999946922
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5452,
+      "output_tokens": 254,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "您的蓝牙耳机签收仅 3 天，属于 15 天内的质量问题，无法受理维修，建议您申请退换货。"
+      ]
+    },
+    {
+      "id": "dd-repair-within15",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary",
+        "cross"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6620.4533751588315
+      ],
+      "llm_calls": 4,
+      "input_tokens": 10941,
+      "output_tokens": 200,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "您的蓝牙耳机（订单 O1001）签收才 3 天，属于 15 天内的质量问题，按规定不受理维修，需要走退换货流程。\n\n请问您希望换货还是退货退款？我这边帮您办理。"
+      ]
+    },
+    {
+      "id": "dd-repair-within15",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary",
+        "cross"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8846.126917051151
+      ],
+      "llm_calls": 5,
+      "input_tokens": 5452,
+      "output_tokens": 265,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "您的蓝牙耳机（订单 O1001）签收仅 3 天，属于 15 天内的质量问题，无法申请维修，建议您直接申请退换货。"
+      ]
+    },
+    {
+      "id": "dd-repair-within15",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary",
+        "cross"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6175.120041938499
+      ],
+      "llm_calls": 4,
+      "input_tokens": 10941,
+      "output_tokens": 209,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_repair"
+      ],
+      "replies": [
+        "您的蓝牙耳机（订单 O1001）签收才 3 天，还在 15 天质保期内，这种情况按政策应走**退换货**，不受理维修。\n\n您看是要**退货退款**还是**换货**？确认后我帮您办理。"
+      ]
+    },
+    {
+      "id": "dd-price-earphone",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6690.426583169028
+      ],
+      "llm_calls": 5,
+      "input_tokens": 4862,
+      "output_tokens": 220,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "蓝牙耳机（订单 O1001）已成功申请价保，退还差价 30.00 元，将原路退回。"
+      ]
+    },
+    {
+      "id": "dd-price-earphone",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4226.813500048593
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7936,
+      "output_tokens": 135,
+      "tools": [
+        "list_my_orders",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "好消息！蓝牙耳机（订单 O1001）的价保申请已成功，退还差价 **30.00 元**，将原路退回。\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-price-earphone",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        10125.736208865419
+      ],
+      "llm_calls": 5,
+      "input_tokens": 4862,
+      "output_tokens": 221,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "您的蓝牙耳机订单（O1001）已成功申请价保，退还差价 30.00 元，将原路退回。"
+      ]
+    },
+    {
+      "id": "dd-price-earphone",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4676.143332850188
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7915,
+      "output_tokens": 118,
+      "tools": [
+        "list_my_orders",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "好消息！您的蓝牙耳机订单（O1001）符合价格保护条件，已为您申请成功，退还差价 **30.00 元**，将原路退回。\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-price-flash",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        8604.856125079095
+      ],
+      "llm_calls": 5,
+      "input_tokens": 4855,
+      "output_tokens": 222,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "您的吹风机订单（O1007）为秒杀订单，不在价保范围内，无法退还差价。"
+      ]
+    },
+    {
+      "id": "dd-price-flash",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4283.983749803156
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7889,
+      "output_tokens": 116,
+      "tools": [
+        "list_my_orders",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "很抱歉，您的吹风机订单（O1007，299元）是秒杀活动购入的，按规则秒杀订单不在价保范围内，无法申请退差价。\n\n还有其他可以帮您的吗？"
+      ]
+    },
+    {
+      "id": "dd-price-flash",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6678.43783297576
+      ],
+      "llm_calls": 5,
+      "input_tokens": 4840,
+      "output_tokens": 217,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "您的吹风机订单（O1007）为秒杀订单，不在价保范围内，无法退还差价。"
+      ]
+    },
+    {
+      "id": "dd-price-flash",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4370.611041085795
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7889,
+      "output_tokens": 116,
+      "tools": [
+        "list_my_orders",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "抱歉，您的吹风机订单（O1007，299元）是秒杀活动购入的，按规则秒杀订单不在价格保护范围内，所以无法申请价保。\n\n还有其他可以帮您的吗？"
+      ]
+    },
+    {
+      "id": "dd-price-expired",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6769.519665976986
+      ],
+      "llm_calls": 5,
+      "input_tokens": 4862,
+      "output_tokens": 224,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "您这单智能手表签收已超过 7 天，不在价保期内，无法申请退还差价。"
+      ]
+    },
+    {
+      "id": "dd-price-expired",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4939.094542060047
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7896,
+      "output_tokens": 125,
+      "tools": [
+        "list_my_orders",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "您的手表订单（O1006，智能手表，599 元）签收已 40 天，超过了 7 天价保期，很抱歉无法申请价保退差价。\n\n如果手表有其他售后问题，可以随时告诉我。"
+      ]
+    },
+    {
+      "id": "dd-price-expired",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        7722.13341598399
+      ],
+      "llm_calls": 5,
+      "input_tokens": 4847,
+      "output_tokens": 224,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "您这单智能手表签收已 40 天，超过 7 天价保期，无法申请价保退差价。"
+      ]
+    },
+    {
+      "id": "dd-price-expired",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary"
+      ],
+      "domains": [
+        "price"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4428.247208008543
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7896,
+      "output_tokens": 123,
+      "tools": [
+        "list_my_orders",
+        "apply_price_protect"
+      ],
+      "replies": [
+        "您的手表订单（O1006，智能手表 ¥599）签收已 40 天，超过了 7 天价保期，很抱歉无法申请价保。\n\n如果还有其他订单需要查询或办理售后，随时告诉我。"
+      ]
+    },
+    {
+      "id": "dd-cross-watch-refund",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary",
+        "cross"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        6378.670958103612
+      ],
+      "llm_calls": 4,
+      "input_tokens": 4365,
+      "output_tokens": 204,
+      "tools": [
+        "list_my_orders",
+        "check_refund"
+      ],
+      "replies": [
+        "智能手表（订单 O1006）已签收 40 天，超过质量问题 15 天退货期，无法办理退货退款，建议申请保修。"
+      ]
+    },
+    {
+      "id": "dd-cross-watch-refund",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "boundary",
+        "cross"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4555.198749992996
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7976,
+      "output_tokens": 184,
+      "tools": [
+        "list_my_orders",
+        "check_refund"
+      ],
+      "replies": [
+        "智能手表（订单 O1006，599 元）签收已 40 天，超过了质量问题 15 天退货期，无法办理退货，但可以申请保修维修。\n\n请问手表具体是什么问题呢？比如是功能故障，还是进水、摔坏、私自拆机这类情况？我帮您申请维修。"
+      ]
+    },
+    {
+      "id": "dd-cross-watch-refund",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary",
+        "cross"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5503.535083029419
+      ],
+      "llm_calls": 4,
+      "input_tokens": 4365,
+      "output_tokens": 202,
+      "tools": [
+        "list_my_orders",
+        "check_refund"
+      ],
+      "replies": [
+        "智能手表（订单 O1006）已签收 40 天，超过质量问题 15 天退货期，无法退款，可申请保修。"
+      ]
+    },
+    {
+      "id": "dd-cross-watch-refund",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "boundary",
+        "cross"
+      ],
+      "domains": [
+        "repair"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4720.037542050704
+      ],
+      "llm_calls": 3,
+      "input_tokens": 7979,
+      "output_tokens": 192,
+      "tools": [
+        "list_my_orders",
+        "check_refund"
+      ],
+      "replies": [
+        "订单 O1006 的智能手表是 9 月 25 日下单、已签收 40 天，超过了质量问题 15 天退货期，无法办理退货退款。\n\n不过这个订单还在保修范围内，可以帮您申请维修。方便说一下手表具体是什么故障吗？比如是功能异常，还是进水、摔坏过？"
+      ]
+    },
+    {
+      "id": "dd-cross-multi",
+      "system": "multi",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write",
+        "multi",
+        "cross"
+      ],
+      "domains": [
+        "price",
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        13122.293207794428
+      ],
+      "llm_calls": 9,
+      "input_tokens": 8406,
+      "output_tokens": 418,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_price_protect",
+        "list_my_orders",
+        "issue_invoice"
+      ],
+      "replies": [
+        "您好，您反馈的两个问题处理结果如下：\n\n1. 蓝牙耳机价保：申请成功，退还差价 30.00 元，将原路退回。\n2. 扫地机器人发票：电子普通发票已开具，抬头为“个人”，请查收。\n\n如还有其他问题，欢迎随时联系我们。"
+      ]
+    },
+    {
+      "id": "dd-cross-multi",
+      "system": "single",
+      "run": 0,
+      "tags": [
+        "domain",
+        "write",
+        "multi",
+        "cross"
+      ],
+      "domains": [
+        "price",
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        5225.082124816254
+      ],
+      "llm_calls": 3,
+      "input_tokens": 8026,
+      "output_tokens": 214,
+      "tools": [
+        "list_my_orders",
+        "apply_price_protect",
+        "issue_invoice"
+      ],
+      "replies": [
+        "两件事都办好了：\n\n1. **价保**：蓝牙耳机（订单 O1001）价保申请成功，退还差价 **30.00 元**，将原路退回。\n2. **发票**：扫地机器人（订单 O1002）已开具电子普通发票，抬头为「个人」。\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-cross-multi",
+      "system": "multi",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write",
+        "multi",
+        "cross"
+      ],
+      "domains": [
+        "price",
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        14810.649083927274
+      ],
+      "llm_calls": 9,
+      "input_tokens": 8402,
+      "output_tokens": 416,
+      "tools": [
+        "list_my_orders",
+        "get_order",
+        "apply_price_protect",
+        "list_my_orders",
+        "issue_invoice"
+      ],
+      "replies": [
+        "您好，两件事都处理好了：\n\n1. 蓝牙耳机（订单 O1001）的价保申请已成功，退还差价 30.00 元，将原路退回。\n2. 扫地机器人订单（O1002）已开具电子普通发票，抬头为“个人”。\n\n还有其他需要帮忙的吗？"
+      ]
+    },
+    {
+      "id": "dd-cross-multi",
+      "system": "single",
+      "run": 1,
+      "tags": [
+        "domain",
+        "write",
+        "multi",
+        "cross"
+      ],
+      "domains": [
+        "price",
+        "invoice"
+      ],
+      "success": true,
+      "failures": [],
+      "latency_ms": [
+        4837.201958987862
+      ],
+      "llm_calls": 3,
+      "input_tokens": 8026,
+      "output_tokens": 214,
+      "tools": [
+        "list_my_orders",
+        "apply_price_protect",
+        "issue_invoice"
+      ],
+      "replies": [
+        "两件事都办好了：\n\n1. **价保**：蓝牙耳机（订单 O1001）价保申请成功，退还差价 **30.00 元**，将原路退回。\n2. **发票**：扫地机器人（订单 O1002）已开具电子普通发票，抬头为「个人」。\n\n还有其他需要帮忙的吗？"
+      ]
+    }
+  ],
+  "prompt_versions": {
+    "multi": "8952a831",
+    "single": "3a108e65"
+  }
+}

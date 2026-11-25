@@ -1,0 +1,34 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.245 seconds.
+Prefix dict has been built successfully.
+
+[multi] 提示词 7115eee1  领域 基础  干扰工具 0 个  任务 12 个 × 3 次
+  任务成功率 83.3%（95% CI 68.1%～92.1%）   pass^3 83.3%
+  每轮延迟 p50 5.9s  p95 12.1s   每任务模型调用 9.6 次  Token 11124（输入 10548 / 输出 576）
+  严重失败率 0.0%（95% CI 0.0%～9.6%）   失败分级：沟通 6   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 100%(n=15)  context 82%(n=33)  multi 50%(n=6)  write 82%(n=33)
+
+[single] 提示词 75fe209e  领域 基础  干扰工具 0 个  任务 12 个 × 3 次
+  任务成功率 97.2%（95% CI 85.8%～99.5%）   pass^3 91.7%
+  每轮延迟 p50 4.7s  p95 7.7s   每任务模型调用 6.8 次  Token 11667（输入 11246 / 输出 421）
+  严重失败率 0.0%（95% CI 0.0%～9.6%）   失败分级：沟通 1   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 100%(n=15)  context 97%(n=33)  multi 83%(n=6)  write 97%(n=33)
+
+配对对比（多 Agent − 单 Agent，按任务成功率）：多 Agent 更好 0 个，单 Agent 更好 2 个，持平 10 个；平均差 -13.9%（95% CI -36.1%～+0.0%）
+
+失败明细：
+  [multi] fd05 #0：回复：缺少 已取消/取消成功/已经取消/已退款/已退回/已为您取消/已经帮您取消
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'机械键盘订单（O1005）的退款已成功，459 元已原路退回，无需再操作。'
+  [multi] fd05 #1：回复：缺少 已取消/取消成功/已经取消/已退款/已退回/已为您取消/已经帮您取消
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'get_order']  回复：'机械键盘订单（O1005）的退款已成功，459 元已全额退回，无需再操作。'
+  [multi] fd05 #2：回复：缺少 已取消/取消成功/已经取消/已退款/已退回/已为您取消/已经帮您取消
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'check_refund']  回复：'经查询，订单 O1005 的退款申请已成功办理，退款金额 459.00 元，无需重复申请，请留意原路到账。'
+  [multi] fd08 #0：回复：缺少 已取消/取消成功/已经取消/已退款/已退回/已为您取消/已经帮您取消
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'list_my_orders', 'get_logistics', 'get_order']  回复：'键盘订单 O1005 的退款已处理完成，459 元已全额退回，款项将原路退回，无需再操作。'
+  [single] fd08 #0：回复：缺少 已取消/取消成功/已经取消/已退款/已退回/已为您取消/已经帮您取消
+      工具 ['list_my_orders', 'check_refund', 'get_logistics', 'submit_refund', 'get_order']  回复：'我理解您的提醒。刚才我查了订单 O1005，状态显示为**退款成功**，操作记录里也有 2026-11-11 12:00 的退款申请，结果“退款成功”，金额 459.00 元。所以之前说的退款已办好是准确的，不需要重复提交。\n\n如果您在支付'
+  [multi] fd08 #1：回复：缺少 已取消/取消成功/已经取消/已退款/已退回/已为您取消/已经帮您取消
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'list_my_orders', 'get_logistics', 'get_order']  回复：'键盘订单 O1005 的退款已处理完成，459 元已原路退回，请留意到账。'
+  [multi] fd08 #2：回复：缺少 已取消/取消成功/已经取消/已退款/已退回/已为您取消/已经帮您取消
+      工具 ['list_my_orders', 'check_refund', 'submit_refund', 'list_my_orders', 'get_logistics', 'get_order']  回复：'键盘订单 O1005 的退款已成功，459 元已原路退回，无需再操作。'

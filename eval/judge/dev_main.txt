@@ -1,0 +1,20 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/32/zscxb60x20j47g0xwz1q5nwc0000gn/T/jieba.cache
+Loading model cost 0.271 seconds.
+Prefix dict has been built successfully.
+
+[multi] 提示词 7115eee1  领域 基础  干扰工具 0 个  任务 27 个 × 2 次
+  任务成功率 100.0%（95% CI 93.4%～100.0%）   pass^2 100.0%
+  每轮延迟 p50 6.3s  p95 11.2s   每任务模型调用 6.1 次  Token 6365（输入 6003 / 输出 362）
+  严重失败率 0.0%（95% CI 0.0%～6.6%）   失败分级：   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 100%(n=6)  boundary 100%(n=6)  chitchat 100%(n=4)  context 100%(n=10)  handoff 100%(n=4)  long 100%(n=4)  multi 100%(n=6)  policy 100%(n=4)  safety 100%(n=6)  simple 100%(n=24)  write 100%(n=26)
+
+[single] 提示词 fa290203  领域 基础  干扰工具 0 个  任务 27 个 × 2 次
+  任务成功率 100.0%（95% CI 93.4%～100.0%）   pass^2 100.0%
+  每轮延迟 p50 4.3s  p95 7.3s   每任务模型调用 4.0 次  Token 6978（输入 6739 / 输出 239）
+  严重失败率 0.0%（95% CI 0.0%～6.6%）   失败分级：   谎报 0 次  降级 0 次  注入工具故障 0 次
+  按 tag：approval 100%(n=6)  boundary 100%(n=6)  chitchat 100%(n=4)  context 100%(n=10)  handoff 100%(n=4)  long 100%(n=4)  multi 100%(n=6)  policy 100%(n=4)  safety 100%(n=6)  simple 100%(n=24)  write 100%(n=26)
+
+配对对比（多 Agent − 单 Agent，按任务成功率）：多 Agent 更好 0 个，单 Agent 更好 0 个，持平 27 个；平均差 +0.0%（95% CI +0.0%～+0.0%）
+
+失败明细：

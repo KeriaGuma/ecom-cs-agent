@@ -1,0 +1,127 @@
+{
+ "prompt_version": "15652d9e",
+ "judges": {
+  "kimi": "kimi-k2.6",
+  "qwen": "qwen3.7-flash"
+ },
+ "n": 204,
+ "errors": 2,
+ "usage": {
+  "qwen": {
+   "calls": 374,
+   "input": 438707,
+   "output": 92108
+  },
+  "kimi": {
+   "calls": 400,
+   "input": 430266,
+   "output": 102242
+  }
+ },
+ "summary": {
+  "kimi": {
+   "multi": {
+    "n": 102,
+    "answered": 0.9706,
+    "faithful": 1.0,
+    "no_overpromise": 1.0,
+    "concise": 0.9755,
+    "tone": 1.0
+   },
+   "single": {
+    "n": 102,
+    "answered": 0.9804,
+    "faithful": 0.951,
+    "no_overpromise": 0.9608,
+    "concise": 0.9461,
+    "tone": 0.9951
+   }
+  },
+  "qwen": {
+   "multi": {
+    "n": 102,
+    "answered": 0.9902,
+    "faithful": 0.9412,
+    "no_overpromise": 1.0,
+    "concise": 0.9804,
+    "tone": 1.0
+   },
+   "single": {
+    "n": 102,
+    "answered": 1.0,
+    "faithful": 0.9412,
+    "no_overpromise": 0.9902,
+    "concise": 0.9902,
+    "tone": 0.9951
+   }
+  }
+ },
+ "inter_judge": {
+  "answered": {
+   "agree": 0.9705882352941176,
+   "kappa": -0.008
+  },
+  "faithful": {
+   "agree": 0.9558823529411765,
+   "kappa": 0.452
+  },
+  "no_overpromise": {
+   "agree": 0.9852941176470589,
+   "kappa": 0.395
+  },
+  "concise": {
+   "agree": 0.9117647058823529,
+   "kappa": 0.145
+  },
+  "tone": {
+   "agree": 1.0,
+   "kappa": 1.0
+  }
+ },
+ "test_retest": {
+  "kimi": {
+   "answered": {
+    "agree": 0.9852941176470589,
+    "kappa": 0.565
+   },
+   "faithful": {
+    "agree": 0.9950980392156863,
+    "kappa": 0.907
+   },
+   "no_overpromise": {
+    "agree": 1.0,
+    "kappa": 1.0
+   },
+   "concise": {
+    "agree": 0.9558823529411765,
+    "kappa": 0.666
+   },
+   "tone": {
+    "agree": 0.9803921568627451,
+    "kappa": -0.007
+   }
+  },
+  "qwen": {
+   "answered": {
+    "agree": 0.995049504950495,
+    "kappa": 0.0
+   },
+   "faithful": {
+    "agree": 0.9900990099009901,
+    "kappa": 0.895
+   },
+   "no_overpromise": {
+    "agree": 0.9900990099009901,
+    "kappa": 0.496
+   },
+   "concise": {
+    "agree": 0.9752475247524752,
+    "kappa": 0.654
+   },
+   "tone": {
+    "agree": 0.9801980198019802,
+    "kappa": 0.328
+   }
+  }
+ }
+}
