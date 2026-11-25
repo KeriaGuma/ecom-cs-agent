@@ -1,0 +1,9 @@
+# Python 3.12 下验证通过的版本（2026-11-09）
+-r requirements-sandbox.txt
+langchain-openai==1.7.4
+jieba==0.42.1
+rank-bm25==0.2.2
+numpy==2.5.4
+mcp==2.3.0
+pytest==9.2.0
+pillow==11.3.0  # 只有生成评测图片（cs_agent/gen_images.py）时用到

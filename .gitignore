@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+.DS_Store
+*.docx
+.env
+data/*.db
+# MCP Server 的服务令牌文件（只存摘要，但也不进仓库）
+data/mcp_tokens.json
+
+data/kb_index/
+
+# LLM 评委的打分缓存（可由 eval/judge/*.json 重建）
+eval/judge/cache/
