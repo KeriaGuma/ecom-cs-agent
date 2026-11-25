@@ -154,13 +154,13 @@ def run_scenario(base_url: str, compose: Callable[..., str] | None = None) -> di
             receive_path = f"{endpoint}/receive"
             expect(staff.post(fault_path, json={"fault": "ack_lost"}), 403)
             expect(staff.post(decision_path, json={"approved": True}), 403)
+            expect(approver.post(fault_path, json={"fault": "ack_lost"}))
             approved = expect(approver.post(decision_path, json={"approved": True})).json()
             require(approved["status"] == "awaiting_return", "Delivered order must await return shipment before payout")
 
             shipped = expect(customer.post(f"{endpoint}/return", json={"tracking_no": "SF900123"})).json()
             require(shipped["return_tracking_no"] == "SF900123", "Return tracking number was not persisted")
 
-            expect(approver.post(fault_path, json={"fault": "ack_lost"}))
             received = expect(approver.post(receive_path, json={})).json()
             require(received["status"] == "unknown", "The simulated payment should commit with a lost acknowledgement")
 
