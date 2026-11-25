@@ -1,0 +1,27 @@
+services:
+  sandbox:
+    image: ecom-cs-sandbox:local
+    build: .
+    ports:
+      - "127.0.0.1:${DEMO_PORT:-8000}:8000"
+    environment:
+      DEMO_MODEL_DELAY_MS: "${DEMO_MODEL_DELAY_MS:-0}"
+    volumes:
+      - sandbox-data:/app/var
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=2).close()"]
+      interval: 5s
+      timeout: 3s
+      retries: 6
+  reconciliation:
+    image: ecom-cs-sandbox:local
+    pull_policy: never
+    command: ["python", "-m", "cs_agent.refund_jobs", "--db", "/app/var/demo.db", "--interval", "${DEMO_RECONCILE_SECONDS:-5}"]
+    volumes:
+      - sandbox-data:/app/var
+    depends_on:
+      sandbox:
+        condition: service_healthy
+
+volumes:
+  sandbox-data:

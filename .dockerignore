@@ -1,0 +1,15 @@
+.git
+.venv
+.env
+.env.*
+**/node_modules
+**/__pycache__
+**/.DS_Store
+.pytest_cache
+bench
+eval
+tests
+data/*.db*
+data/kb_index
+data/mcp_tokens.json
+*.docx

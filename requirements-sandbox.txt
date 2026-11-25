@@ -1,0 +1,8 @@
+# Scripted sandbox runtime. Live providers, vector retrieval and evaluation use requirements.txt.
+-c constraints-sandbox.txt
+langchain-core==1.7.6
+python-dotenv==1.2.4
+pydantic==2.14.3
+fastapi==0.162.2
+uvicorn==0.54.0
+httpx==0.28.1
